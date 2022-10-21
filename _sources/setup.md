@@ -307,7 +307,7 @@ Microsoft Edge is not modern, despite what Microsoft might try and otherwise tel
 Now that you've installed everything it's time to check that everything works as expected!
 Type the following into your terminal:
 
-    bash <( curl -s https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/check_install.sh)
+    bash <( curl -s https://raw.githubusercontent.com/M-earnest/Python_for_Psychologists_Winter2022/main/check_install.sh)
 
 If you installed everything correctly you should see a message informing you as such.
 If any problems were detected you should receive some brief instructions on what is wrong with potential suggestions on how to remedy it.
@@ -330,11 +330,11 @@ By installing `Python` on your system (i.e. specifically `Conda`) and setting up
 
 To get things up and running, please follow these steps:
 
-1. Download the [`environment.yml`](https://raw.githubusercontent.com/peerherholz/Python_for_Psychologists_Winter2021/master/environment.yml) file (e.g. with right mouse click -> Save As). Make sure that the file ends with `.yml` and not `.txt`.
+1. Download the [`environment.yml`](https://raw.githubusercontent.com/M-earnest/Python_for_Psychologists_Winter2022/main/environment.yml) file (e.g. with right mouse click -> Save As). Make sure that the file ends with `.yml` and not `.txt`.
 2. Open up a conda terminal (or any other terminal), and create a new conda environment with the following command: `conda env create -f /path/to/file/environment.yml` - For example ``conda env create -f ~/Downloads/environment.yml`
-3. Download the notebooks in this repository via [this link](https://github.com/peerherholz/Python_for_Psychologists_Winter2021/archive/master.zip)) and unzip them to your preferred location, e.g. `Desktop/Python_for_Psychologists_Winter2021`.
-4. Next, open up a `conda terminal` (or any other `terminal`), activate the `conda environment` with `conda activate pfp_2021` (or on older `conda environment` with `source activate pfp_2021` for `mac` and `linux` and `activate pfp_2021` for `windows`).
-5. Finally, via the `terminal`, move to the folder where you've put all the unzipped content of this workshop, e.g. with the command `cd ~/Desktop/Python_for_Psychologists_Winter2021` and run the command `jupyter notebook`. If the `notebook server` isn't automatically opened in a new browser window, please copy-paste either the `http://127.0.0.1:8888/...` or the `http://localhost:8888/...` path into a new browser window and press `Enter`. You should now see the `jupyter notebook server` (looking like a file browser and displaying the content of the directory). 
+3. Download the notebooks in this repository via [this link](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) and unzip them to your preferred location, e.g. `Desktop/Python_for_Psychologists_Winter2022`.
+4. Next, open up a `conda terminal` (or any other `terminal`), activate the `conda environment` with `conda activate pfp_2022` (or on older `conda environment` with `source activate pfp_2022` for `mac` and `linux` and `activate pfp_2022` for `windows`).
+5. Finally, via the `terminal`, move to the folder where you've put all the unzipped content of this workshop, e.g. with the command `cd ~/Desktop/Python_for_Psychologists_Winter2022` and run the command `jupyter notebook`. If the `notebook server` isn't automatically opened in a new browser window, please copy-paste either the `http://127.0.0.1:8888/...` or the `http://localhost:8888/...` path into a new browser window and press `Enter`. You should now see the `jupyter notebook server` (looking like a file browser and displaying the content of the directory). 
 ```
 
 ```{tabbed} Cloud via Mybinder

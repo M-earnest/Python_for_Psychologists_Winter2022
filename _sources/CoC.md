@@ -45,6 +45,18 @@ Participants asked to stop any harassing behavior are expected to comply immedia
 ## **Reporting**
 If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to the organizers either in person or by email.
 
+Further the Goethe-University offers a number of ressources: 
+
+[sexual harrasment/violence](https://www.goethe-university-frankfurt.de/113533163/Sexualised_Discrimination?locale=ent)
+
+[anti-discrimination office](https://www.goethe-university-frankfurt.de/113532682/Services_and_Self_conception?locale=en)
+
+[equal opportunities (german)](https://www.uni-frankfurt.de/70268108/Beratungsstelle_Chancengleichheit)
+
+[Ombudsperson (german)](https://www.uni-frankfurt.de/97234850/Ombudspersonen_f%C3%BCr_Studierende_und_wissenschaftliche_Mitarbeiter_innen_sowie_f%C3%BCr_studentische_und_wissenschaftliche_Hilfskr%C3%A4fte)
+
+
+
 ## *Reporting Issues*
 
 Any incident of unacceptable behavior hurts the learning environment for everyone. We are therefore committed to supporting students to access corresponding reporting resources and ensure a supportive environment.

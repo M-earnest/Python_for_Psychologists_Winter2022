@@ -23,8 +23,8 @@ First things first: what is going to happen in this course? What is it all about
 
 #### Materials 📓
 
-'''''' ADAPT LINK '''''
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFQeu3eM4R5GtnRzb_bZPOEO66lZ8QZAYvyPjb_4ApRpXkW715drhvrsP9bGNrAQg5fl3WpiR9hpt5/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+'''''' coming soon '''''
+
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
