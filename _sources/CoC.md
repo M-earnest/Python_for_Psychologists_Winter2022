@@ -53,6 +53,9 @@ Further the Goethe-University offers a number of ressources:
 
 [equal opportunities (german)](https://www.uni-frankfurt.de/70268108/Beratungsstelle_Chancengleichheit)
 
+[Guide-book: Studium Inklusiv: Mit gesundheitlicher Beeinträchtigung oder Behinderung
+gut durchs Studium](https://www.uni-frankfurt.de/98672010/leitfaden_gu_inklusion_stud.pdf)
+
 [Ombudsperson (german)](https://www.uni-frankfurt.de/97234850/Ombudspersonen_f%C3%BCr_Studierende_und_wissenschaftliche_Mitarbeiter_innen_sowie_f%C3%BCr_studentische_und_wissenschaftliche_Hilfskr%C3%A4fte)
 
 
