@@ -19,7 +19,7 @@ How do you interact with your computer? In general, you as a user provide some `
 
 #### Materials 📓
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTkm6evTi-Ag-noQGTGLVwykDUFJroeLyr-oKcB1qISpb9vD6pU-ktMRswOjUZeUNESSoMxt9Z3Pd4b/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+''' coming soon '''
 
 ### The (bash) shell
 

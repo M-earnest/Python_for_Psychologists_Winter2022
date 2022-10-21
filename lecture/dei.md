@@ -76,16 +76,15 @@ Please note that this list will be rather "neuroscience-focused" as it's the ins
 
 ### Women in Neuroscience Repository
 
-The [Women in Neuroscience Repository](https://www.winrepo.org/) aims to "identify and recommend female neuroscientists for conferences, symposia or collaborations." via providing a fantastic interactive resource organized by a multitude of keywords. There's also a [<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Twitter_Logo_as_of_2021.svg/1920px-Twitter_Logo_as_of_2021.svg.png" width="20" height="15">](https://twitter.com/WINRePo1) account.
+The [Women in Neuroscience Repository](https://www.winrepo.org/) aims to "identify and recommend female neuroscientists for conferences, symposia or collaborations." via providing a fantastic interactive resource organized by a multitude of keywords. There's also a [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/512px-Twitter-logo.svg.png" width="20" height="15">](https://twitter.com/WINRePo1) account.
 
 <iframe width="560" height="315" src="https://www.winrepo.org/ " title="winrepo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Queer in Neuro
 
-The [Queer in Neuro](https://queerinneuro.com/) initiative is currently under development but exciting things will happen soon. Make sure to check their [<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Twitter_Logo_as_of_2021.svg/1920px-Twitter_Logo_as_of_2021.svg.png" width="20" height="15">](https://twitter.com/QueerInNeuro).
+The [Queer in Neuro](https://queerinneuro.com/) initiative is currently under development but exciting things will happen soon. Make sure to check their [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/512px-Twitter-logo.svg.png" width="20" height="15">](https://twitter.com/QueerInNeuro).
 
 
-<iframe width="560" height="315" src="https://queerinneuro.com/ " title="queerinneuro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Queer Engineer International
 
