@@ -43,7 +43,7 @@ Below you will find important details regarding the course summarized in a compa
 
 #### When and where
 
-The course will officially run from October 28th, 2022 till November 19th, 2022, although homework and coding assignments may be open until the end of the semester (we'll discuss apropriate time-frames and course load with you, no worries!). The first meeting on Friday the 28.10.22 from 14.00 (ct?) to 18.00 will be held at the "Seminarhaus" (SH) in room SH 3.105, Theodor-W.-Adorno-Platz 6, 60323, Frankfurt am Main. The following meetings will be held from 10.00 (ct) to 18.00 on the 4.11.22, 5.11.22 and on the 19.11.22 in room SH 3.105.
+The course will officially run from October 28th, 2022 till November 19th, 2022, although homework and coding assignments may be open until the end of the semester (we'll discuss apropriate time-frames and course load with you, no worries!). The first meeting on Friday the 28.10.22 from 14.00 (ct) to 18.00 will be held at the "Seminarhaus" (SH) in room SH 3.105, Theodor-W.-Adorno-Platz 6, 60323, Frankfurt am Main. The following meetings will be held from 10.00 (ct) to 18.00 on the 4.11.22, 5.11.22 and on the 19.11.22 in room SH 3.105.
 
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.661464452743532%2C50.12589530933526%2C8.67423176765442%2C50.130778644149046&amp;layer=mapnik&amp;marker=50.12833703902714%2C8.667848110198975" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.12834&amp;mlon=8.66785#map=17/50.12834/8.66785">View Larger Map</a></small>
 
@@ -113,11 +113,11 @@ You can choose if you want to only obtain a participation credit **or** a grade.
 
 *In order to obtain your participation credit you will have to provide the following:*
 
-- `homework assignments`: There will be `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+- `homework assignments`: There will be approx. `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
 - `Class participation`: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.
 
 *If you want to obtain your grade for the module in this course, you will have to provide the following:*
-    - `homework assignments` (20)%: There will be `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+    - `homework assignments` (20)%: There will be approx. `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
     and 
     - `Experiment script` (80% of final grade): The `interactive & reproducible publication` as outlined. 
     or
