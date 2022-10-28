@@ -386,6 +386,11 @@
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals">
    Goals
   </a>
@@ -774,11 +779,6 @@
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#soapbox">
    Soapbox
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -844,6 +844,11 @@
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals">
    Goals
   </a>
@@ -1235,11 +1240,6 @@
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#finding-things">
    Finding Things
   </a>
@@ -1296,6 +1296,15 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <h1>Before we get started 2…<a class="headerlink" href="#before-we-get-started-2" title="Permalink to this headline">¶</a></h1>
 <p>We’re going to be working with a dataset from <a class="reference external" href="https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip">https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip</a>.</p>
 <p>Download that file and unzip it on your Desktop!</p>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p>There are lots of excellent resources online for learning more about bash:</p>
+<ul class="simple">
+<li><p>The GNU Manual is <em>the</em> reference for all bash commands: <a class="reference external" href="http://www.gnu.org/manual/manual.html">http://www.gnu.org/manual/manual.html</a></p></li>
+<li><p>“Learning the Bash Shell” book: <a class="reference external" href="http://shop.oreilly.com/product/9780596009656.do">http://shop.oreilly.com/product/9780596009656.do</a></p></li>
+<li><p>An interactive on-line bash shell course: <a class="reference external" href="https://www.learnshell.org/">https://www.learnshell.org/</a></p></li>
+</ul>
 </div>
 <div class="section" id="goals">
 <h1>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h1>
@@ -1387,7 +1396,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>Let’s check! You can use the following command to determine what shell you’re using:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>echo $SHELL
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">echo</span> <span class="nv">$SHELL</span>
 </pre></div>
 </div>
 </div>
@@ -1429,11 +1438,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fancy_analyzes.py             intro_to_shell.ipynb
-gui_cli_example_bash.sh       introduction.md
-gui_cli_example_python.py     introduction_1.md
-intro_jupyter.ipynb           introduction_2.md
-intro_to_git_and_github.ipynb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">desserts</span>/  environment.yml  intro_to_shell.ipynb  <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/
 </pre></div>
 </div>
 </div>
@@ -1447,10 +1452,12 @@ intro_to_git_and_github.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bash: ks: command not found
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_42124</span><span class="o">/</span><span class="mf">53694076.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">ks</span>
+
+<span class="ne">NameError</span>: name &#39;ks&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1505,7 +1512,7 @@ intro_to_git_and_github.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/google_drive/GitHub/Python_for_Psychologists_Winter2021/lecture/introduction
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop&#39;
 </pre></div>
 </div>
 </div>
@@ -1582,7 +1589,7 @@ intro_to_git_and_github.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/google_drive/GitHub/Python_for_Psychologists_Winter2021/lecture/introduction
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop&#39;
 </pre></div>
 </div>
 </div>
@@ -1594,11 +1601,7 @@ intro_to_git_and_github.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fancy_analyzes.py             intro_to_shell.ipynb
-gui_cli_example_bash.sh       introduction.md
-gui_cli_example_python.py     introduction_1.md
-intro_jupyter.ipynb           introduction_2.md
-intro_to_git_and_github.ipynb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">desserts</span>/  environment.yml  intro_to_shell.ipynb  <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/
 </pre></div>
 </div>
 </div>
@@ -1613,11 +1616,7 @@ intro_to_git_and_github.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fancy_analyzes.py              intro_to_shell.ipynb
-gui_cli_example_bash.sh        introduction.md
-gui_cli_example_python.py      introduction_1.md
-intro_jupyter.ipynb            introduction_2.md
-intro_to_git_and_github.ipynb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">desserts</span>/  environment.yml  intro_to_shell.ipynb  <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/
 </pre></div>
 </div>
 </div>
@@ -1641,10 +1640,9 @@ intro_to_git_and_github.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">Applications</span>/ <span class=" -Color -Color-Bold -Color-Bold-Blue">Volumes</span>/      <span class=" -Color -Color-Bold -Color-Bold-Magenta">etc</span>@          <span class=" -Color -Color-Bold -Color-Bold-Blue">sbin</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">Library</span>/      <span class=" -Color -Color-Bold -Color-Bold-Blue">bin</span>/          <span class=" -Color -Color-Bold -Color-Bold-Magenta">home</span>@         <span class=" -Color -Color-Bold -Color-Bold-Magenta">tmp</span>@
-<span class=" -Color -Color-Bold -Color-Bold-Blue">System</span>/       <span class=" -Color -Color-Bold -Color-Bold-Blue">cores</span>/        <span class=" -Color -Color-Bold -Color-Bold-Blue">opt</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">usr</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">Users</span>/        <span class=" -Color -Color-Bold -Color-Bold-Blue">dev</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">private</span>/      <span class=" -Color -Color-Bold -Color-Bold-Magenta">var</span>@
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Cyan">bin</span>@    <span class=" -Color -Color-Bold -Color-Bold-Blue">dev</span>/   <span class=" -Color -Color-Bold -Color-Bold-Cyan">lib</span>@    <span class=" -Color -Color-Bold -Color-Bold-Cyan">libx32</span>@      <span class=" -Color -Color-Bold -Color-Bold-Blue">mnt</span>/   <span class=" -Color -Color-Bold -Color-Bold-Blue">root</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">snap</span>/     <span class=" -Color -Color-Bold -Color-Bold-Blue">sys</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">var</span>/
+<span class=" -Color -Color-Bold -Color-Bold-Blue">boot</span>/   <span class=" -Color -Color-Bold -Color-Bold-Blue">etc</span>/   <span class=" -Color -Color-Bold -Color-Bold-Cyan">lib32</span>@  <span class=" -Color -Color-Bold -Color-Bold-Blue">lost+found</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">opt</span>/   <span class=" -Color -Color-Bold -Color-Bold-Blue">run</span>/   <span class=" -Color -Color-Bold -Color-Bold-Blue">srv</span>/      <span class=" -Color -Color-Black -Color-Black-BGGreen">tmp</span>/
+<span class=" -Color -Color-Bold -Color-Bold-Blue">cdrom</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">home</span>/  <span class=" -Color -Color-Bold -Color-Bold-Cyan">lib64</span>@  <span class=" -Color -Color-Bold -Color-Bold-Blue">media</span>/       <span class=" -Color -Color-Bold -Color-Bold-Blue">proc</span>/  <span class=" -Color -Color-Bold -Color-Bold-Cyan">sbin</span>@  swapfile  <span class=" -Color -Color-Bold -Color-Bold-Blue">usr</span>/
 </pre></div>
 </div>
 </div>
@@ -1665,16 +1663,17 @@ intro_to_git_and_github.ipynb
 <p>For example, <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-s</span></code> will display the size of the contents of the provided directory:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cd /mnt/c/Users/my_user_name --&gt; for the windows people</span>
-<span class="n">ls</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">north</span><span class="o">-</span><span class="n">pacific</span><span class="o">-</span><span class="n">gyre</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 208
-  8 amino-acids.txt   0 <span class=" -Color -Color-Bold -Color-Bold-Blue">elements</span>         24 planets.txt
-  0 <span class=" -Color -Color-Bold -Color-Bold-Blue">animal-counts</span>     8 morse.txt         8 salmon.txt
-  8 animals.txt       0 <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>             152 sunspot.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 140
+4 goodiff.sh      8 NENE01751A.txt  8 NENE01971Z.txt  8 NENE02040B.txt
+4 goostats.sh     8 NENE01751B.txt  8 NENE01978A.txt  8 NENE02040Z.txt
+8 NENE01729A.txt  8 NENE01812A.txt  8 NENE01978B.txt  8 NENE02043A.txt
+8 NENE01729B.txt  8 NENE01843A.txt  4 NENE02018B.txt  8 NENE02043B.txt
+8 NENE01736A.txt  8 NENE01843B.txt  8 NENE02040A.txt
 </pre></div>
 </div>
 </div>
@@ -1682,13 +1681,15 @@ intro_to_git_and_github.ipynb
 <p>Whereas <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-S</span></code> will sort the contents of the provided directory <em>by size</em>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">S</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">S</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">north</span><span class="o">-</span><span class="n">pacific</span><span class="o">-</span><span class="n">gyre</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sunspot.txt     <span class=" -Color -Color-Bold -Color-Bold-Blue">elements</span>        morse.txt       animals.txt     salmon.txt
-planets.txt     <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>             amino-acids.txt <span class=" -Color -Color-Bold -Color-Bold-Blue">animal-counts</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NENE01751A.txt  NENE01729B.txt  NENE01978B.txt  NENE01843B.txt  NENE02018B.txt
+NENE01751B.txt  NENE01843A.txt  NENE02043A.txt  NENE01971Z.txt  goodiff.sh
+NENE01729A.txt  NENE02043B.txt  NENE01978A.txt  NENE01736A.txt  goostats.sh
+NENE01812A.txt  NENE02040A.txt  NENE02040Z.txt  NENE02040B.txt
 </pre></div>
 </div>
 </div>
@@ -1704,11 +1705,8 @@ planets.txt     <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>   
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: illegal option -- j
-usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: invalid option -- &#39;j&#39;
+Try &#39;ls --help&#39; for more information.
 </pre></div>
 </div>
 </div>
@@ -1732,25 +1730,19 @@ usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fancy_analyzes.py             intro_to_shell.ipynb
-gui_cli_example_bash.sh       introduction.md
-gui_cli_example_python.py     introduction_1.md
-intro_jupyter.ipynb           introduction_2.md
-intro_to_git_and_github.ipynb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">desserts</span>/  environment.yml  intro_to_shell.ipynb  <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">adams_family</span>      <span class=" -Color -Color-Bold -Color-Bold-Blue">expra</span>             <span class=" -Color -Color-Bold -Color-Bold-Blue">mlcn_workshop</span>     <span class=" -Color -Color-Bold -Color-Bold-Blue">the_new_yorker</span>
-<span class=" -Color -Color-Bold -Color-Bold-Blue">bidsonym_test</span>     <span class=" -Color -Color-Bold -Color-Bold-Blue">micro_profiles</span>    <span class=" -Color -Color-Bold -Color-Bold-Blue">morphology</span>        <span class=" -Color -Color-Bold -Color-Bold-Blue">walkthrough</span>
-<span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>              <span class=" -Color -Color-Bold -Color-Bold-Blue">misc</span>              <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
 </pre></div>
 </div>
 </div>
@@ -1765,401 +1757,6 @@ Generally try <code class="docutils literal notranslate"><span class="pre">man</
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">man</span> <span class="n">ls</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LS(1)                     BSD General Commands Manual                    LS(1)
-
-NAME
-     ls -- list directory contents
-
-SYNOPSIS
-     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1%] [file ...]
-
-DESCRIPTION
-     For each operand that names a file of a type other than directory, ls
-     displays its name as well as any requested, associated information.  For
-     each operand that names a file of type directory, ls displays the names
-     of files contained within that directory, as well as any requested, asso-
-     ciated information.
-
-     If no operands are given, the contents of the current directory are dis-
-     played.  If more than one operand is given, non-directory operands are
-     displayed first; directory and non-directory operands are sorted sepa-
-     rately and in lexicographical order.
-
-     The following options are available:
-
-     -@      Display extended attribute keys and sizes in long (-l) output.
-
-     -1      (The numeric digit ``one&#39;&#39;.)  Force output to be one entry per
-             line.  This is the default when output is not to a terminal.
-
-     -A      List all entries except for . and ...  Always set for the super-
-             user.
-
-     -a      Include directory entries whose names begin with a dot (.).
-
-     -B      Force printing of non-printable characters (as defined by
-             ctype(3) and current locale settings) in file names as \xxx,
-             where xxx is the numeric value of the character in octal.
-
-     -b      As -B, but use C escape codes whenever possible.
-
-     -C      Force multi-column output; this is the default when output is to
-             a terminal.
-
-     -c      Use time when file status was last changed for sorting (-t) or
-             long printing (-l).
-
-     -d      Directories are listed as plain files (not searched recursively).
-
-     -e      Print the Access Control List (ACL) associated with the file, if
-             present, in long (-l) output.
-
-     -F      Display a slash (`/&#39;) immediately after each pathname that is a
-             directory, an asterisk (`*&#39;) after each that is executable, an at
-             sign (`@&#39;) after each symbolic link, an equals sign (`=&#39;) after
-             each socket, a percent sign (`%&#39;) after each whiteout, and a ver-
-             tical bar (`|&#39;) after each that is a FIFO.
-
-     -f      Output is not sorted.  This option turns on the -a option.
-
-     -G      Enable colorized output.  This option is equivalent to defining
-             CLICOLOR in the environment.  (See below.)
-
-     -g      This option is only available for compatibility with POSIX; it is
-             used to display the group name in the long (-l) format output
-             (the owner name is suppressed).
-
-     -H      Symbolic links on the command line are followed.  This option is
-             assumed if none of the -F, -d, or -l options are specified.
-
-     -h      When used with the -l option, use unit suffixes: Byte, Kilobyte,
-             Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the
-             number of digits to three or less using base 2 for sizes.
-
-     -i      For each file, print the file&#39;s file serial number (inode num-
-             ber).
-
-     -k      If the -s option is specified, print the file size allocation in
-             kilobytes, not blocks.  This option overrides the environment
-             variable BLOCKSIZE.
-
-     -L      Follow all symbolic links to final target and list the file or
-             directory the link references rather than the link itself.  This
-             option cancels the -P option.
-
-     -l      (The lowercase letter ``ell&#39;&#39;.)  List in long format.  (See
-             below.)  A total sum for all the file sizes is output on a line
-             before the long listing.
-
-     -m      Stream output format; list files across the page, separated by
-             commas.
-
-     -n      Display user and group IDs numerically, rather than converting to
-             a user or group name in a long (-l) output.  This option turns on
-             the -l option.
-
-     -O      Include the file flags in a long (-l) output.
-
-     -o      List in long format, but omit the group id.
-
-     -P      If argument is a symbolic link, list the link itself rather than
-             the object the link references.  This option cancels the -H and
-             -L options.
-
-     -p      Write a slash (`/&#39;) after each filename if that file is a direc-
-             tory.
-
-     -q      Force printing of non-graphic characters in file names as the
-             character `?&#39;; this is the default when output is to a terminal.
-
-     -R      Recursively list subdirectories encountered.
-
-     -r      Reverse the order of the sort to get reverse lexicographical
-             order or the oldest entries first (or largest files last, if com-
-             bined with sort by size
-
-     -S      Sort files by size
-
-     -s      Display the number of file system blocks actually used by each
-             file, in units of 512 bytes, where partial units are rounded up
-             to the next integer value.  If the output is to a terminal, a
-             total sum for all the file sizes is output on a line before the
-             listing.  The environment variable BLOCKSIZE overrides the unit
-             size of 512 bytes.
-
-     -T      When used with the -l (lowercase letter ``ell&#39;&#39;) option, display
-             complete time information for the file, including month, day,
-             hour, minute, second, and year.
-
-     -t      Sort by time modified (most recently modified first) before sort-
-             ing the operands by lexicographical order.
-
-     -u      Use time of last access, instead of last modification of the file
-             for sorting (-t) or long printing (-l).
-
-     -U      Use time of file creation, instead of last modification for sort-
-             ing (-t) or long output (-l).
-
-     -v      Force unedited printing of non-graphic characters; this is the
-             default when output is not to a terminal.
-
-     -W      Display whiteouts when scanning directories.  (-S) flag).
-
-     -w      Force raw printing of non-printable characters.  This is the
-             default when output is not to a terminal.
-
-     -x      The same as -C, except that the multi-column output is produced
-             with entries sorted across, rather than down, the columns.
-
-     -%      Distinguish dataless files and directories with a &#39;%&#39; character
-             in long (-l) output, and don&#39;t materialize dataless directories
-             when listing them.
-
-     The -1, -C, -x, and -l options all override each other; the last one
-     specified determines the format used.
-
-     The -c and -u options override each other; the last one specified deter-
-     mines the file time used.
-
-     The -B, -b, -w, and -q options all override each other; the last one
-     specified determines the format used for non-printable characters.
-
-     The -H, -L and -P options all override each other (either partially or
-     fully); they are applied in the order specified.
-
-     By default, ls lists one entry per line to standard output; the excep-
-     tions are to terminals or when the -C or -x options are specified.
-
-     File information is displayed with one or more &lt;blank&gt;s separating the
-     information associated with the -i, -s, and -l options.
-
-   The Long Format
-     If the -l option is given, the following information is displayed for
-     each file: file mode, number of links, owner name, group name, number of
-     bytes in the file, abbreviated month, day-of-month file was last modi-
-     fied, hour file last modified, minute file last modified, and the path-
-     name.  In addition, for each directory whose contents are displayed, the
-     total number of 512-byte blocks used by the files in the directory is
-     displayed on a line by itself, immediately before the information for the
-     files in the directory.  If the file or directory has extended
-     attributes, the permissions field printed by the -l option is followed by
-     a &#39;@&#39; character.  Otherwise, if the file or directory has extended secu-
-     rity information (such as an access control list), the permissions field
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     printed by the -l option is followed by a &#39;+&#39; character.  If the -%
-     option is given, a &#39;%&#39; character follows the permissions field for data-
-     less files and directories, possibly replacing the &#39;@&#39; or &#39;+&#39; character.
-
-     If the modification time of the file is more than 6 months in the past or
-     future, then the year of the last modification is displayed in place of
-     the hour and minute fields.
-
-     If the owner or group names are not a known user or group name, or the -n
-     option is given, the numeric ID&#39;s are displayed.
-
-     If the file is a character special or block special file, the major and
-     minor device numbers for the file are displayed in the size field.  If
-     the file is a symbolic link, the pathname of the linked-to file is pre-
-     ceded by ``-&gt;&#39;&#39;.
-
-     The file mode printed under the -l option consists of the entry type,
-     owner permissions, and group permissions.  The entry type character
-     describes the type of file, as follows:
-
-           b     Block special file.
-           c     Character special file.
-           d     Directory.
-           l     Symbolic link.
-           s     Socket link.
-           p     FIFO.
-           -     Regular file.
-
-     The next three fields are three characters each: owner permissions, group
-     permissions, and other permissions.  Each field has three character posi-
-     tions:
-
-           1.   If r, the file is readable; if -, it is not readable.
-
-           2.   If w, the file is writable; if -, it is not writable.
-
-           3.   The first of the following that applies:
-
-                      S     If in the owner permissions, the file is not exe-
-                            cutable and set-user-ID mode is set.  If in the
-                            group permissions, the file is not executable and
-                            set-group-ID mode is set.
-
-                      s     If in the owner permissions, the file is exe-
-                            cutable and set-user-ID mode is set.  If in the
-                            group permissions, the file is executable and set-
-                            group-ID mode is set.
-
-                      x     The file is executable or the directory is search-
-                            able.
-
-                      -     The file is neither readable, writable, exe-
-                            cutable, nor set-user-ID nor set-group-ID mode,
-                            nor sticky.  (See below.)
-
-                These next two apply only to the third character in the last
-                group (other permissions).
-
-                      T     The sticky bit is set (mode 1000), but not execute
-                            or search permission.  (See chmod(1) or
-                            sticky(8).)
-
-                      t     The sticky bit is set (mode 1000), and is search-
-                            able or executable.  (See chmod(1) or sticky(8).)
-
-EXAMPLES
-     The following is how to do an ls listing sorted by increasing size
-
-           ls -lrS
-
-DIAGNOSTICS
-     The ls utility exits 0 on success, and &gt;0 if an error occurs.
-
-ENVIRONMENT
-     The following environment variables affect the execution of ls:
-
-     BLOCKSIZE       If the environment variable BLOCKSIZE is set, the block
-                     counts (see -s) will be displayed in units of that size
-                     block.
-
-     CLICOLOR        Use ANSI color sequences to distinguish file types.  See
-                     LSCOLORS below.  In addition to the file types mentioned
-                     in the -F option some extra attributes (setuid bit set,
-                     etc.) are also displayed.  The colorization is dependent
-                     on a terminal type with the proper termcap(5) capabili-
-                     ties.  The default ``cons25&#39;&#39; console has the proper
-                     capabilities, but to display the colors in an xterm(1),
-                     for example, the TERM variable must be set to
-                     ``xterm-color&#39;&#39;.  Other terminal types may require simi-
-                     lar adjustments.  Colorization is silently disabled if
-                     the output isn&#39;t directed to a terminal unless the
-                     CLICOLOR_FORCE variable is defined.
-
-     CLICOLOR_FORCE  Color sequences are normally disabled if the output isn&#39;t
-                     directed to a terminal.  This can be overridden by set-
-                     ting this flag.  The TERM variable still needs to refer-
-                     ence a color capable terminal however otherwise it is not
-                     possible to determine which color sequences to use.
-
-     COLUMNS         If this variable contains a string representing a decimal
-                     integer, it is used as the column position width for dis-
-                     playing multiple-text-column output.  The ls utility cal-
-                     culates how many pathname text columns to display based
-                     on the width provided.  (See -C and -x.)
-
-     LANG            The locale to use when determining the order of day and
-                     month in the long -l format output.  See environ(7) for
-                     more information.
-
-     LSCOLORS        The value of this variable describes what color to use
-                     for which attribute when colors are enabled with
-                     CLICOLOR.  This string is a concatenation of pairs of the
-                     format fb, where f is the foreground color and b is the
-                     background color.
-
-                     The color designators are as follows:
-
-                           a     black
-                           b     red
-                           c     green
-                           d     brown
-                           e     blue
-                           f     magenta
-                           g     cyan
-                           h     light grey
-                           A     bold black, usually shows up as dark grey
-                           B     bold red
-                           C     bold green
-                           D     bold brown, usually shows up as yellow
-                           E     bold blue
-                           F     bold magenta
-                           G     bold cyan
-                           H     bold light grey; looks like bright white
-                           x     default foreground or background
-
-                     Note that the above are standard ANSI colors.  The actual
-                     display may differ depending on the color capabilities of
-                     the terminal in use.
-
-                     The order of the attributes are as follows:
-
-                           1.   directory
-                           2.   symbolic link
-                           3.   socket
-                           4.   pipe
-                           5.   executable
-                           6.   block special
-                           7.   character special
-                           8.   executable with setuid bit set
-                           9.   executable with setgid bit set
-                           10.  directory writable to others, with sticky bit
-                           11.  directory writable to others, without sticky
-                                bit
-
-                     The default is &quot;exfxcxdxbxegedabagacad&quot;, i.e. blue fore-
-                     ground and default background for regular directories,
-                     black foreground and red background for setuid executa-
-                     bles, etc.
-
-     LS_COLWIDTHS    If this variable is set, it is considered to be a colon-
-                     delimited list of minimum column widths.  Unreasonable
-                     and insufficient widths are ignored (thus zero signifies
-                     a dynamically sized column).  Not all columns have
-                     changeable widths.  The fields are, in order: inode,
-                     block count, number of links, user name, group name,
-                     flags, file size, file name.
-
-     TERM            The CLICOLOR functionality depends on a terminal type
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                     with color capabilities.
-
-     TZ              The timezone to use when displaying dates.  See
-                     environ(7) for more information.
-
-COMPATIBILITY
-     The group field is now automatically included in the long listing for
-     files in order to be compatible with the IEEE Std 1003.2 (``POSIX.2&#39;&#39;)
-     specification.
-
-LEGACY DESCRIPTION
-     In legacy mode, the -f option does not turn on the -a option and the -g,
-     -n, and -o options do not turn on the -l option.
-
-     Also, the -o option causes the file flags to be included in a long (-l)
-     output; there is no -O option.
-
-     When -H is specified (and not overridden by -L or -P) and a file argument
-     is a symlink that resolves to a non-directory file, the output will
-     reflect the nature of the link, rather than that of the file.  In legacy
-     operation, the output will describe the file.
-
-     For more information about legacy mode, see compat(5).
-
-SEE ALSO
-     chflags(1), chmod(1), sort(1), xterm(1), compat(5), termcap(5),
-     symlink(7), sticky(8)
-
-STANDARDS
-     The ls utility conforms to IEEE Std 1003.1-2001 (``POSIX.1&#39;&#39;).
-
-HISTORY
-     An ls command appeared in Version 1 AT&amp;T UNIX.
-
-BUGS
-     To maintain backward compatibility, the relationships between the many
-     options are quite complex.
-
-BSD                              May 19, 2002                              BSD
 </pre></div>
 </div>
 </div>
@@ -2178,16 +1775,13 @@ BSD                              May 19, 2002                              BSD
 <p>You can use multiple options at the same time! If the options are single letters (like most of those with <code class="docutils literal notranslate"><span class="pre">ls</span></code>), you can combine them with the same <code class="docutils literal notranslate"><span class="pre">-</span></code> flag:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">sS</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">sS</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 112
-48 solar.pdf           0 <span class=" -Color -Color-Bold -Color-Bold-Blue">writing</span>             8 pizza.cfg
-40 history.txt         0 <span class=" -Color -Color-Bold -Color-Bold-Blue">creatures</span>           8 numbers.txt
- 0 <span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>                0 <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>
- 0 <span class=" -Color -Color-Bold -Color-Bold-Blue">molecules</span>           8 notes.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 12
+4 <span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  4 <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  4 <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
 </pre></div>
 </div>
 </div>
@@ -2200,21 +1794,31 @@ BSD                              May 19, 2002                              BSD
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">north</span><span class="o">-</span><span class="n">pacific</span><span class="o">-</span><span class="n">gyre</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 208
--rw-rw-r--@   1 peerherholz  staff    283 Jul 30 10:41 amino-acids.txt
-drwxrwxr-x@   3 peerherholz  staff     96 Jul 30 10:41 <span class=" -Color -Color-Bold -Color-Bold-Blue">animal-counts</span>
--rw-rw-r--@   1 peerherholz  staff    136 Jul 30 10:41 animals.txt
-drwxrwxr-x@ 105 peerherholz  staff   3360 Jul 30 10:41 <span class=" -Color -Color-Bold -Color-Bold-Blue">elements</span>
--rw-rw-r--@   1 peerherholz  staff    554 Jul 30 10:41 morse.txt
-drwxrwxr-x@  50 peerherholz  staff   1600 Jul 30 10:41 <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>
--rw-rw-r--@   1 peerherholz  staff   8898 Jul 30 10:41 planets.txt
--rw-rw-r--@   1 peerherholz  staff     45 Jul 30 10:41 salmon.txt
--rw-rw-r--@   1 peerherholz  staff  73861 Jul 30 10:41 sunspot.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 140
+-rw-rw-r-- 1 michael michael  345 Sep 16  2021 goodiff.sh
+-rw-rw-r-- 1 michael michael  218 Sep 16  2021 goostats.sh
+-rw-rw-r-- 1 michael michael 4406 Sep 16  2021 NENE01729A.txt
+-rw-rw-r-- 1 michael michael 4400 Sep 16  2021 NENE01729B.txt
+-rw-rw-r-- 1 michael michael 4371 Sep 16  2021 NENE01736A.txt
+-rw-rw-r-- 1 michael michael 4411 Sep 16  2021 NENE01751A.txt
+-rw-rw-r-- 1 michael michael 4409 Sep 16  2021 NENE01751B.txt
+-rw-rw-r-- 1 michael michael 4401 Sep 16  2021 NENE01812A.txt
+-rw-rw-r-- 1 michael michael 4395 Sep 16  2021 NENE01843A.txt
+-rw-rw-r-- 1 michael michael 4375 Sep 16  2021 NENE01843B.txt
+-rw-rw-r-- 1 michael michael 4372 Sep 16  2021 NENE01971Z.txt
+-rw-rw-r-- 1 michael michael 4381 Sep 16  2021 NENE01978A.txt
+-rw-rw-r-- 1 michael michael 4389 Sep 16  2021 NENE01978B.txt
+-rw-rw-r-- 1 michael michael 3517 Sep 16  2021 NENE02018B.txt
+-rw-rw-r-- 1 michael michael 4391 Sep 16  2021 NENE02040A.txt
+-rw-rw-r-- 1 michael michael 4367 Sep 16  2021 NENE02040B.txt
+-rw-rw-r-- 1 michael michael 4381 Sep 16  2021 NENE02040Z.txt
+-rw-rw-r-- 1 michael michael 4386 Sep 16  2021 NENE02043A.txt
+-rw-rw-r-- 1 michael michael 4393 Sep 16  2021 NENE02043B.txt
 </pre></div>
 </div>
 </div>
@@ -2227,13 +1831,15 @@ drwxrwxr-x@  50 peerherholz  staff   1600 Jul 30 10:41 <span class=" -Color -Col
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">h</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">h</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">north</span><span class="o">-</span><span class="n">pacific</span><span class="o">-</span><span class="n">gyre</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>amino-acids.txt animals.txt     morse.txt       planets.txt     sunspot.txt
-<span class=" -Color -Color-Bold -Color-Bold-Blue">animal-counts</span>   <span class=" -Color -Color-Bold -Color-Bold-Blue">elements</span>        <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>             salmon.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>goodiff.sh      NENE01736A.txt  NENE01843A.txt  NENE01978B.txt  NENE02040Z.txt
+goostats.sh     NENE01751A.txt  NENE01843B.txt  NENE02018B.txt  NENE02043A.txt
+NENE01729A.txt  NENE01751B.txt  NENE01971Z.txt  NENE02040A.txt  NENE02043B.txt
+NENE01729B.txt  NENE01812A.txt  NENE01978A.txt  NENE02040B.txt
 </pre></div>
 </div>
 </div>
@@ -2246,21 +1852,31 @@ drwxrwxr-x@  50 peerherholz  staff   1600 Jul 30 10:41 <span class=" -Color -Col
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">lh</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">lh</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">north</span><span class="o">-</span><span class="n">pacific</span><span class="o">-</span><span class="n">gyre</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 208
--rw-rw-r--@   1 peerherholz  staff   283B Jul 30 10:41 amino-acids.txt
-drwxrwxr-x@   3 peerherholz  staff    96B Jul 30 10:41 <span class=" -Color -Color-Bold -Color-Bold-Blue">animal-counts</span>
--rw-rw-r--@   1 peerherholz  staff   136B Jul 30 10:41 animals.txt
-drwxrwxr-x@ 105 peerherholz  staff   3.3K Jul 30 10:41 <span class=" -Color -Color-Bold -Color-Bold-Blue">elements</span>
--rw-rw-r--@   1 peerherholz  staff   554B Jul 30 10:41 morse.txt
-drwxrwxr-x@  50 peerherholz  staff   1.6K Jul 30 10:41 <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>
--rw-rw-r--@   1 peerherholz  staff   8.7K Jul 30 10:41 planets.txt
--rw-rw-r--@   1 peerherholz  staff    45B Jul 30 10:41 salmon.txt
--rw-rw-r--@   1 peerherholz  staff    72K Jul 30 10:41 sunspot.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 140K
+-rw-rw-r-- 1 michael michael  345 Sep 16  2021 goodiff.sh
+-rw-rw-r-- 1 michael michael  218 Sep 16  2021 goostats.sh
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 NENE01729A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01729B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01736A.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 NENE01751A.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 NENE01751B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01812A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01843A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01843B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01971Z.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01978A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE01978B.txt
+-rw-rw-r-- 1 michael michael 3,5K Sep 16  2021 NENE02018B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE02040A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE02040B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE02040Z.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE02043A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 NENE02043B.txt
 </pre></div>
 </div>
 </div>
@@ -2281,11 +1897,7 @@ drwxrwxr-x@  50 peerherholz  staff   1.6K Jul 30 10:41 <span class=" -Color -Col
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>intro_to_git_and_github.ipynb gui_cli_example_python.py
-intro_jupyter.ipynb           fancy_analyzes.py
-introduction.md               intro_to_shell.ipynb
-introduction_1.md             introduction_2.md
-gui_cli_example_bash.sh       introduction_3.md
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">desserts</span>/  environment.yml  <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/  intro_to_shell.ipynb
 </pre></div>
 </div>
 </div>
@@ -2297,14 +1909,12 @@ gui_cli_example_bash.sh       introduction_3.md
 <p>Providing an argument to <code class="docutils literal notranslate"><span class="pre">ls</span></code> lets us list the content of other directories (besides our current working directory):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">F</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">F</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">bidsonym_test</span>/     <span class=" -Color -Color-Bold -Color-Bold-Blue">micro_profiles</span>/    <span class=" -Color -Color-Bold -Color-Bold-Blue">morphology</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>/              <span class=" -Color -Color-Bold -Color-Bold-Blue">misc</span>/              <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">expra</span>/             <span class=" -Color -Color-Bold -Color-Bold-Blue">mlcn_workshop</span>/     <span class=" -Color -Color-Bold -Color-Bold-Blue">walkthrough</span>/
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">desserts</span>/  environment.yml  intro_to_shell.ipynb  <span class=" -Color -Color-Bold -Color-Bold-Blue">shell-lesson-data</span>/
 </pre></div>
 </div>
 </div>
@@ -2316,14 +1926,12 @@ gui_cli_example_bash.sh       introduction_3.md
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">F</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">F</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">creatures</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">molecules</span>/          numbers.txt         <span class=" -Color -Color-Bold -Color-Bold-Blue">writing</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>/               <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/ pizza.cfg
-history.txt         notes.txt           solar.pdf
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
 </pre></div>
 </div>
 </div>
@@ -2334,8 +1942,12 @@ history.txt         notes.txt           solar.pdf
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cd /mnt/c/Users/my_user_name/Desktop -&gt; windows</span>
-<span class="n">cd</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pwd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop&#39;
 </pre></div>
 </div>
 </div>
@@ -2346,10 +1958,20 @@ history.txt         notes.txt           solar.pdf
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">north</span><span class="o">-</span><span class="n">pacific</span><span class="o">-</span><span class="n">gyre</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data/north-pacific-gyre
 </pre></div>
 </div>
 </div>
@@ -2368,7 +1990,7 @@ history.txt         notes.txt           solar.pdf
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data/data
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop/shell-lesson-data/north-pacific-gyre&#39;
 </pre></div>
 </div>
 </div>
@@ -2381,9 +2003,10 @@ history.txt         notes.txt           solar.pdf
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>amino-acids.txt  <span class=" -Color -Color-Bold -Color-Bold-Blue">elements</span>/        planets.txt
-<span class=" -Color -Color-Bold -Color-Bold-Blue">animal-counts</span>/   morse.txt        salmon.txt
-animals.txt      <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>/             sunspot.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>goodiff.sh      NENE01736A.txt  NENE01843A.txt  NENE01978B.txt  NENE02040Z.txt
+goostats.sh     NENE01751A.txt  NENE01843B.txt  NENE02018B.txt  NENE02043A.txt
+NENE01729A.txt  NENE01751B.txt  NENE01971Z.txt  NENE02040A.txt  NENE02043B.txt
+NENE01729B.txt  NENE01812A.txt  NENE01978A.txt  NENE02040B.txt
 </pre></div>
 </div>
 </div>
@@ -2394,15 +2017,13 @@ animals.txt      <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>/ 
 <p>We can go “down” into directories, but what about reversing that? What if I want to go back to <code class="docutils literal notranslate"><span class="pre">data-shell</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">data</span><span class="o">-</span><span class="n">shell</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bash: cd: data-shell: No such file or directory
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Errno 2] No such file or directory: &#39;shell-lesson-data&#39;
+/home/michael/Desktop/shell-lesson-data/north-pacific-gyre
 </pre></div>
 </div>
 </div>
@@ -2412,6 +2033,11 @@ animals.txt      <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>/ 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">..</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
 </pre></div>
 </div>
 </div>
@@ -2425,7 +2051,7 @@ animals.txt      <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>/ 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop/shell-lesson-data&#39;
 </pre></div>
 </div>
 </div>
@@ -2442,9 +2068,8 @@ animals.txt      <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>/ 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">.</span>/                  <span class=" -Color -Color-Bold -Color-Bold-Blue">creatures</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/ pizza.cfg
-<span class=" -Color -Color-Bold -Color-Bold-Blue">..</span>/                 <span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>/               notes.txt           solar.pdf
-.bash_profile       <span class=" -Color -Color-Bold -Color-Bold-Blue">molecules</span>/          numbers.txt         <span class=" -Color -Color-Bold -Color-Bold-Blue">writing</span>/
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">.</span>/   .bash_profile   <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
+<span class=" -Color -Color-Bold -Color-Bold-Blue">..</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  .suprise.txt
 </pre></div>
 </div>
 </div>
@@ -2465,13 +2090,8 @@ animals.txt      <span class=" -Color -Color-Bold -Color-Bold-Blue">pdb</span>/ 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">.</span>/                             intro_to_git_and_github.ipynb
-<span class=" -Color -Color-Bold -Color-Bold-Blue">..</span>/                            intro_to_shell.ipynb
-<span class=" -Color -Color-Bold -Color-Bold-Blue">.ipynb_checkpoints</span>/            introduction.md
-fancy_analyzes.py              introduction_1.md
-gui_cli_example_bash.sh        introduction_2.md
-gui_cli_example_python.py      introduction_3.md
-intro_jupyter.ipynb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">.</span>/   .bash_profile   <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
+<span class=" -Color -Color-Bold -Color-Bold-Blue">..</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  .suprise.txt
 </pre></div>
 </div>
 </div>
@@ -2487,6 +2107,11 @@ intro_jupyter.ipynb
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael
+</pre></div>
+</div>
+</div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">cd</span></code> optionally takes no arguments. But where does that land us?</p>
 <div class="cell docutils container">
@@ -2496,7 +2121,7 @@ intro_jupyter.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael&#39;
 </pre></div>
 </div>
 </div>
@@ -2505,7 +2130,12 @@ intro_jupyter.ipynb
 <p>Let’s go back to the <code class="docutils literal notranslate"><span class="pre">data</span></code> directory:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
 </pre></div>
 </div>
 </div>
@@ -2517,7 +2147,7 @@ intro_jupyter.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data/data
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop/shell-lesson-data&#39;
 </pre></div>
 </div>
 </div>
@@ -2537,7 +2167,7 @@ intro_jupyter.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data/data
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop/shell-lesson-data&#39;
 </pre></div>
 </div>
 </div>
@@ -2545,7 +2175,12 @@ intro_jupyter.ipynb
 <p>We can provide absolute paths to our commands and they’ll work, too:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">peerherholz</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">michael</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
 </pre></div>
 </div>
 </div>
@@ -2557,7 +2192,7 @@ intro_jupyter.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop/shell-lesson-data&#39;
 </pre></div>
 </div>
 </div>
@@ -2569,9 +2204,7 @@ intro_jupyter.ipynb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">creatures</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">molecules</span>/          numbers.txt         <span class=" -Color -Color-Bold -Color-Bold-Blue">writing</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>/               <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/ pizza.cfg
-history.txt         notes.txt           solar.pdf
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
 </pre></div>
 </div>
 </div>
@@ -2589,6 +2222,11 @@ history.txt         notes.txt           solar.pdf
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2597,7 +2235,7 @@ history.txt         notes.txt           solar.pdf
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael&#39;
 </pre></div>
 </div>
 </div>
@@ -2605,12 +2243,12 @@ history.txt         notes.txt           solar.pdf
 <p>If you’re unsure, you can determine what your home directory is via the environmental variable <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> (like we did with <code class="docutils literal notranslate"><span class="pre">$SHELL</span></code> before!):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>echo $HOME
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">echo</span> <span class="nv">$HOME</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael
 </pre></div>
 </div>
 </div>
@@ -2620,7 +2258,7 @@ history.txt         notes.txt           solar.pdf
 <h3><code class="docutils literal notranslate"><span class="pre">-</span></code><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>The shell will interpret the <code class="docutils literal notranslate"><span class="pre">-</span></code> character as “wherever you were last”.</p>
 <p>Unlike <code class="docutils literal notranslate"><span class="pre">..</span></code>, which moves us “up” one directory, <code class="docutils literal notranslate"><span class="pre">-</span></code> will bring you BACK.</p>
-<p>We were just in <code class="docutils literal notranslate"><span class="pre">/Users/peerherholz/Desktop/data-shell</span></code> and then changed to <code class="docutils literal notranslate"><span class="pre">/Users/peerherholz</span></code> so <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">-</span></code> should bring us back:</p>
+<p>We were just in <code class="docutils literal notranslate"><span class="pre">/home/michael/Desktop/shell-lesson-data</span> </code> and then changed to <code class="docutils literal notranslate"><span class="pre">/home/michael</span></code> so <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">-</span></code> should bring us back:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">-</span>
@@ -2628,7 +2266,7 @@ history.txt         notes.txt           solar.pdf
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
 </pre></div>
 </div>
 </div>
@@ -2728,12 +2366,23 @@ history.txt         notes.txt           solar.pdf
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
-<span class="n">pwd</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/peerherholz/Desktop/shell-lesson-data
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pwd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/home/michael/Desktop/shell-lesson-data&#39;
 </pre></div>
 </div>
 </div>
@@ -2745,9 +2394,7 @@ history.txt         notes.txt           solar.pdf
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">creatures</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">molecules</span>/          numbers.txt         <span class=" -Color -Color-Bold -Color-Bold-Blue">writing</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>/               <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/ pizza.cfg
-history.txt         notes.txt           solar.pdf
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
 </pre></div>
 </div>
 </div>
@@ -2771,9 +2418,7 @@ history.txt         notes.txt           solar.pdf
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">creatures</span>/          <span class=" -Color -Color-Bold -Color-Bold-Blue">molecules</span>/          numbers.txt         <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis</span>/
-<span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>/               <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/ pizza.cfg           <span class=" -Color -Color-Bold -Color-Bold-Blue">writing</span>/
-history.txt         notes.txt           solar.pdf
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis</span>/
 </pre></div>
 </div>
 </div>
@@ -2800,11 +2445,16 @@ history.txt         notes.txt           solar.pdf
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data/thesis
+</pre></div>
+</div>
+</div>
 </div>
 <p>We can make a file via the following command:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">draft</span><span class="o">.</span><span class="n">txt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>touch draft.txt
 </pre></div>
 </div>
 </div>
@@ -2818,7 +2468,7 @@ history.txt         notes.txt           solar.pdf
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 0
--rw-r--r--  1 peerherholz  staff  0 Nov  4 18:52 draft.txt
+-rw-rw-r-- 1 michael michael 0 Okt 28 09:20 draft.txt
 </pre></div>
 </div>
 </div>
@@ -2830,6 +2480,11 @@ history.txt         notes.txt           solar.pdf
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
 </pre></div>
 </div>
 </div>
@@ -2928,7 +2583,7 @@ $ <span class="nb">cd</span> analyzed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>quotes.txt            thesis/quotations.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>quotes.txt  thesis/quotations.txt
 </pre></div>
 </div>
 </div>
@@ -3022,6 +2677,11 @@ $ ls
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3038,10 +2698,7 @@ $ ls
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: quotes.txt: No such file or directory
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: cannot access &#39;quotes.txt&#39;: No such file or directory
 </pre></div>
 </div>
 </div>
@@ -3069,10 +2726,7 @@ $ ls
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rm: thesis: is a directory
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rm: cannot remove &#39;thesis&#39;: Is a directory
 </pre></div>
 </div>
 </div>
@@ -3117,107 +2771,105 @@ $ cp amino-acids.txt animals.txt morse.txt
 <div class="section" id="using-wildcards-for-accessing-multiple-files-at-once">
 <h3>Using wildcards for accessing multiple files at once<a class="headerlink" href="#using-wildcards-for-accessing-multiple-files-at-once" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">*</span></code> is a wildcard which matches zero or more characters.</p>
-<p>Consider the <code class="docutils literal notranslate"><span class="pre">data-shell/molecules</span></code> directory:</p>
+<p>Consider the <code class="docutils literal notranslate"><span class="pre">data-shell/proteins</span></code> directory:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">molecules</span><span class="o">/*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">exercise</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">proteins</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>molecules/cubane.pdb  molecules/methane.pdb molecules/pentane.pdb
-molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
 </pre></div>
 </div>
 </div>
 </div>
-<p>This matches every file in the <code class="docutils literal notranslate"><span class="pre">molecules</span></code> directory.</p>
+<p>This matches every file in the <code class="docutils literal notranslate"><span class="pre">proteins</span></code> directory.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">molecules</span><span class="o">/*</span><span class="n">pdb</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">exercise</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">proteins</span><span class="o">/*</span><span class="n">pdb</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>molecules/cubane.pdb  molecules/methane.pdb molecules/pentane.pdb
-molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exercise-data/proteins/cubane.pdb   exercise-data/proteins/octane.pdb
+exercise-data/proteins/ethane.pdb   exercise-data/proteins/pentane.pdb
+exercise-data/proteins/methane.pdb  exercise-data/proteins/propane.pdb
 </pre></div>
 </div>
 </div>
 </div>
-<p>This matches every file in the <code class="docutils literal notranslate"><span class="pre">molecules</span></code> directory ending in <code class="docutils literal notranslate"><span class="pre">.pdb</span></code>.</p>
+<p>This matches every file in the <code class="docutils literal notranslate"><span class="pre">proteins</span></code> directory ending in <code class="docutils literal notranslate"><span class="pre">.pdb</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">molecules</span><span class="o">/</span><span class="n">p</span><span class="o">*.</span><span class="n">pdb</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">exercise</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">proteins</span><span class="o">/</span><span class="n">p</span><span class="o">*.</span><span class="n">pdb</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>molecules/pentane.pdb molecules/propane.pdb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exercise-data/proteins/pentane.pdb  exercise-data/proteins/propane.pdb
 </pre></div>
 </div>
 </div>
 </div>
-<p>This matches all files in the <code class="docutils literal notranslate"><span class="pre">molecules</span></code> directory starting with <code class="docutils literal notranslate"><span class="pre">p</span></code> and ending with <code class="docutils literal notranslate"><span class="pre">.pdb</span></code></p>
+<p>This matches all files in the <code class="docutils literal notranslate"><span class="pre">proteins</span></code> directory starting with <code class="docutils literal notranslate"><span class="pre">p</span></code> and ending with <code class="docutils literal notranslate"><span class="pre">.pdb</span></code></p>
 </div>
 <div class="section" id="using-wildcards-for-accessing-multiple-files-at-once-cont-d">
 <h3>Using wildcards for accessing multiple files at once (cont’d)<a class="headerlink" href="#using-wildcards-for-accessing-multiple-files-at-once-cont-d" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">?</span></code> is a wildcard matching exactly one character.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ls molecules/?ethane.pdb
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ls exercise-data/proteins/?ethane.pdb
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>molecules/methane.pdb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exercise-data/proteins/methane.pdb
 </pre></div>
 </div>
 </div>
 </div>
-<p>This matches any file in <code class="docutils literal notranslate"><span class="pre">molecules</span></code> that has one character followed by <code class="docutils literal notranslate"><span class="pre">ethane.pdb</span></code>. Compare to:</p>
+<p>This matches any file in <code class="docutils literal notranslate"><span class="pre">proteins</span></code> that has one character followed by <code class="docutils literal notranslate"><span class="pre">ethane.pdb</span></code>. Compare to:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">molecules</span><span class="o">/*</span><span class="n">ethane</span><span class="o">.</span><span class="n">pdb</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span>  <span class="n">exercise</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">proteins</span><span class="o">/*</span><span class="n">ethane</span><span class="o">.</span><span class="n">pdb</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>molecules/ethane.pdb  molecules/methane.pdb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exercise-data/proteins/ethane.pdb  exercise-data/proteins/methane.pdb
 </pre></div>
 </div>
 </div>
 </div>
-<p>Which matches any file in <code class="docutils literal notranslate"><span class="pre">molecules</span></code> that ends in <code class="docutils literal notranslate"><span class="pre">ethane.pdb</span></code>.</p>
+<p>Which matches any file in <code class="docutils literal notranslate"><span class="pre">proteins</span></code> that ends in <code class="docutils literal notranslate"><span class="pre">ethane.pdb</span></code>.</p>
 </div>
 <div class="section" id="id8">
 <h3>Using wildcards for accessing multiple files at once (cont’d)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>You can string wildcards together, too!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ls molecules/???ane.pdb
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ls  exercise-data/proteins/???ane.pdb
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>molecules/cubane.pdb molecules/ethane.pdb molecules/octane.pdb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exercise-data/proteins/cubane.pdb  exercise-data/proteins/octane.pdb
+exercise-data/proteins/ethane.pdb
 </pre></div>
 </div>
 </div>
 </div>
-<p>This matches and file in <code class="docutils literal notranslate"><span class="pre">molecules</span></code> that has any three characters and ends in <code class="docutils literal notranslate"><span class="pre">ane.pdb</span></code></p>
+<p>This matches and file in <code class="docutils literal notranslate"><span class="pre">proteins</span></code> that has any three characters and ends in <code class="docutils literal notranslate"><span class="pre">ane.pdb</span></code></p>
 <p>Wildcards are said to be “expanded” to create a list of matching files. This happens <strong>before</strong> running the relevant command. For example, the following command will fail:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">molecules</span><span class="o">/*</span><span class="n">pdf</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span>  <span class="n">exercise</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">proteins</span><span class="o">/*</span><span class="n">pdf</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: molecules/*pdf: No such file or directory
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: cannot access &#39;exercise-data/proteins/*pdf&#39;: No such file or directory
 </pre></div>
 </div>
 </div>
@@ -3225,7 +2877,7 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 </div>
 <div class="section" id="exercise-list-filenames-matching-a-pattern">
 <h3>Exercise: List filenames matching a pattern<a class="headerlink" href="#exercise-list-filenames-matching-a-pattern" title="Permalink to this headline">¶</a></h3>
-<p>When run in the <code class="docutils literal notranslate"><span class="pre">molecules</span></code> directory, which <code class="docutils literal notranslate"><span class="pre">ls</span></code> command(s) will produce this output?</p>
+<p>When run in the <code class="docutils literal notranslate"><span class="pre">proteins</span></code> directory, which <code class="docutils literal notranslate"><span class="pre">ls</span></code> command(s) will produce this output?</p>
 <p><code class="docutils literal notranslate"><span class="pre">ethane.pdb</span> <span class="pre">methane.pdb</span></code></p>
 <ol class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">*t*ane.pdb</span></code></p></li>
@@ -3281,15 +2933,6 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <li><p>There are a number of reasons for this (e.g., better control flow, error handling, and debugging)</p></li>
 </ul>
 </div>
-<div class="section" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
-<p>There are lots of excellent resources online for learning more about bash:</p>
-<ul class="simple">
-<li><p>The GNU Manual is <em>the</em> reference for all bash commands: <a class="reference external" href="http://www.gnu.org/manual/manual.html">http://www.gnu.org/manual/manual.html</a></p></li>
-<li><p>“Learning the Bash Shell” book: <a class="reference external" href="http://shop.oreilly.com/product/9780596009656.do">http://shop.oreilly.com/product/9780596009656.do</a></p></li>
-<li><p>An interactive on-line bash shell course: <a class="reference external" href="https://www.learnshell.org/">https://www.learnshell.org/</a></p></li>
-</ul>
-</div>
 <div class="section" id="finding-things">
 <h1>Finding Things<a class="headerlink" href="#finding-things" title="Permalink to this headline">¶</a></h1>
 <p>Oftentimes, our file system can be quite complex, with sub-directories inside sub-directories inside sub-directories.</p>
@@ -3297,7 +2940,12 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <p>First, let’s navigate to the <code class="docutils literal notranslate"><span class="pre">data-shell/writing</span></code> directory:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span><span class="n">writing</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">shell</span><span class="o">-</span><span class="n">lesson</span><span class="o">-</span><span class="n">data</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/michael/Desktop/shell-lesson-data
 </pre></div>
 </div>
 </div>
@@ -3311,7 +2959,7 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">data</span>      haiku.txt <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis</span>    <span class=" -Color -Color-Bold -Color-Bold-Blue">tools</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">exercise-data</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">north-pacific-gyre</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">thesis_backup</span>/
 </pre></div>
 </div>
 </div>
@@ -3319,24 +2967,54 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <p>Unfortunately, this doesn’t list any of the files in the sub-directories. Enter <code class="docutils literal notranslate"><span class="pre">find</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>find .
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>.
-./tools
-./tools/old
-./tools/old/oldtool
-./tools/format
-./tools/stats
-./haiku.txt
-./thesis
-./thesis/empty-draft.md
-./data
-./data/two.txt
-./data/LittleWomen.txt
-./data/one.txt
+./exercise-data
+./exercise-data/numbers.txt
+./exercise-data/creatures
+./exercise-data/creatures/minotaur.dat
+./exercise-data/creatures/basilisk.dat
+./exercise-data/creatures/unicorn.dat
+./exercise-data/animal-counts
+./exercise-data/animal-counts/animals.csv
+./exercise-data/writing
+./exercise-data/writing/haiku.txt
+./exercise-data/writing/LittleWomen.txt
+./exercise-data/proteins
+./exercise-data/proteins/pentane.pdb
+./exercise-data/proteins/methane.pdb
+./exercise-data/proteins/ethane.pdb
+./exercise-data/proteins/propane.pdb
+./exercise-data/proteins/octane.pdb
+./exercise-data/proteins/cubane.pdb
+./.bash_profile
+./north-pacific-gyre
+./north-pacific-gyre/NENE01843A.txt
+./north-pacific-gyre/NENE01843B.txt
+./north-pacific-gyre/NENE02043A.txt
+./north-pacific-gyre/NENE01729A.txt
+./north-pacific-gyre/NENE01736A.txt
+./north-pacific-gyre/NENE01729B.txt
+./north-pacific-gyre/NENE01812A.txt
+./north-pacific-gyre/NENE02040B.txt
+./north-pacific-gyre/NENE01751A.txt
+./north-pacific-gyre/NENE02018B.txt
+./north-pacific-gyre/NENE01978A.txt
+./north-pacific-gyre/NENE02043B.txt
+./north-pacific-gyre/goodiff.sh
+./north-pacific-gyre/NENE02040Z.txt
+./north-pacific-gyre/NENE01978B.txt
+./north-pacific-gyre/NENE01751B.txt
+./north-pacific-gyre/NENE01971Z.txt
+./north-pacific-gyre/NENE02040A.txt
+./north-pacific-gyre/goostats.sh
+./thesis_backup
+./thesis_backup/quotations.txt
+./.suprise.txt
 </pre></div>
 </div>
 </div>
@@ -3347,16 +3025,19 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <p>We can add some helpful options to <code class="docutils literal notranslate"><span class="pre">find</span></code> to filter things a bit:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="nb">type</span> <span class="n">d</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>find . -type d
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>.
-./tools
-./tools/old
-./thesis
-./data
+./exercise-data
+./exercise-data/creatures
+./exercise-data/animal-counts
+./exercise-data/writing
+./exercise-data/proteins
+./north-pacific-gyre
+./thesis_backup
 </pre></div>
 </div>
 </div>
@@ -3365,19 +3046,46 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <p>Alternatively, we can list only the <strong>f</strong>iles with:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="nb">type</span> <span class="n">f</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>find . -type f
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./tools/old/oldtool
-./tools/format
-./tools/stats
-./haiku.txt
-./thesis/empty-draft.md
-./data/two.txt
-./data/LittleWomen.txt
-./data/one.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./exercise-data/numbers.txt
+./exercise-data/creatures/minotaur.dat
+./exercise-data/creatures/basilisk.dat
+./exercise-data/creatures/unicorn.dat
+./exercise-data/animal-counts/animals.csv
+./exercise-data/writing/haiku.txt
+./exercise-data/writing/LittleWomen.txt
+./exercise-data/proteins/pentane.pdb
+./exercise-data/proteins/methane.pdb
+./exercise-data/proteins/ethane.pdb
+./exercise-data/proteins/propane.pdb
+./exercise-data/proteins/octane.pdb
+./exercise-data/proteins/cubane.pdb
+./.bash_profile
+./north-pacific-gyre/NENE01843A.txt
+./north-pacific-gyre/NENE01843B.txt
+./north-pacific-gyre/NENE02043A.txt
+./north-pacific-gyre/NENE01729A.txt
+./north-pacific-gyre/NENE01736A.txt
+./north-pacific-gyre/NENE01729B.txt
+./north-pacific-gyre/NENE01812A.txt
+./north-pacific-gyre/NENE02040B.txt
+./north-pacific-gyre/NENE01751A.txt
+./north-pacific-gyre/NENE02018B.txt
+./north-pacific-gyre/NENE01978A.txt
+./north-pacific-gyre/NENE02043B.txt
+./north-pacific-gyre/goodiff.sh
+./north-pacific-gyre/NENE02040Z.txt
+./north-pacific-gyre/NENE01978B.txt
+./north-pacific-gyre/NENE01751B.txt
+./north-pacific-gyre/NENE01971Z.txt
+./north-pacific-gyre/NENE02040A.txt
+./north-pacific-gyre/goostats.sh
+./thesis_backup/quotations.txt
+./.suprise.txt
 </pre></div>
 </div>
 </div>
@@ -3385,29 +3093,33 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <p>We can also match things by name:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="o">*.</span><span class="n">txt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>find . -name <span class="s2">&quot;*.txt&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./haiku.txt
-</pre></div>
-</div>
-</div>
-</div>
-<p>Why didn’t this also get the other files??</p>
-<p>Remember: wildcards are expanded BEFORE being passed to the command. So, we really want:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="s2">&quot;*.txt&quot;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./haiku.txt
-./data/two.txt
-./data/LittleWomen.txt
-./data/one.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./exercise-data/numbers.txt
+./exercise-data/writing/haiku.txt
+./exercise-data/writing/LittleWomen.txt
+./north-pacific-gyre/NENE01843A.txt
+./north-pacific-gyre/NENE01843B.txt
+./north-pacific-gyre/NENE02043A.txt
+./north-pacific-gyre/NENE01729A.txt
+./north-pacific-gyre/NENE01736A.txt
+./north-pacific-gyre/NENE01729B.txt
+./north-pacific-gyre/NENE01812A.txt
+./north-pacific-gyre/NENE02040B.txt
+./north-pacific-gyre/NENE01751A.txt
+./north-pacific-gyre/NENE02018B.txt
+./north-pacific-gyre/NENE01978A.txt
+./north-pacific-gyre/NENE02043B.txt
+./north-pacific-gyre/NENE02040Z.txt
+./north-pacific-gyre/NENE01978B.txt
+./north-pacific-gyre/NENE01751B.txt
+./north-pacific-gyre/NENE01971Z.txt
+./north-pacific-gyre/NENE02040A.txt
+./thesis_backup/quotations.txt
+./.suprise.txt
 </pre></div>
 </div>
 </div>
@@ -3419,15 +3131,33 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 <p>We can do that with a bit of extra work:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="s2">&quot;*.txt&quot;</span> <span class="o">-</span><span class="n">exec</span> <span class="n">ls</span> <span class="o">-</span><span class="n">lh</span> <span class="p">{}</span> \<span class="p">;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>find . -name <span class="s2">&quot;*.txt&quot;</span> -exec ls -lh <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-rw-rw-r--@ 1 peerherholz  staff   218B Jul 30 10:41 ./haiku.txt
--rw-rw-r--@ 1 peerherholz  staff    18K Jul 30 10:41 ./data/two.txt
--rw-rw-r--@ 1 peerherholz  staff   1.0M Jul 30 10:41 ./data/LittleWomen.txt
--rw-rw-r--@ 1 peerherholz  staff   3.9K Jul 30 10:41 ./data/one.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-rw-rw-r-- 1 michael michael 13 Sep 16  2021 ./exercise-data/numbers.txt
+-rw-rw-r-- 1 michael michael 218 Sep 16  2021 ./exercise-data/writing/haiku.txt
+-rw-rw-r-- 1 michael michael 1,1M Sep 16  2021 ./exercise-data/writing/LittleWomen.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01843A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01843B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02043A.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 ./north-pacific-gyre/NENE01729A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01736A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01729B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01812A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02040B.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 ./north-pacific-gyre/NENE01751A.txt
+-rw-rw-r-- 1 michael michael 3,5K Sep 16  2021 ./north-pacific-gyre/NENE02018B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01978A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02043B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02040Z.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01978B.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 ./north-pacific-gyre/NENE01751B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01971Z.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02040A.txt
+-rw-rw-r-- 1 michael michael 0 Okt 28 09:20 ./thesis_backup/quotations.txt
+-rw-rw-r-- 1 michael michael 0 Okt 27 19:45 ./.suprise.txt
 </pre></div>
 </div>
 </div>
@@ -3447,10 +3177,28 @@ molecules/ethane.pdb  molecules/octane.pdb  molecules/propane.pdb
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-rw-rw-r--@ 1 peerherholz  staff   1.0M Jul 30 10:41 ./data/LittleWomen.txt
--rw-rw-r--@ 1 peerherholz  staff   3.9K Jul 30 10:41 ./data/one.txt
--rw-rw-r--@ 1 peerherholz  staff    18K Jul 30 10:41 ./data/two.txt
--rw-rw-r--@ 1 peerherholz  staff   218B Jul 30 10:41 ./haiku.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-rw-rw-r-- 1 michael michael   13 Sep 16  2021 ./exercise-data/numbers.txt
+-rw-rw-r-- 1 michael michael  218 Sep 16  2021 ./exercise-data/writing/haiku.txt
+-rw-rw-r-- 1 michael michael 1,1M Sep 16  2021 ./exercise-data/writing/LittleWomen.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 ./north-pacific-gyre/NENE01729A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01729B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01736A.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 ./north-pacific-gyre/NENE01751A.txt
+-rw-rw-r-- 1 michael michael 4,4K Sep 16  2021 ./north-pacific-gyre/NENE01751B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01812A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01843A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01843B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01971Z.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01978A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE01978B.txt
+-rw-rw-r-- 1 michael michael 3,5K Sep 16  2021 ./north-pacific-gyre/NENE02018B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02040A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02040B.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02040Z.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02043A.txt
+-rw-rw-r-- 1 michael michael 4,3K Sep 16  2021 ./north-pacific-gyre/NENE02043B.txt
+-rw-rw-r-- 1 michael michael    0 Okt 27 19:45 ./.suprise.txt
+-rw-rw-r-- 1 michael michael    0 Okt 28 09:20 ./thesis_backup/quotations.txt
 </pre></div>
 </div>
 </div>
