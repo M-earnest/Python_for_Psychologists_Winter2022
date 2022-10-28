@@ -17,52 +17,51 @@ Within these pages, we provide the all information important to follow and condu
 ## Python for Psychologists
 
 Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can and why it should be utilized within experimental
-psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a more precise outline of the course, please consult the [respective section - # adapt link #](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/setup.html).
+psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a more precise outline of the course, please consult the [respective section](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/setup.html).
 This course is designed to provide lecture content in a way that it is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as many people as possible.
 
 <p align="center"><iframe src="https://giphy.com/embed/13HgwGsXF0aiGY" width="340" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/13HgwGsXF0aiGY"><small>via GIPHY</small></a></p></p>
 
 You can use the following sections to navigate through the content of the lecture:
 
-* [Overview & procedure ](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/overview.html)
+* [Overview & procedure ](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/overview.html)
 
-   What's this course all about? How are things implemented and supposed to work? 
+   What's this course all about? How are things implemented and supposed to work?
 
-* [General outline](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/outline.html)
+* [General outline](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/outline.html)
 
    What are the specific topics and aspects taught?
 
-* [Introduction](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/introduction.html)
+* [Introduction](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/introduction.html)
 
    All things gotta start somewhere and using programming within research settings is no exception to
    that, but how?
 
-* [Running experiments in Python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/experiments/experiments.html#)
+* [Running experiments in Python](https://m-earnest.github.io/Python_for_Psychologists_Winter2022//experiments/experiments.html#)
 
-   How can you use python to conduct experiments to acquire data from participants? 
+   How can you use python to conduct experiments to acquire data from participants?
 
-* [Data analyses in Python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/analyses/analyses.html)
+* [Data analyses in Python](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/analyses/analyses.html)
 
-   How can you use python to obtain insights from data, including preprocessing, statistics and visualizations? 
+   How can you use python to obtain insights from data, including preprocessing, statistics and visualizations?
 
-* [Student projects](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/projects.html)
+* [Student projects](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/projects.html)
 
    Making sure the work and progress of the participants is transparent and
    documented.
 
-* [Questionnaires](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/questionnaires.html)
+* [Questionnaires](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/questionnaires.html)
 
    Was it worth it and how can this be evaluated?
 
-* [Code of Conduct](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/CoC.html)
+* [Code of Conduct](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/CoC.html)
 
    Necessities for creating an open, fair, safe and inclusive learning
    experience.
 
 ## I've got a question!
 
-In case you have any questions or difficulties with the lecture and its materials, please don’t hesitate a single second to get in touch with us. A great way to do this is to [open an issue - # adapt link #](https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues) on the
-GitHub site of the course. You can of course further contact me via [E-mail](ernst@psych.uni-frankfurt.de). Every feedback or idea  you might have is highly appreciated and valued.
+In case you have any questions or difficulties with the lecture and its materials, please don’t hesitate a single second to get in touch with us. A great way to do this is to open an issue on the GitHub site of the course. You can of course further contact me via [E-mail](ernst@psych.uni-frankfurt.de). Every feedback or idea  you might have is highly appreciated and valued.
 
 <p align="center"><iframe src="https://giphy.com/embed/ATt7p8OO4mvvO" width="440" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/photos-street-sesame-ATt7p8OO4mvvO"><small>via GIPHY</small></a></p></p>
 
