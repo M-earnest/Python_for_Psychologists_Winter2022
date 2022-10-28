@@ -2,12 +2,12 @@
 
 Now we'll start exploring this thing called "the computer" a bit more, specifically two aspects that might seem adjacent to utilizing `python` within research workflows but are actually crucial components: `CLIs/IDEs`  and `(bash) shell`. Don't worry: this will also entail hands-on programming, just not directly in `python`. The things covered in this session will introduce central concepts for our subsequent endeavors.
 
-## Topics 💡👨🏻‍🏫 
+## Topics 💡👨🏻‍🏫
 
 In the following you'll find the `objectives` and `materials` for each of the topics we'll discuss during this session.
 
 ### You & your computer
-How do you interact with your computer? In general, you as a user provide some `input` that contains a `task` that your `computer` should perform in order to obtain a desired `outcome`. However, there are different ways you can approach this, each with advantages and disadvantages. More precisely this refers to the distinction between `GUI`s and `CLI`s. Within this part of the session we'll discuss both a bit and also talk about different options to utilize `programming languages`. 
+How do you interact with your computer? In general, you as a user provide some `input` that contains a `task` that your `computer` should perform in order to obtain a desired `outcome`. However, there are different ways you can approach this, each with advantages and disadvantages. More precisely this refers to the distinction between `GUI`s and `CLI`s. Within this part of the session we'll discuss both a bit and also talk about different options to utilize `programming languages`.
 
 #### Objectives 📍
 
@@ -19,7 +19,7 @@ How do you interact with your computer? In general, you as a user provide some `
 
 #### Materials 📓
 
-''' coming soon '''
+<iframe src="https://docs.google.com/presentation/d/1kH-Rh5b10wL0SSolbtC3bxaP_P0vhMSzomGhTw0eufY/edit#slide=id.g8074ffaf2c_0_0" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### The (bash) shell
 
