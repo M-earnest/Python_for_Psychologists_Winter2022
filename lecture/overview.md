@@ -97,14 +97,14 @@ As this is a practical lab course intended to provide you with an introduction t
 
 ##### Exams and Assignments
 
-There will be two assignments that will make up your final grade an `take-home, open book final exam` and an `experiment script`. These will entail the generation of an `interactive & reproducible publication`, that is a `data analysis pipeline` which is `documented` and `run` within a `jupyter notebook`, as well as provided in a form that allows others to `openly re-run everything`.  
+There will be an assignment that will make up your final grade, either an `take-home, open book final exam` or an `experiment script`. These will entail the generation of an `interactive & reproducible publication`, that is a `data analysis pipeline` which is `documented` and `run` within a `jupyter notebook`, as well as provided in a form that allows others to `openly re-run everything`.  
 
-There will be `# a number # homework assignments`. Assignments will be communictaed in the respective sections of this course and during the lectures.
+There will be `# a number of homework assignments`. Assignments will be communictaed in the respective sections of this course and during the lectures.
 
 ##### Grading
 
-Your final grade will be based on the `experiment script` the `final exam`.
-**Please note** that there will prominent differences depending on the start date of your studies, i.e. the `exam regulation` under which you started the master program. I'm very sorry that there will be some imbalance, I'm also not a fan of this. However, we have to comply with the `exam regulations` unfortunately.   
+Your final grade will be based on the the `final exam` + `homework assignments`.
+**Please note** that there will be prominent differences depending on the start date of your studies, i.e. the `exam regulation` under which you started the master program. I'm very sorry that there will be some imbalance, I'm also not a fan of this. However, we have to comply with the `exam regulations` unfortunately.   
 
 
 **First semester, started winter term 21/22 or later**
