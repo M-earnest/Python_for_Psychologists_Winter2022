@@ -18,13 +18,17 @@ Please see below for our current optimistic schedule. Depending on our progress,
 ✍🏽 - writing outside course hours  
 📖 - reading outside course hours  
 
-| Date (day/month/year) 🗓         | Topic 💡 👨🏻‍🏫   | Assignment & deadline 🖥️ ✍🏽📖 |
+
+| Date (day/month/year) 🗓         | Topic 💡 👨🏻‍🏫   | Assignment 🖥️ ✍🏽📖 / deadline |
 |--------------|-----------|------------|
 | 28/10/2022 | Introduction I - course information & setup 💡 👨🏻‍🏫  | 🖥️ 📖 /not applicable |
 | 28/10/2022 | Introduction II - GUI/CLI & BASH  💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 | 🖥️ 📖  /not applicable |
-| 28/10/2022 | Introduction III - computing environments 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 | 🖥️ 📖 / 05/11/2022 - 11:59 PM EST |
-| 04/11/2022 | Introduction IV - jupyter ecosystem/notebooks 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ 📖 / 05/11/2022 - 11:59 PM EST |
-| 04/11/2022 | Python I - basics & data types I 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ ✍🏽📖 / 17/05/2022 - 11:59 PM EST |
-| 04/11/2022 | Python II - basics & data types II 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ ✍🏽📖 / 17/05/2022 - 11:59 PM EST |
-| 05/11/2022 | Python III - control flow operations 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ ✍🏽📖  / 17/05/2022 - 11:59 PM EST |
-| 05/11/2022 | Python IV - functions & files 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 | 🖥️ ✍🏽📖  / 17/05/2022 - 11:59 PM EST |
+| 04/11/2022 | Introduction III - computing environments 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 | 🖥️ 📖 / 14/11/2021, 11:59 PM EST |
+| 04/11/2022 | Introduction IV - jupyter ecosystem/notebooks 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ 📖 / 14/11/2021, 11:59 PM EST |
+| 04/11/2022 | Python I - basics & data types I 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ ✍🏽📖 / 03/12/2021, 11:59 PM EST |
+| 04/11/2022 | Python II - basics & data types II 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ ✍🏽📖 / 03/12/2021, 11:59 PM EST |
+| 05/11/2022 | Python III - control flow operations 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  | 🖥️ ✍🏽📖  / 17/12/2021, 11:59 PM EST |
+| 19/11/2022 | PsychoPy I - writing experiments in python 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬   | 🖥️ ✍🏽📖 / ?|
+| 19/11/2022 | PsychoPy II - stimulus presentation & responses 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬   | 🖥️ ✍🏽📖 / ?|
+| (19/11/2022) | (Data analyses I - data handling) 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬  |🖥️ ✍🏽📖 |)
+| (19/11/2022) | (Data analyses II - statistics & visualization) 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬  | 🖥️ ✍🏽📖 / ?|)

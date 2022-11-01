@@ -10,7 +10,7 @@ While most thesis projects (undergrad and grad), PhD and other positions that ac
 ### TL;DR
 
 Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can and why it should be utilized within experimental
-psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a rather precise outline of the course, please consult the [respective section](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/setup.html).
+psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a rather precise outline of the course, please consult the [respective section](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/setup.html).
 
 ### How to reach the folks in the front
 
@@ -67,19 +67,19 @@ Well, depends on your calculator, but you'll need frequent access to a computer 
 Nah, everything we'll use is [open-source software](https://en.wikipedia.org/wiki/Open-source_software) or at minimum free of charge and publicly available. 
 Why? Because teaching students via [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) is just not fair and won't help anyone: students have to obtain licenses or use those from the university (which usually doesn't have enough for everyone), leading to tremendous problems regarding inequity now and in the future. Additionally, [opens-source software](https://en.wikipedia.org/wiki/Open-source_software) can do everything, if not more than [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) and is furthermore usually better supported, tested and documented, creating a fantastic sense of community. 
 
-In order to help you get all the software required for the course, a [comprehensive installation instruction](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/setup.html) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please contact me ASAP and we'll get that sorted out**
+In order to help you get all the software required for the course, a [comprehensive installation instruction](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/setup.html) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please contact me ASAP and we'll get that sorted out**
 
 <iframe src="https://giphy.com/embed/CTX0ivSQbI78A" width="240" height="177" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/internet-computer-technology-CTX0ivSQbI78A">via GIPHY</a></p>
 
 #### Where is everything?
 
-All course materials (lecture slides, lecture demo notebooks, lab notebooks, homework assignments, etc.) will be available on the [course website - # adpat link #](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/index.html), i.e. the one you're looking at right now. Everything will be completely open and free to use, thus constituting an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources) you are **free to explore, enhance and share**. Thus, this website and all materials will also remain up for the entire duration of the course and beyond, ideally to end of the internet. The usage of this resource and the materials therein will be explained at the beginning and throughout the course.  
+All course materials (lecture slides, lecture demo notebooks, lab notebooks, homework assignments, etc.) will be available on the [course website](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/index.html), i.e. the one you're looking at right now. Everything will be completely open and free to use, thus constituting an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources) you are **free to explore, enhance and share**. Thus, this website and all materials will also remain up for the entire duration of the course and beyond, ideally to end of the internet. The usage of this resource and the materials therein will be explained at the beginning and throughout the course.  
 
 <iframe src="https://giphy.com/embed/c20UV66B7zCWA" width="240" height="155" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/superman-phone-looking-c20UV66B7zCWA">via GIPHY</a></p>
 
 #### Syllabus and Text
 
-As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/outline.html). This syllabus is subject to change; students who miss class are responsible for learning about any changes to the syllabus.
+As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/outline.html). This syllabus is subject to change; students who miss class are responsible for learning about any changes to the syllabus.
 
 The course was build with the knowledge of several textbooks, all of which are online and free:
 
@@ -164,7 +164,7 @@ We might miss some things, so please notify the instructors of your pending abse
 
 ### Code of conduct
 
-This course has a `Code of conduct`. Please inform yourself about the specifics by carefully reading through the [respective section](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/CoC.html).
+This course has a `Code of conduct`. Please inform yourself about the specifics by carefully reading through the [respective section](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/CoC.html).
 
 <iframe src="https://giphy.com/embed/l5s71uAp3CzKwxwkoZ" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-nbc-the-office-tv-l5s71uAp3CzKwxwkoZ">via GIPHY</a></p>
 
@@ -177,13 +177,13 @@ That said, to ensure that we’re respecting everyone's time we'll mainly answer
 
 If you have:
 
-**- questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, the `discord` channel, `e-mail` or the [GitHub repository](https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues).
+**- questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, the `discord` channel, `e-mail` or the [GitHub repository](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/issues).
 
 **- a technical assignment question** - come to office hours (after making an appointment) (or post to `discord`). Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to `discord`. Be as specific as you can in the question you ask (and include error messages when appropriate!). And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
 
 **- been stuck on something for a while (>30min) and aren’t even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn’t working. **That’s OK - we’ve all been there!** IF you are stuck, you can and should reach out for help, even if you aren’t exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on `discord`). If you don’t have a specific question, include the information you have (what you’re stuck on, the code you’ve been trying that hasn’t been happening, and/or the error messages you’ve been getting).
 
-**- questions about course logistics** - first, check the [overview](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/overview.html) & [syllabus](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
+**- questions about course logistics** - first, check the [overview](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/overview.html) & [syllabus](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
 
 **- something super cool to share related to class or want to talk about a topic in further depth** - feel free to post on `discord`, contact the instructors or come to office hours. 
 
