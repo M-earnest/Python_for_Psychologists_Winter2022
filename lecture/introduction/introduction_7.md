@@ -8,7 +8,7 @@ In the following you'll find the `objectives` and `materials` for each of the to
 
 
 ### Introduction to Python - II
-This session, we'll build upon the things learn last week and broader our capabilities in `python`, focusing on `indentation` and `control flow & structures`. 
+This session, we'll build upon the things learned last week and broader our capabilities in `python`, focusing on `indentation` and `control flow & structures`. 
 
 #### Objectives 📍
 
@@ -21,7 +21,7 @@ This session, we'll build upon the things learn last week and broader our capabi
 
 #### Materials 📓
 
-Please see the rendered version of the `jupyter notebook` [Introduction VII - Introduction to Python III](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_III.html) in the `ToC` on the left.
+Please see the rendered version of the `jupyter notebook` [Introduction VII - Introduction to Python III](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/introduction_7.html) in the `ToC` on the left.
 
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
@@ -31,19 +31,20 @@ Not applicable, as project related work didn't start yet.
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
 ### Homework assignment #5
-Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](https://www.dropbox.com/s/grci8e8g2gx7jst/PFP_assignment_5_intro_python_3.ipynb?dl=1). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
+Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
 
-**Deadline: 12/01/2022, 11:59 PM EST**
+**Deadline: 17/01/2022, 11:59 PM EST**
 
 ### Prepare PsychoPy installation
 
-Also, in preparation for our switch to more applied things, starting with experiments in `python` and thus endeavors in `psychopy`, could you please create a new respective `conda environment` (remember those?) via the following lines:
+Also, in preparation for our switch to more applied things, i.e. starting with experiments in `python`. We'll have to install `psychopy`. To do that please download the [environment.yml](https://raw.githubusercontent.com/psychopy/psychopy/master/conda/psychopy-env.yml) file provided and create a new respective `conda environment` (remember those?) via the following lines:
 
-      conda create -n psychopy psychopy
+      conda env create -n psychopy -f psychopy-env.yml
       conda activate psychopy
       pip install jedi psychtoolbox pygame pyo pyobjc python-vlc ujson
 
-and then test if everything works via running `psychopy` (type it and then press “enter”) from within the new environment (make sure you did activate it via `conda activate psychopy`)?
+and then test if everything works via running the command `psychopy` (type it and then press “enter”) from within the new environment (make sure you did activate it via `conda activate psychopy`).
+
 
 ### optional/reading/further materials
 
