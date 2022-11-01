@@ -7,8 +7,8 @@ Within the third session we'll continue with the sections from last week, that i
 In the following you'll find the `objectives` and `materials` for each of the topics we'll discuss during this session.
 
 ### Computing environments
-You might think: "why do we have to talk about computing environments & reproducibility? I just to code.". 
-Fair enough but as hinted at during the introduction, knowing a bit more about this thing called the "computer" and how your code is run will be tremendously helpful and important going further. The sooner you can utilize the respective tools/resources the better as quite a bit, actually all, of your coding will depend on it. We usually trust our machines to do what we ask them to do and while quite often we get the desired output, there's a fair chance that the same task will lead to a different outcome on a different OS, using a different version, etc. . However, what outcomes do we "trust" and why does it converge? All of this relates to "reproducibility" and within this section we'll briefly explore underlying problems and potential (partial) solutions via `python`.    
+You might think: "why do we have to talk about computing environments & reproducibility just to code?". 
+Fair enough but as hinted at during the introduction, knowing a bit more about this thing called the "computer" and how your code is run will be tremendously helpful later on. The sooner you can utilize the respective tools/resources the better, as quite a bit, actually all, of your coding will depend on it. We usually trust our machines to do what we ask them to do and while quite often we get the desired output, there's a fair chance that the same task will lead to a different outcome on a different OS, using a different version, etc. . However, what outcomes do we "trust" and why does it converge? All of this relates to "reproducibility" and within this section we'll briefly explore underlying problems and potential (partial) solutions via `python`.    
 
 #### Objectives 📍
 - get to know problems wrt computational analysis & reproducibility
@@ -19,11 +19,12 @@ Fair enough but as hinted at during the introduction, knowing a bit more about t
 
 
 #### Materials 📓
-Please download the example script [fancy_analyzes.py](https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1).
+This session will deal with the example script `fancy_analyzes.py` , which you should find in your User/path/Python_for_Psychologists_Winter2022/lecture/introduction/ directory, otherwise please dowinload it [here](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/blob/main/lecture/introduction/fancy_analyzes.py)
 
 **Warning**: there will be sounds in the presentation, so might you want to lower the volume on your machine.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRRVMRe7CegikWx84HvsfGvAhvWlA-Bb8tj5bqWmU9Vucl6kUxCC4XcIzVU6a0ExcJkgnnRYO_aE7Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1LcR-v9lpTCuPstdppge3vh5JMQ_i8zUXzieIE_OLyKY/edit#slide=id.g8074ffaf2c_0_0" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
@@ -31,4 +32,4 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-None.
+Your first homework assignment will entail the generation of a `conda environment` called  `bb8` with `python 3.9` and `pandas`, `nilearn`, `jupyter` & sending us the corresponding `environment.yml` via e-mail. This should be somewhat trivial given the information in the presentation in the previous chapter.
