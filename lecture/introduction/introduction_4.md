@@ -7,8 +7,8 @@ Within the fourth session we'll finish the `virtualization` section, that is exp
 In the following you'll find the `objectives` and `materials` for each of the topics we'll discuss during this session.
 
 ### Computing environments
-You might think: "why do we have to talk about computing environments & reproducibility? I just to code.". 
-Fair enough but as hinted at during the introduction, knowing a bit more about this thing called the "computer" and how your code is run will be tremendously helpful and important going further. The sooner you can utilize the respective tools/resources the better as quite a bit, actually all, of your coding will depend on it. We usually trust our machines to do what we ask them to do and while quite often we get the desired output, there's a fair chance that the same task will lead to a different outcome on a different OS, using a different version, etc. . However, what outcomes do we "trust" and why does it converge? All of this relates to "reproducibility" and within this section we'll briefly explore underlying problems and potential (partial) solutions via `python`.    
+You might think: "why do we have to talk about computing environments & reproducibility just to code?". 
+Fair enough but as hinted at during the introduction, knowing a bit more about this thing called the "computer" and how your code is run will be tremendously helpful later on. The sooner you can utilize the respective tools/resources the better, as quite a bit, actually all, of your coding will depend on it. We usually trust our machines to do what we ask them to do and while quite often we get the desired output, there's a fair chance that the same task will lead to a different outcome on a different OS, using a different version, etc. . However, what outcomes do we "trust" and why does it converge? All of this relates to "reproducibility" and within this section we'll briefly explore underlying problems and potential (partial) solutions via `python`.    
 
 #### Objectives 📍
 - get to know problems wrt computational analysis & reproducibility
@@ -19,11 +19,11 @@ Fair enough but as hinted at during the introduction, knowing a bit more about t
 
 
 #### Materials 📓
-Please download the example script [fancy_analyzes.py](https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1).
+This session will deal with the example script `fancy_analyzes.py` , which you should find in your User/path/Python_for_Psychologists_Winter2022/lecture/introduction/ directory, otherwise please dowinload it [here](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/blob/main/lecture/introduction/fancy_analyzes.py)
 
 ''' coming soon'''
 
-### Jupyter notebookss
+### Jupyter notebooks
 During the previous session we had a look at different ways of communicating with our computers. Generally speaking we could either use a `GUI` or a `CLI`. In more detail we also have different options to utilize the same `programming language` to communicate with our `computer`, e.g. the `shell`, `jupyter notebooks` and `IDE`s. After we already explored the `shell` a bit, we'll now spend a closer look at `jupyter notebook` and how we can work with them. This is a central topic as the `python introduction` and `data analyzes` parts of the course will be conducted via `jupyter notebook` and you'll have to hand in most assignments via them as well.  
 
 #### Objectives 📍
@@ -43,7 +43,7 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-Your first homework assignment will entail the generation of a `conda environment` called  `pp2022` with `python 3.9` and `pandas`, `nilearn`, `jupyter` & sending us the corresponding `environment.yml` via e-mail. 
+Your first homework assignment will entail the generation of a `conda environment` called  `bb8` with `python 3.9` and `pandas`, `nilearn`, `jupyter` & sending us the corresponding `environment.yml` via e-mail. This should be trivial given the information in the presentation in the previous chapter.
 
 Your second homework assignment will entail the generation of a `jupyter notebook` with
     - **mandatory**:  `3 different cells`:
@@ -54,7 +54,7 @@ Your second homework assignment will entail the generation of a `jupyter noteboo
     - **optional**: try to include a picture of your favorite animal
 - save the notebook and e-mail it to ernst@psych.uni-frankfurt.de
 
-Please note that the deadline for both assignments is: 05/11/2021, 11:59 PM EST.
+Please note that the deadline for both assignments is: 14/11/2021, 11:59 PM EST.
 
 ### optional/reading/further materials
 
