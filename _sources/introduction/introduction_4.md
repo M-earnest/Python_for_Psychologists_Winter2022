@@ -21,7 +21,10 @@ Fair enough but as hinted at during the introduction, knowing a bit more about t
 #### Materials 📓
 This session will deal with the example script `fancy_analyzes.py` , which you should find in your User/path/Python_for_Psychologists_Winter2022/lecture/introduction/ directory, otherwise please dowinload it [here](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/blob/main/lecture/introduction/fancy_analyzes.py)
 
-''' coming soon'''
+**Warning**: there will be sounds in the presentation, so might you want to lower the volume on your machine.
+
+<iframe src="https://docs.google.com/presentation/d/1LcR-v9lpTCuPstdppge3vh5JMQ_i8zUXzieIE_OLyKY/edit#slide=id.g1023fcfac53_0_0" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 ### Jupyter notebooks
 During the previous session we had a look at different ways of communicating with our computers. Generally speaking we could either use a `GUI` or a `CLI`. In more detail we also have different options to utilize the same `programming language` to communicate with our `computer`, e.g. the `shell`, `jupyter notebooks` and `IDE`s. After we already explored the `shell` a bit, we'll now spend a closer look at `jupyter notebook` and how we can work with them. This is a central topic as the `python introduction` and `data analyzes` parts of the course will be conducted via `jupyter notebook` and you'll have to hand in most assignments via them as well.  
@@ -35,7 +38,7 @@ During the previous session we had a look at different ways of communicating wit
 
 #### Materials 📓
 
-Please see the rendered version of the `jupyter notebook` [Introduction IV - jupyter notebooks](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html) in the `ToC` on the left.
+Please see the rendered version of the `jupyter notebook` [Introduction IV - jupyter notebooks](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_jupyter.html) in the `ToC` on the left.
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
