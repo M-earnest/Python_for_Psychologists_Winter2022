@@ -30,11 +30,6 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-### Homework assignment #5
-Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
-
-**Deadline: 17/01/2022, 11:59 PM EST**
-
 ### Prepare PsychoPy installation
 
 Also, in preparation for our switch to more applied things, i.e. starting with experiments in `python`. We'll have to install `psychopy`. To do that please download the [environment.yml](https://raw.githubusercontent.com/psychopy/psychopy/master/conda/psychopy-env.yml) file provided and create a new respective `conda environment` (remember those?) via the following lines:
@@ -44,6 +39,12 @@ Also, in preparation for our switch to more applied things, i.e. starting with e
       pip install jedi psychtoolbox pygame pyo pyobjc python-vlc ujson
 
 and then test if everything works via running the command `psychopy` (type it and then press “enter”) from within the new environment (make sure you did activate it via `conda activate psychopy`).
+
+
+### Homework assignment #5
+Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
+
+**Deadline: 17/12/2022, 11:59 PM EST**
 
 
 ### optional/reading/further materials
