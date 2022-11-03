@@ -442,6 +442,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stackoverflow-developer-survey">
+     2022 Stackoverflow Developer Survey
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#high-level">
      High-level
     </a>
@@ -697,6 +702,11 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#widely-used">
      Widely-used
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stackoverflow-developer-survey">
+     2022 Stackoverflow Developer Survey
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -969,7 +979,15 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p>Python is the fastest-growing major programming language</p></li>
 <li><p>Top 3 overall (with JavaScript, Java)</p></li>
 </ul>
-<center><img src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/09/growth_major_languages-1-1400x1200.png" width="800px" style="margin-bottom: 10px;"></center></div>
+<center><img src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/09/growth_major_languages-1-1400x1200.png" width="800px" style="margin-bottom: 10px;"></center>
+<p><a class="reference external" href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">The incredible growth of python, by David Robinson, 6.09.2017</a></p>
+</div>
+<div class="section" id="stackoverflow-developer-survey">
+<h3>2022 Stackoverflow Developer Survey<a class="headerlink" href="#stackoverflow-developer-survey" title="Permalink to this headline">¶</a></h3>
+<img src="../static/popular_languages_devs.png">
+<img src="../static/popular_languages_learners.png">
+<p><a class="reference external" href="https://survey.stackoverflow.co/2022/#most-popular-technologies-language">https://survey.stackoverflow.co/2022/#most-popular-technologies-language</a></p>
+</div>
 <div class="section" id="high-level">
 <h3>High-level<a class="headerlink" href="#high-level" title="Permalink to this headline">¶</a></h3>
 <p>Python features a high level of abstraction</p>
@@ -1019,10 +1037,12 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p>Enormous ecosystem of third-party packages</p></li>
 <li><p>Widely used in many areas of software development (web, dev-ops, data science, etc.)</p></li>
 </ul>
-<center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/general_purpose_meme.png"></center></div>
+<center><img src="../static/pypi_packages.png" width="500px" style="margin-bottom: 10px;"></center>
+<center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/general_purpose_meme.png"></center>
+</div>
 <div class="section" id="dynamic">
 <h3>Dynamic<a class="headerlink" href="#dynamic" title="Permalink to this headline">¶</a></h3>
-<p>Code is interpreted at run-time</p>
+<p>Code is interpreted at [runtime](<a class="reference external" href="https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)">https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)</a></p>
 <ul class="simple">
 <li><p>No compilation process*; code is read line-by-line when executed</p></li>
 <li><p>Eliminates delays between development and execution</p></li>
@@ -1070,12 +1090,8 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <ul>
 <li><p><a class="reference external" href="#Default-argument-and-keyword-arguments">Default argument and keyword arguments</a></p></li>
 <li><p><a class="reference external" href="#*args-and-*kwargs-parameters"><code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code> parameters</a></p></li>
-<li><p><a class="reference external" href="#Unnamed-functions:-lambda-function">Unnamed functions: <code class="docutils literal notranslate"><span class="pre">lambda</span></code> function</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="#Classes">Classes</a></p></li>
-<li><p><a class="reference external" href="#Modules">Modules</a></p></li>
-<li><p><a class="reference external" href="#Exceptions">Exceptions</a></p></li>
 </ul>
 <p>Here’s what we will focus on in the first block:</p>
 <ul class="simple">
@@ -1107,7 +1123,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="section" id="modules">
 <h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
 <p>Most of the functionality in <code class="docutils literal notranslate"><span class="pre">Python</span></code> is provided by <em>modules</em>. To use a module in a Python program it first has to be imported. A module can be imported using the <code class="docutils literal notranslate"><span class="pre">import</span></code> statement.</p>
-<center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/python_import.png"></center><p>For example, to import the module <code class="docutils literal notranslate"><span class="pre">math</span></code>, which contains many standard mathematical functions, we can do:</p>
+<center><img src="../static/python_import.png"></center><p>For example, to import the module <code class="docutils literal notranslate"><span class="pre">math</span></code>, which contains many standard mathematical functions, we can do:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -1132,7 +1148,8 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<p>Importing the whole module us often times unnecessary and can lead to longer loading time or increase the memory consumption. An alternative to the previous method, we can also choose to import only a few selected functions from a module by explicitly listing which ones we want to import:</p>
+<p>where math.cos() is what is understood as a function (i.e a block of code which runs only when it is <code class="docutils literal notranslate"><span class="pre">called</span></code>). Functions can usually be identified by the <code class="docutils literal notranslate"><span class="pre">Brackets</span> <span class="pre">()</span></code> directly following the function name.</p>
+<p>Importing the whole module is often times unnecessary and can lead to longer loading times or increased memory consumption. As an alternative to the previous method, we can also choose to import only a few selected functions <code class="docutils literal notranslate"><span class="pre">from</span></code> a module by explicitly listing which ones we want to import:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
@@ -1156,12 +1173,238 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-7-b02e6e6c7025&gt;&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+    <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span>
+                     <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
 </div>
-<p>Comparably you can also use the <code class="docutils literal notranslate"><span class="pre">help</span></code> function to find out more about a given <code class="docutils literal notranslate"><span class="pre">module</span></code>:</p>
+</div>
+</div>
+<p>Comparably you can also use the <code class="docutils literal notranslate"><span class="pre">help</span></code> function (one of a numer of <a class="reference external" href="https://docs.python.org/3/library/functions.html">pythons build-in functions</a>) to find out more about a given <code class="docutils literal notranslate"><span class="pre">module</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on module math:
+
+NAME
+    math
+
+MODULE REFERENCE
+    https://docs.python.org/3.7/library/math
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    This module provides access to the mathematical functions
+    defined by the C standard.
+
+FUNCTIONS
+    acos(x, /)
+        Return the arc cosine (measured in radians) of x.
+    
+    acosh(x, /)
+        Return the inverse hyperbolic cosine of x.
+    
+    asin(x, /)
+        Return the arc sine (measured in radians) of x.
+    
+    asinh(x, /)
+        Return the inverse hyperbolic sine of x.
+    
+    atan(x, /)
+        Return the arc tangent (measured in radians) of x.
+    
+    atan2(y, x, /)
+        Return the arc tangent (measured in radians) of y/x.
+        
+        Unlike atan(y/x), the signs of both x and y are considered.
+    
+    atanh(x, /)
+        Return the inverse hyperbolic tangent of x.
+    
+    ceil(x, /)
+        Return the ceiling of x as an Integral.
+        
+        This is the smallest integer &gt;= x.
+    
+    copysign(x, y, /)
+        Return a float with the magnitude (absolute value) of x but the sign of y.
+        
+        On platforms that support signed zeros, copysign(1.0, -0.0)
+        returns -1.0.
+    
+    cos(x, /)
+        Return the cosine of x (measured in radians).
+    
+    cosh(x, /)
+        Return the hyperbolic cosine of x.
+    
+    degrees(x, /)
+        Convert angle x from radians to degrees.
+    
+    erf(x, /)
+        Error function at x.
+    
+    erfc(x, /)
+        Complementary error function at x.
+    
+    exp(x, /)
+        Return e raised to the power of x.
+    
+    expm1(x, /)
+        Return exp(x)-1.
+        
+        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.
+    
+    fabs(x, /)
+        Return the absolute value of the float x.
+    
+    factorial(x, /)
+        Find x!.
+        
+        Raise a ValueError if x is negative or non-integral.
+    
+    floor(x, /)
+        Return the floor of x as an Integral.
+        
+        This is the largest integer &lt;= x.
+    
+    fmod(x, y, /)
+        Return fmod(x, y), according to platform C.
+        
+        x % y may differ.
+    
+    frexp(x, /)
+        Return the mantissa and exponent of x, as pair (m, e).
+        
+        m is a float and e is an int, such that x = m * 2.**e.
+        If x is 0, m and e are both 0.  Else 0.5 &lt;= abs(m) &lt; 1.0.
+    
+    fsum(seq, /)
+        Return an accurate floating point sum of values in the iterable seq.
+        
+        Assumes IEEE-754 floating point arithmetic.
+    
+    gamma(x, /)
+        Gamma function at x.
+    
+    gcd(x, y, /)
+        greatest common divisor of x and y
+    
+    hypot(x, y, /)
+        Return the Euclidean distance, sqrt(x*x + y*y).
+    
+    isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0)
+        Determine whether two floating point numbers are close in value.
+        
+          rel_tol
+            maximum difference for being considered &quot;close&quot;, relative to the
+            magnitude of the input values
+          abs_tol
+            maximum difference for being considered &quot;close&quot;, regardless of the
+            magnitude of the input values
+        
+        Return True if a is close in value to b, and False otherwise.
+        
+        For the values to be considered close, the difference between them
+        must be smaller than at least one of the tolerances.
+        
+        -inf, inf and NaN behave similarly to the IEEE 754 Standard.  That
+        is, NaN is not close to anything, even itself.  inf and -inf are
+        only close to themselves.
+    
+    isfinite(x, /)
+        Return True if x is neither an infinity nor a NaN, and False otherwise.
+    
+    isinf(x, /)
+        Return True if x is a positive or negative infinity, and False otherwise.
+    
+    isnan(x, /)
+        Return True if x is a NaN (not a number), and False otherwise.
+    
+    ldexp(x, i, /)
+        Return x * (2**i).
+        
+        This is essentially the inverse of frexp().
+    
+    lgamma(x, /)
+        Natural logarithm of absolute value of Gamma function at x.
+    
+    log(...)
+        log(x, [base=math.e])
+        Return the logarithm of x to the given base.
+        
+        If the base not specified, returns the natural logarithm (base e) of x.
+    
+    log10(x, /)
+        Return the base 10 logarithm of x.
+    
+    log1p(x, /)
+        Return the natural logarithm of 1+x (base e).
+        
+        The result is computed in a way which is accurate for x near zero.
+    
+    log2(x, /)
+        Return the base 2 logarithm of x.
+    
+    modf(x, /)
+        Return the fractional and integer parts of x.
+        
+        Both results carry the sign of x and are floats.
+    
+    pow(x, y, /)
+        Return x**y (x to the power of y).
+    
+    radians(x, /)
+        Convert angle x from degrees to radians.
+    
+    remainder(x, y, /)
+        Difference between x and the closest integer multiple of y.
+        
+        Return x - n*y where n*y is the closest integer multiple of y.
+        In the case where x is exactly halfway between two multiples of
+        y, the nearest even value of n is used. The result is always exact.
+    
+    sin(x, /)
+        Return the sine of x (measured in radians).
+    
+    sinh(x, /)
+        Return the hyperbolic sine of x.
+    
+    sqrt(x, /)
+        Return the square root of x.
+    
+    tan(x, /)
+        Return the tangent of x (measured in radians).
+    
+    tanh(x, /)
+        Return the hyperbolic tangent of x.
+    
+    trunc(x, /)
+        Truncates the Real x to the nearest Integral toward 0.
+        
+        Uses the __trunc__ magic method.
+
+DATA
+    e = 2.718281828459045
+    inf = inf
+    nan = nan
+    pi = 3.141592653589793
+    tau = 6.283185307179586
+
+FILE
+    /home/michael/anaconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so
 </pre></div>
 </div>
 </div>
@@ -1184,7 +1427,8 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<p>You can basically provide any name (given it’s following <code class="docutils literal notranslate"><span class="pre">python</span></code>/<code class="docutils literal notranslate"><span class="pre">coding</span></code> conventions) but focusing on intelligibility won’t be the worst idea:</p>
+<p>You can provide any name (given it’s following <code class="docutils literal notranslate"><span class="pre">python</span></code>/<code class="docutils literal notranslate"><span class="pre">coding</span></code> conventions) but focusing on intelligibility won’t be the worst idea.</p>
+<p>Remember <a class="reference external" href="https://peps.python.org/pep-0020/">“Readibility counts”</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">pineapple</span>
@@ -1202,17 +1446,10 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="section" id="exercise-1-1">
 <h3>Exercise 1.1<a class="headerlink" href="#exercise-1-1" title="Permalink to this headline">¶</a></h3>
 <p>Import the <code class="docutils literal notranslate"><span class="pre">max</span></code> from <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and find out what it does.</p>
+<p><em><strong>note</strong>: the <code class="docutils literal notranslate"><span class="pre">#</span></code> character tells python not to run the following code in that line. It is therefore used to embedd comments in our code while avoiding errors. You can try deleting the <code class="docutils literal notranslate"><span class="pre">#</span></code> and see what happens.</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write your solution in this code cell</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="nb">max</span>
-<span class="n">help</span><span class="p">(</span><span class="nb">max</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1224,13 +1461,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write your solution in this code cell</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">middle_earth</span>
 </pre></div>
 </div>
 </div>
@@ -1368,12 +1598,91 @@ FILE
 </div>
 </div>
 </div>
+<p>A module consists of a python file (.py) containing code that will automatically run on import, but also allows us to access functions specfied in the module file. In the Introduction folder you’ll find a file called <code class="docutils literal notranslate"><span class="pre">hello_statement.py</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hello_statement</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello world!
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s have a look at the functions contained</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">hello_statement</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on module hello_statement:
+
+NAME
+    hello_statement
+
+FUNCTIONS
+    some_func()
+        a simple greeting
+    
+    some_other_func()
+        a simple response to a greeting
+    
+    some_other_other_func()
+        a different response to a greeting
+
+FILE
+    /home/michael/gitkraken/Python_for_Psychologists_Winter2022/lecture/introduction/hello_statement.py
+</pre></div>
+</div>
+</div>
+</div>
+<p>and call them as usual</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hello_statement</span><span class="o">.</span><span class="n">some_func</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>How&#39;r you now?
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hello_statement</span><span class="o">.</span><span class="n">some_other_func</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Notso bad &#39;n&#39;you?
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hello_statement</span><span class="o">.</span><span class="n">some_other_other_func</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Good &#39;n&#39;you?
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="namespaces-and-imports">
 <h2>Namespaces and imports<a class="headerlink" href="#namespaces-and-imports" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Python is <strong>very</strong> serious about maintaining orderly <code class="docutils literal notranslate"><span class="pre">namespaces</span></code></p></li>
+<li><p>Python is <strong>very</strong> serious about maintaining orderly <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> (i.e unique identifiers)</p></li>
 <li><p>If you want to use some code outside the current scope, you need to explicitly “<code class="docutils literal notranslate"><span class="pre">import</span></code>” it</p></li>
 <li><p>Python’s import system often annoys beginners, but it substantially increases <code class="docutils literal notranslate"><span class="pre">code</span></code> clarity</p>
 <ul>
@@ -1391,6 +1700,17 @@ FILE
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function log in module math:
+
+log(...)
+    log(x, [base=math.e])
+    Return the logarithm of x to the given base.
+    
+    If the base not specified, returns the natural logarithm (base e) of x.
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1398,10 +1718,20 @@ FILE
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.302585092994046
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.3219280948873626
 </pre></div>
 </div>
 </div>
@@ -1417,7 +1747,7 @@ FILE
 <li><p>code <code class="docutils literal notranslate"><span class="pre">variables</span></code> <strong>!=</strong> math variables</p>
 <ul>
 <li><p>in mathematics <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to equality (statement of truth), e.g. <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">10x</span> <span class="pre">+</span> <span class="pre">2</span></code></p></li>
-<li><p>in coding <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to assignments, e.g. <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1</span></code></p></li>
+<li><p>in coding <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to assignments, e.g. <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1</span></code> (instead we use <code class="docutils literal notranslate"><span class="pre">==</span></code>to test for equality)</p></li>
 </ul>
 </li>
 <li><p>Variables are pointers, not data stores!</p></li>
@@ -1462,7 +1792,7 @@ FILE
 </div>
 </div>
 </div>
-<p>Again, this does not mean that <code class="docutils literal notranslate"><span class="pre">x</span></code> equals <code class="docutils literal notranslate"><span class="pre">1</span></code> but that the <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">x</span></code> has the <code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">1</span></code>. Thus, our <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">x</span></code> is <em>stored</em> in the respective <code class="docutils literal notranslate"><span class="pre">namespace</span></code>:</p>
+<p>Again, this does not mean that <code class="docutils literal notranslate"><span class="pre">x</span></code> equals <code class="docutils literal notranslate"><span class="pre">1</span></code> but that the <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">x</span></code> contains the <code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">1</span></code>. Thus, our <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">x</span></code> is <em>stored</em> in the respective <code class="docutils literal notranslate"><span class="pre">namespace</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
@@ -1521,7 +1851,9 @@ FILE
 </div>
 </div>
 </div>
-<p>This outline one further <em>very important</em> characteristic of <code class="docutils literal notranslate"><span class="pre">python</span></code> (and many other programming languages): <code class="docutils literal notranslate"><span class="pre">variables</span></code> can be directly overwritten by <code class="docutils literal notranslate"><span class="pre">assigning</span></code> them a new <code class="docutils literal notranslate"><span class="pre">value</span></code>. We don’t get an error like “This <code class="docutils literal notranslate"><span class="pre">namespace</span></code> is already taken.” Thus, always remember/keep track of what <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> were already used to avoid unintentional deletions/errors (reproducibility/replicability much?).</p>
+<p>This outlines one more <em>very important</em> characteristic of <code class="docutils literal notranslate"><span class="pre">python</span></code> (and many other programming languages):</p>
+<p><code class="docutils literal notranslate"><span class="pre">variables</span></code> can be directly overwritten by <code class="docutils literal notranslate"><span class="pre">assigning</span></code> them a new <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
+<p>We don’t get an error like “This <code class="docutils literal notranslate"><span class="pre">namespace</span></code> is already taken.” Thus, always remember/keep track of what <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> were already used to avoid unintentional deletions/errors (reproducibility/replicability much?).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ring_bearer</span> <span class="o">=</span> <span class="s1">&#39;Bilbo&#39;</span>
@@ -1548,11 +1880,29 @@ FILE
 </div>
 </div>
 </div>
-<p>If we try to use a variable that has not yet been defined we get an <code class="docutils literal notranslate"><span class="pre">NameError</span></code> (Note for later sessions, that we will use in the notebooks <code class="docutils literal notranslate"><span class="pre">try/except</span></code> blocks to handle the exception, so the notebook doesn’t stop. The code below will try to execute <code class="docutils literal notranslate"><span class="pre">print</span></code> function and if the <code class="docutils literal notranslate"><span class="pre">NameError</span></code> occurs the error message will be printed. Otherwise, an error will be raised. You will learn more about exception handling later.):</p>
+<p>If we try to use a variable that has not yet been defined we get an <code class="docutils literal notranslate"><span class="pre">NameError</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fellowship</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="mi">3</span><span class="n">d4e9eaec38a</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">fellowship</span>
+
+<span class="ne">NameError</span>: name &#39;fellowship&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note for later sessions, that we will use in the notebooks <code class="docutils literal notranslate"><span class="pre">try/except</span></code> blocks to handle the exception, so the notebook doesn’t stop. The code below will try to execute the <code class="docutils literal notranslate"><span class="pre">print</span></code> function and if the <code class="docutils literal notranslate"><span class="pre">NameError</span></code> occurs the error message will be printed. Otherwise, an error will be raised. You will learn more about exception handling later.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">Peer</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Peeeeeer</span><span class="p">)</span>
 <span class="k">except</span><span class="p">(</span><span class="ne">NameError</span><span class="p">)</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NameError&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -1561,7 +1911,7 @@ FILE
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NameError name &#39;Peer&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NameError name &#39;Peeeeeer&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1570,7 +1920,7 @@ FILE
 <ul class="simple">
 <li><p>Can include <code class="docutils literal notranslate"><span class="pre">letters</span></code> (A-Z), <code class="docutils literal notranslate"><span class="pre">digits</span></code> (0-9), and <code class="docutils literal notranslate"><span class="pre">underscores</span></code> ( _ )</p></li>
 <li><p>Cannot start with a <code class="docutils literal notranslate"><span class="pre">digit</span></code></p></li>
-<li><p>Are <strong>case sensitive</strong> (questions: where did “lower/upper case” originate?)</p></li>
+<li><p>Are <strong>case sensitive</strong> (question: where did “lower/upper case” originate?)</p></li>
 </ul>
 <p>This means that, for example:</p>
 <ul class="simple">
@@ -1587,15 +1937,6 @@ FILE
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_elves</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">n_dwarfs</span> <span class="o">=</span> <span class="mf">7.0</span>
-<span class="n">n_humans</span> <span class="o">=</span> <span class="s2">&quot;nine&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-2-2">
 <h4>Exercise 2.2<a class="headerlink" href="#exercise-2-2" title="Permalink to this headline">¶</a></h4>
@@ -1605,13 +1946,6 @@ FILE
 <li><p>10</p></li>
 <li><p>10.0</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_elves</span> <span class="o">+</span> <span class="n">n_dwarfs</span>
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-2-3">
 <h4>Exercise 2.3<a class="headerlink" href="#exercise-2-3" title="Permalink to this headline">¶</a></h4>
@@ -1632,6 +1966,11 @@ FILE
 <span class="n">ring_bearer</span>  
 <span class="n">ring_bearer</span> <span class="o">=</span> <span class="s1">&#39;Bilbo&#39;</span>
 <span class="n">ring_bearer</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Bilbo&#39;
 </pre></div>
 </div>
 </div>
@@ -1702,7 +2041,7 @@ FILE
 </div>
 <div class="section" id="floating-point-numbers">
 <h4>Floating-point numbers<a class="headerlink" href="#floating-point-numbers" title="Permalink to this headline">¶</a></h4>
-<p>So what’s the difference to <code class="docutils literal notranslate"><span class="pre">floating-point</span> <span class="pre">numbers</span></code>? <code class="docutils literal notranslate"><span class="pre">Floating-point</span> <span class="pre">numbers</span></code> are <em>decimal-point number</em> that can be <em>signed</em> (e.g. <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">180.90</span></code>, <code class="docutils literal notranslate"><span class="pre">-1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">-42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">-180.90</span></code>).</p>
+<p>So what’s the difference to <code class="docutils literal notranslate"><span class="pre">floating-point</span> <span class="pre">numbers</span></code>? <code class="docutils literal notranslate"><span class="pre">Floating-point</span> <span class="pre">numbers</span></code> are <em>decimal-point numbers</em> that can be <em>signed</em> (e.g. <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">180.90</span></code>, <code class="docutils literal notranslate"><span class="pre">-1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">-42.42</span></code>, <code class="docutils literal notranslate"><span class="pre">-180.90</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_float</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -1745,7 +2084,8 @@ FILE
 </div>
 <div class="section" id="strings">
 <h4>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h4>
-<p>Next up: <code class="docutils literal notranslate"><span class="pre">strings</span></code>. <code class="docutils literal notranslate"><span class="pre">Strings</span></code> are basically <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">elements</span></code>, from <code class="docutils literal notranslate"><span class="pre">letters</span></code> to <code class="docutils literal notranslate"><span class="pre">words</span></code> to <code class="docutils literal notranslate"><span class="pre">sentences</span></code> all can be/are <code class="docutils literal notranslate"><span class="pre">strings</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code>. In order to define a <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">Python</span></code> needs <strong>quotation marks</strong>, more precisely <code class="docutils literal notranslate"><span class="pre">strings</span></code> start and end with quotation marks, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;Rivendell&quot;</span></code>. You can choose between <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">'</span></code> as both will work (NB: <code class="docutils literal notranslate"><span class="pre">python</span></code> will put <code class="docutils literal notranslate"><span class="pre">'</span></code> around <code class="docutils literal notranslate"><span class="pre">strings</span></code> even if you specified <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>). However, it is recommended to decide on one and be consistent.</p>
+<p>Next up: <code class="docutils literal notranslate"><span class="pre">strings</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Strings</span></code> are basically <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">elements</span></code>, from <code class="docutils literal notranslate"><span class="pre">letters</span></code> to <code class="docutils literal notranslate"><span class="pre">words</span></code> to <code class="docutils literal notranslate"><span class="pre">sentences</span></code> all are encoded as <code class="docutils literal notranslate"><span class="pre">strings</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code>. In order to define a <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">Python</span></code> needs <strong>quotation marks</strong>, more precisely <code class="docutils literal notranslate"><span class="pre">strings</span></code> start and end with quotation marks, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;Rivendell&quot;</span></code>. You can choose between <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">'</span></code> as both will work (NB: <code class="docutils literal notranslate"><span class="pre">python</span></code> will put <code class="docutils literal notranslate"><span class="pre">'</span></code> around <code class="docutils literal notranslate"><span class="pre">strings</span></code> even if you specified <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>). However, it is recommended to decide on one and be consistent.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Weathertop&quot;</span>
@@ -1791,6 +2131,18 @@ FILE
 <p>How about some <code class="docutils literal notranslate"><span class="pre">Boolean</span></code>s? At this point it gets a bit more “abstract”. While there are many possible <code class="docutils literal notranslate"><span class="pre">numbers</span></code> and <code class="docutils literal notranslate"><span class="pre">strings</span></code>, a Boolean can only have one of two <code class="docutils literal notranslate"><span class="pre">values</span></code>: <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>. That is, a <code class="docutils literal notranslate"><span class="pre">Boolean</span></code> says something about whether something <em>is the case or not</em>. It’s easier to understand with some examples. First try the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function with a <code class="docutils literal notranslate"><span class="pre">Boolean</span></code> as an argument.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b1</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">b1</span><span class="p">)</span>
 </pre></div>
@@ -1828,27 +2180,27 @@ FILE
 </div>
 </div>
 </div>
-<p>Interestingly, <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> also have <code class="docutils literal notranslate"><span class="pre">numeric</span> <span class="pre">values</span></code>! <code class="docutils literal notranslate"><span class="pre">True</span></code> has a value of <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> has a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<p>Interestingly, <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> also have <code class="docutils literal notranslate"><span class="pre">numeric</span> <span class="pre">values</span></code>! <code class="docutils literal notranslate"><span class="pre">True</span></code> has an integer value of <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> has a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="o">+</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span> <span class="o">+</span> <span class="kc">False</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wrongs</span> <span class="o">=</span> <span class="kc">False</span> <span class="o">+</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">wrongs</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">wrongs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
 </pre></div>
 </div>
 </div>
@@ -1921,15 +2273,6 @@ FILE
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fellowship_n_humans</span> <span class="o">=</span> <span class="mf">2.0</span>
-<span class="n">fellowship_n_hobbits</span> <span class="o">=</span> <span class="s1">&#39;four&#39;</span>
-<span class="n">fellowship_n_elves</span> <span class="o">=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-3-2">
 <h5>Exercise 3.2<a class="headerlink" href="#exercise-3-2" title="Permalink to this headline">¶</a></h5>
@@ -1938,25 +2281,9 @@ FILE
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">-</span> <span class="pre">False</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">type(True)</span></code></p></li>
 </ol>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p></li>
-</ol>
-</div>
-<div class="section" id="exercise-3-3">
-<h5>Exercise 3.3<a class="headerlink" href="#exercise-3-3" title="Permalink to this headline">¶</a></h5>
-<p>Define two <code class="docutils literal notranslate"><span class="pre">variables</span></code>, <code class="docutils literal notranslate"><span class="pre">fellowship_n_dwarfs</span></code> with a <code class="docutils literal notranslate"><span class="pre">value</span></code> of one as a <code class="docutils literal notranslate"><span class="pre">string</span></code> and <code class="docutils literal notranslate"><span class="pre">fellowship_n_wizards</span></code> with a <code class="docutils literal notranslate"><span class="pre">value</span></code> of one as a <code class="docutils literal notranslate"><span class="pre">float</span></code>. Subsequently, change the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">fellowship_n_dwarfs</span></code> to <code class="docutils literal notranslate"><span class="pre">integer</span></code> and the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">fellowship_n_wizard</span></code> to <code class="docutils literal notranslate"><span class="pre">string</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fellowship_n_dwarfs</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="n">fellowship_n_wizards</span> <span class="o">=</span> <span class="s1">&#39;1.0&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="n">fellowship_n_dwarfs</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write your solution here</span>
 </pre></div>
 </div>
 </div>
@@ -1966,14 +2293,20 @@ FILE
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="exercise-3-3">
+<h5>Exercise 3.3<a class="headerlink" href="#exercise-3-3" title="Permalink to this headline">¶</a></h5>
+<p>Define two <code class="docutils literal notranslate"><span class="pre">variables</span></code>, <code class="docutils literal notranslate"><span class="pre">fellowship_n_dwarfs</span></code> with a <code class="docutils literal notranslate"><span class="pre">value</span></code> of one as a <code class="docutils literal notranslate"><span class="pre">string</span></code> and <code class="docutils literal notranslate"><span class="pre">fellowship_n_wizards</span></code> with a <code class="docutils literal notranslate"><span class="pre">value</span></code> of one as a <code class="docutils literal notranslate"><span class="pre">float</span></code>. Subsequently, change the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">fellowship_n_dwarfs</span></code> to <code class="docutils literal notranslate"><span class="pre">integer</span></code> and the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">fellowship_n_wizard</span></code> to <code class="docutils literal notranslate"><span class="pre">string</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="n">fellowship_n_wizards</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write your solution here</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1.0&#39;
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write your solution here</span>
 </pre></div>
 </div>
 </div>
@@ -2064,7 +2397,7 @@ FILE
 <div class="section" id="r">
 <h3>R<a class="headerlink" href="#r" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.r-project.org/">R</a> is dominant in traditional statistics and some fields of science</p>
+<li><p><a class="reference external" href="https://www.r-project.org/">R</a> is wide-spread in traditional statistics and some fields of science</p>
 <ul>
 <li><p>Has attracted many SAS, SPSS, and Stata users</p></li>
 </ul>
@@ -2101,11 +2434,13 @@ FILE
 </ul>
 </li>
 </ul>
-<center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/general_purpose_meme.png"></center>    </div>
+<center><img src="../static/general_purpose_meme.png"></center>    
+<center><img src="https://media.tenor.com/fMUOPRVdSzUAAAAd/python.gif" width="200" ></center> 
+<center><a href="https://media.tenor.com/fMUOPRVdSzUAAAAd/python.gif">via GIPHY</a></center></div>
 <div class="section" id="you-can-have-your-cake-and-eat-it">
 <h3>You can have your cake <em>and</em> eat it!<a class="headerlink" href="#you-can-have-your-cake-and-eat-it" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Many languages—particularly R—now interface seamlessly with Python</p></li>
+<li><p>Many languages—particularly R—now interface seamlessly with Python (<a class="reference external" href="https://rpy2.github.io/">r2py</a>, <a class="reference external" href="https://rforge.net/Rserve/">Rserve</a>, and <a class="reference external" href="https://pypi.python.org/pypi/pyRserve/">pyRserve</a>)</p></li>
 <li><p>You can work primarily in Python, fall back on R when you need it (or vice versa)</p></li>
 <li><p>The best of all possible worlds?</p></li>
 </ul>
@@ -2161,7 +2496,7 @@ FILE
 </div>
 <div class="section" id="homework-assignment-3">
 <h2>Homework assignment #3<a class="headerlink" href="#homework-assignment-3" title="Permalink to this headline">¶</a></h2>
-<p>Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it #################adapt link ############### <a class="reference external" href="https://www.dropbox.com/s/bafzg60rxcxwwzg/PFP_assignment_3_intro_python_1.ipynb?dl=1">here</a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun!</p>
+<p>Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it[here]. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun!</p>
 <p><strong>Deadline: 03/12/2021, 11:59 PM EST</strong></p>
 </div>
 </div>

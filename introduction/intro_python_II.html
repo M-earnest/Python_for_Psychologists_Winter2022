@@ -814,7 +814,7 @@ Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fi
 <h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Permalink to this headline">¶</a></h2>
 <br>
 <ul class="simple">
-<li><p>most of what you’ll see within this lecture was prepared by Ross Markello, Michael Notter and Peer Herholz and further adapted for this course by Peer Herholz</p></li>
+<li><p>most of what you’ll see within this lecture was prepared by Ross Markello, Michael Notter and Peer Herholz and further adapted for this course by Peer Herholz and Michael Ernst</p></li>
 <li><p>based on Tal Yarkoni’s <a class="reference external" href="https://neurohackademy.org/course/introduction-to-python-2/">“Introduction to Python” lecture at Neurohackademy 2019</a></p></li>
 <li><p>based on <a class="reference external" href="http://github.com/jrjohansson/scientific-python-lectures">IPython notebooks from J. R. Johansson</a></p></li>
 <li><p>based on <a class="reference external" href="http://www.stavros.io/tutorials/python/">http://www.stavros.io/tutorials/python/</a> &amp; <a class="reference external" href="http://www.swaroopch.com/notes/python">http://www.swaroopch.com/notes/python</a></p></li>
@@ -877,14 +877,11 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <ul>
 <li><p><a class="reference external" href="#Default-argument-and-keyword-arguments">Default argument and keyword arguments</a></p></li>
 <li><p><a class="reference external" href="#*args-and-*kwargs-parameters"><code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code> parameters</a></p></li>
-<li><p><a class="reference external" href="#Unnamed-functions:-lambda-function">Unnamed functions: <code class="docutils literal notranslate"><span class="pre">lambda</span></code> function</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="#Classes">Classes</a></p></li>
-<li><p><a class="reference external" href="#Modules">Modules</a></p></li>
-<li><p><a class="reference external" href="#Exceptions">Exceptions</a></p></li>
 </ul>
-<p>Here’s what we will focus on in the first block:</p>
+<p>Here’s what we will focus on in the second block:</p>
+<p>Recap</p>
 <ul class="simple">
 <li><p><a class="reference external" href="#Module">Module</a></p></li>
 <li><p><a class="reference external" href="#Help-and-Descriptions">Help and Descriptions</a></p></li>
@@ -895,6 +892,9 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p><a class="reference external" href="#Fundamental-types">Fundamental types</a></p></li>
 </ul>
 </li>
+</ul>
+<p>New stuff</p>
+<ul class="simple">
 <li><p><a class="reference external" href="#Operators-and-comparisons">Operators and comparisons</a></p>
 <ul>
 <li><p><a class="reference external" href="#Shortcut-math-operation-and-assignment">Shortcut math operation and assignment</a></p></li>
@@ -912,7 +912,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 <div class="section" id="recap-of-the-last-session">
 <h2>Recap of the last session<a class="headerlink" href="#recap-of-the-last-session" title="Permalink to this headline">¶</a></h2>
-<p>Before we dive into new endeavors, it might be important to briefly recap the things we’ve talked about so far. Specifically, we will do this to evaluate if everyone’s roughly on the same page. Thus, if some of the aspects within the recap are either new or fuzzy to you, please have a quick look at the respective part of the <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_I.html">last session</a> again and as usual: ask questions wherever something is not clear.</p>
+<p>Before we dive into new endeavors, it might be important to briefly recap the things we’ve talked about so far. Specifically, we will do this to evaluate if everyone’s roughly on the same page. Thus, if some of the aspects within the recap are either new or fuzzy to you, please have a quick look at the respective part of the <a class="reference external" href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_python_I.html">last session</a> again and as usual: ask questions wherever something is not clear.</p>
 </div>
 <div class="section" id="what-is-python">
 <h2>What is Python?<a class="headerlink" href="#what-is-python" title="Permalink to this headline">¶</a></h2>
@@ -933,13 +933,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>As this might be a bit hard to navigate, specifically for <code class="docutils literal notranslate"><span class="pre">finding</span></code>/<code class="docutils literal notranslate"><span class="pre">referencing</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code>. Thus, it might be a good idea to provide a respective <code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">name</span></code>. For example, could you show how you would provide the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> module the <code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">name</span></code> <code class="docutils literal notranslate"><span class="pre">pd</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -952,6 +945,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
+<span class="kn">from</span> <span class="nn">pingouin.nonparametric</span> <span class="kn">import</span> <span class="n">wilcoxon</span>
 </pre></div>
 </div>
 </div>
@@ -1000,25 +994,10 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_students</span> <span class="o">=</span> <span class="mi">21</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>Quickly after you realize that the value should actually be <code class="docutils literal notranslate"><span class="pre">20</span></code>. What options do you have to change the <code class="docutils literal notranslate"><span class="pre">value</span></code> of this <code class="docutils literal notranslate"><span class="pre">variable</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_students</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">n_students</span> <span class="o">=</span> <span class="n">n_students</span> <span class="o">-</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
@@ -1031,18 +1010,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">n_students</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
-</pre></div>
-</div>
-</div>
-</div>
 <p>Is there a way to change the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">n_students</span></code> to something else, e.g. <code class="docutils literal notranslate"><span class="pre">float</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1051,49 +1018,10 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">n_students</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19.0
-</pre></div>
-</div>
-</div>
-</div>
 <p>Along the way you want to create another <code class="docutils literal notranslate"><span class="pre">variable</span></code>, this time called <code class="docutils literal notranslate"><span class="pre">acquisition_time</span></code> and the <code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">December</span></code>. How would we do that and what <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> would that be?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pingouin.nonparametric</span> <span class="kn">import</span> <span class="n">wilcoxon</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">acquisition_time</span> <span class="o">=</span> <span class="s2">&quot;December&quot;</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">acquisition_time</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
 </pre></div>
 </div>
 </div>
@@ -1106,26 +1034,9 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outcome_anova</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">outcome_ancova</span> <span class="o">=</span> <span class="kc">False</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>Alright, thanks for taking the time to go through this <code class="docutils literal notranslate"><span class="pre">recap</span></code>. Again: if you could solve/answer all questions, you should have the information/knowledge needed for this session.</p>
-<p>Here’s what we will focus on in the first block:</p>
+<p>Here’s agagin what we’ll focus on in this block:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="#Module">Module</a></p></li>
-<li><p><a class="reference external" href="#Help-and-Descriptions">Help and Descriptions</a></p></li>
-<li><p><a class="reference external" href="#Variables-and-types">Variables and types</a></p>
-<ul>
-<li><p><a class="reference external" href="#Symbol-names">Symbol names</a></p></li>
-<li><p><a class="reference external" href="#Assignment">Assignment</a></p></li>
-<li><p><a class="reference external" href="#Fundamental-types">Fundamental types</a></p></li>
-</ul>
-</li>
 <li><p><a class="reference external" href="#Operators-and-comparisons">Operators and comparisons</a></p>
 <ul>
 <li><p><a class="reference external" href="#Shortcut-math-operation-and-assignment">Shortcut math operation and assignment</a></p></li>
@@ -1168,17 +1079,19 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<p>In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2.7</span></code>, what kind of <code class="docutils literal notranslate"><span class="pre">division</span></code> (<code class="docutils literal notranslate"><span class="pre">/</span></code>) will be executed, <em>depends</em> on the type of the numbers involved. If all numbers are <code class="docutils literal notranslate"><span class="pre">integers</span></code>, the <code class="docutils literal notranslate"><span class="pre">division</span></code> will be an <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>, otherwise, it will be a <code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">division</span></code>. In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> this has been changed and fractions aren’t lost when <code class="docutils literal notranslate"><span class="pre">dividing</span></code> <code class="docutils literal notranslate"><span class="pre">integers</span></code> (for <code class="docutils literal notranslate"><span class="pre">integer</span></code> <code class="docutils literal notranslate"><span class="pre">division</span></code> you can use another operator, <code class="docutils literal notranslate"><span class="pre">//</span></code>). In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> the following two <code class="docutils literal notranslate"><span class="pre">operations</span></code> will give the same result (in <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2</span></code> the first one will be treated as an <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>). It’s thus important to remember that the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of  <code class="docutils literal notranslate"><span class="pre">division</span> <span class="pre">outcomes</span></code> will always be <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2.7</span></code> (aka the legacy version), what kind of <code class="docutils literal notranslate"><span class="pre">division</span></code> (<code class="docutils literal notranslate"><span class="pre">/</span></code>) is executed, <em>depends</em> on the type of the numbers involved. If all numbers are <code class="docutils literal notranslate"><span class="pre">integers</span></code>, the <code class="docutils literal notranslate"><span class="pre">division</span></code> will be an <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>, otherwise, it will be a <code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">division</span></code>. In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> this has been changed and fractions aren’t lost when <code class="docutils literal notranslate"><span class="pre">dividing</span></code> <code class="docutils literal notranslate"><span class="pre">integers</span></code> (for <code class="docutils literal notranslate"><span class="pre">integer</span></code> <code class="docutils literal notranslate"><span class="pre">division</span></code> you can use another operator, <code class="docutils literal notranslate"><span class="pre">//</span></code>). In <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> the following two <code class="docutils literal notranslate"><span class="pre">operations</span></code> will give the same result (in <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2</span></code> the first one will be treated as an <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>). It’s thus important to remember that the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> of  <code class="docutils literal notranslate"><span class="pre">division</span> <span class="pre">outcomes</span></code> will always be <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5
 0.5
+0
 </pre></div>
 </div>
 </div>
@@ -1334,10 +1247,42 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<p>While the “classic” <code class="docutils literal notranslate"><span class="pre">operators</span></code> appear to be rather simple and the “boolean” <code class="docutils literal notranslate"><span class="pre">operators</span></code> rather abstract, a sufficient understanding of both is very important to efficiently utilize the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language. However, don’t worry: we’ll use them throughout the entire course going forward to gain further experience.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outcome_anova</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">outcome_ancova</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">outcome_anova</span> <span class="ow">and</span> <span class="ow">or</span> <span class="n">outcome_ancova</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+    <span class="n">outcome_anova</span> <span class="ow">and</span> <span class="ow">or</span> <span class="n">outcome_ancova</span>
+                      <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<p>While the “classic” <code class="docutils literal notranslate"><span class="pre">operators</span></code> appear to be rather simple and the “boolean” <code class="docutils literal notranslate"><span class="pre">operators</span></code> rather abstract, a sufficient understanding of both is very important to efficiently utilize the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language. However, don’t worry: going forward we’ll have plenty of opportunities to get familiarized with them.</p>
 <p>After spending a look at <code class="docutils literal notranslate"><span class="pre">operators</span></code>, it’s time to check out <code class="docutils literal notranslate"><span class="pre">comparisons</span></code> in more detail. Again, most of them might seem familiar and work as you would expect. Here’s the list again:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Comparisons</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> (greater or equal), <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> (less or equal), <code class="docutils literal notranslate"><span class="pre">==</span></code> (equal), <code class="docutils literal notranslate"><span class="pre">!=</span></code> (not equal) and <code class="docutils literal notranslate"><span class="pre">is</span></code> (identical)</p></li>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Comparisons</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  `&gt;`, `&lt;`, `&gt;=` (greater or equal), `&lt;=` (less or equal), `==` (equal),
+  `!=` (not equal) and `is` (identical)
+</pre></div>
+</div>
+</li>
 </ul>
 <p>The first four are the “classics” and something you might remember from your <code class="docutils literal notranslate"><span class="pre">math</span> <span class="pre">classes</span></code> in high school. Nevertheless, it’s worth to check how they exactly work in <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p>
 <p>If we compare <code class="docutils literal notranslate"><span class="pre">numerical</span> <span class="pre">values</span></code>, we obtain <code class="docutils literal notranslate"><span class="pre">booleans</span></code> that indicate if the <code class="docutils literal notranslate"><span class="pre">comparisons</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>. Lets start with the “classics”.</p>
@@ -1517,6 +1462,18 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;ugly&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">&quot;Wombats and capybaras&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
 <p>Before we finish the <code class="docutils literal notranslate"><span class="pre">operators</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">comparison</span></code> part, it’s important to outline one important aspects that you’ve actually already seen here and there but was never mentioned/explained in detail: <code class="docutils literal notranslate"><span class="pre">operators</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">comparisons</span></code> work directly on <code class="docutils literal notranslate"><span class="pre">variables</span></code>, that is their <code class="docutils literal notranslate"><span class="pre">values</span></code>. For example, if we want to change the number of a <code class="docutils literal notranslate"><span class="pre">variable</span></code> called <code class="docutils literal notranslate"><span class="pre">n_lectures</span></code> from <code class="docutils literal notranslate"><span class="pre">5</span></code> to <code class="docutils literal notranslate"><span class="pre">6</span></code>, we can simply run:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1547,6 +1504,20 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<p>Be careful though, as <code class="docutils literal notranslate"><span class="pre">+=</span></code> means to<code class="docutils literal notranslate"><span class="pre">add</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">value</span> <span class="pre">stored</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">variable</span></code>, while <code class="docutils literal notranslate"><span class="pre">=+</span></code> is understood as assigning a positive value to a variable</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_lectures</span> <span class="o">=+</span> <span class="mi">1</span>
+<span class="n">n_lectures</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
 <p>This works with other <code class="docutils literal notranslate"><span class="pre">types</span></code> and <code class="docutils literal notranslate"><span class="pre">operators</span></code>/<code class="docutils literal notranslate"><span class="pre">comparisons</span></code> too, for example <code class="docutils literal notranslate"><span class="pre">strings</span></code> and <code class="docutils literal notranslate"><span class="pre">==</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1570,19 +1541,14 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<p>Spoiler: there are of course many existing <code class="docutils literal notranslate"><span class="pre">functions</span></code> for all sorts of equations and statistics so you don’t have to write it yourself every time. For example, we could also compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> using <code class="docutils literal notranslate"><span class="pre">numpy</span></code>’s <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mf">1.2</span> <span class="o">+</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">+</span> <span class="mf">1.9</span> <span class="o">+</span> <span class="mf">1.3</span> <span class="o">+</span> <span class="mf">1.2</span> <span class="o">+</span> <span class="mf">1.7</span><span class="p">)</span><span class="o">/</span><span class="mi">7</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Spoiler: there are of course many existing <code class="docutils literal notranslate"><span class="pre">functions</span></code> for all sorts of equations and statistics so you don’t have to write it yourself every time. For example, we could also compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> using <code class="docutils literal notranslate"><span class="pre">numpy</span></code>’s <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1604,19 +1570,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reference</span> <span class="o">=</span> <span class="s2">&quot;In contrast to the majority of the prior studies the mean reaction time of the here described analyses was `1.2`.&quot;</span>
-<span class="s2">&quot;mean reaction time&quot;</span> <span class="ow">in</span> <span class="n">reference</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1647,23 +1600,9 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 <p><strong>Fantastic work folks, really really great! Time for a quick party!</strong></p>
 </br>
-<center><img src="https://media4.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif?cid=ecf05e47vl8lju7wj80ak9p5azuq5imkcbv64d2jple35roj&rid=giphy.gif&ct=g" width="300"></center>
-<center><a href="https://giphy.com/gifs/sesamestreet-sesame-street-50th-anniversary-kyLYXonQYYfwYDIeZl">via GIPHY</a></center><p>Having already checked out <code class="docutils literal notranslate"><span class="pre">modules</span></code>, <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">&amp;</span> <span class="pre">descriptions</span></code>, <code class="docutils literal notranslate"><span class="pre">variables</span> <span class="pre">and</span> <span class="pre">data</span> <span class="pre">types</span></code>, <code class="docutils literal notranslate"><span class="pre">operators</span> <span class="pre">and</span> <span class="pre">comparisons</span></code>, we will continue with the final section of the first block of our <code class="docutils literal notranslate"><span class="pre">python</span></code> introduction. More precisely, we will advance to new, more complex <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> and <code class="docutils literal notranslate"><span class="pre">structures</span></code>: <code class="docutils literal notranslate"><span class="pre">strings</span></code>, <code class="docutils literal notranslate"><span class="pre">lists</span></code>, <code class="docutils literal notranslate"><span class="pre">tuples</span></code> and <code class="docutils literal notranslate"><span class="pre">dictionaries</span></code>.</p>
+<center><img src="https://media4.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif?cid=ecf05e47yjfvryawxucfpurnnl2ylpxmni286ndguga1uob2&rid=giphy.gif&ct=g" width="300"></center>
+<center><a href="https://media4.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif?cid=ecf05e47yjfvryawxucfpurnnl2ylpxmni286ndguga1uob2&rid=giphy.gif&ct=g">via GIPHY</a></center><p>Having already checked out <code class="docutils literal notranslate"><span class="pre">modules</span></code>, <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">&amp;</span> <span class="pre">descriptions</span></code>, <code class="docutils literal notranslate"><span class="pre">variables</span> <span class="pre">and</span> <span class="pre">data</span> <span class="pre">types</span></code>, <code class="docutils literal notranslate"><span class="pre">operators</span> <span class="pre">and</span> <span class="pre">comparisons</span></code>, we will continue with the final section of the first block of our <code class="docutils literal notranslate"><span class="pre">python</span></code> introduction. More precisely, we will advance to new, more complex <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> and <code class="docutils literal notranslate"><span class="pre">structures</span></code>: <code class="docutils literal notranslate"><span class="pre">strings</span></code>, <code class="docutils literal notranslate"><span class="pre">lists</span></code>, <code class="docutils literal notranslate"><span class="pre">tuples</span></code> and <code class="docutils literal notranslate"><span class="pre">dictionaries</span></code>.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="#Module">Module</a></p></li>
-<li><p><a class="reference external" href="#Help-and-Descriptions">Help and Descriptions</a></p></li>
-<li><p><a class="reference external" href="#Variables-and-types">Variables and types</a></p>
-<ul>
-<li><p><a class="reference external" href="#Symbol-names">Symbol names</a></p></li>
-<li><p><a class="reference external" href="#Assignment">Assignment</a></p></li>
-<li><p><a class="reference external" href="#Fundamental-types">Fundamental types</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="#Operators-and-comparisons">Operators and comparisons</a></p>
-<ul>
-<li><p><a class="reference external" href="#Shortcut-math-operation-and-assignment">Shortcut math operation and assignment</a></p></li>
-</ul>
-</li>
 <li><p><a class="reference external" href="#Strings,-List-and-dictionaries">Strings, List and dictionaries</a></p>
 <ul>
 <li><p><a class="reference external" href="#Strings">Strings</a></p></li>
@@ -1685,13 +1624,13 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>Wait, what? Why are we talking about strings again? Well, actually, <code class="docutils literal notranslate"><span class="pre">strings</span></code> are more than a “just” fundamental type. There are quite a few things you can do with <code class="docutils literal notranslate"><span class="pre">strings</span></code> that we haven’t talked about yet. However, first things first: <code class="docutils literal notranslate"><span class="pre">strings</span></code> contain text:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">statement</span> <span class="o">=</span> <span class="s2">&quot;The wombat and the capybara are equally cute. However, while the wombat lives in Australia, the capybara can be found in south america.&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">statement</span> <span class="o">=</span> <span class="s2">&quot;The wombat and the capybara are equally cute. However, while the wombat lives in Australia, the capybara can be found in South America.&quot;</span>
 <span class="n">statement</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally cute. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally cute. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -2009,6 +1948,55 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The results were significant at </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">0.049</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The results were significant at 0.049
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are other ways to be more explicit when formatting strings and we cann even use multiple inputs for one string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{}</span><span class="s2"> is my name , and this is </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name , and this is Samwise Gamgee.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{0}</span><span class="s2"> is my name , and this is </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name , and this is Samwise Gamgee.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{fname}</span><span class="s2"> is my name , and this is </span><span class="si">{sname}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fname</span> <span class="o">=</span> <span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="n">sname</span> <span class="o">=</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name , and this is Samwise Gamgee.
+</pre></div>
+</div>
+</div>
+</div>
 <p>If you would like to include <code class="docutils literal notranslate"><span class="pre">line-breaks</span></code> and/or <code class="docutils literal notranslate"><span class="pre">tabs</span></code> in your <code class="docutils literal notranslate"><span class="pre">strings</span></code>, you can use <code class="docutils literal notranslate"><span class="pre">\n</span></code> and <code class="docutils literal notranslate"><span class="pre">\t</span></code> respectively:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2056,13 +2044,47 @@ All white space i.e. spaces and tabs, within the quotes, are preserved as-is.</p
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;I&#39;m the first line. Check how line-breaks are shown in the second line.</span>
 <span class="sd">Do you see the line-break?</span>
 <span class="sd">&quot;What&#39;s going on here?,&quot; you might ask.</span>
-<span class="sd">Well, &quot;that&#39;s just how tiple quotes work.&quot;</span>
+<span class="sd">Well, &quot;that&#39;s just how triple quotes work.&quot;</span>
 <span class="sd">&#39;&#39;&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;I\&#39;m the first line. Check how line-breaks are shown in the second line.\nDo you see the line-break?\n&quot;What\&#39;s going on here?,&quot; you might ask.\nWell, &quot;that\&#39;s just how tiple quotes work.&quot;\n&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Frodo: We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.</span>
+<span class="sd">Faramir: Your bodyguard?</span>
+<span class="sd">Sam: His gardener. </span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;\nFrodo: We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.\nFaramir: Your bodyguard?\nSam: His gardener. \n&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Frodo: We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.</span>
+<span class="s1">Faramir: Your bodyguard?</span>
+<span class="s1">Sam: His gardener. </span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Frodo: We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
+Faramir: Your bodyguard?
+Sam: His gardener. 
 </pre></div>
 </div>
 </div>
@@ -2080,46 +2102,14 @@ All white space i.e. spaces and tabs, within the quotes, are preserved as-is.</p
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">info_wombat</span> <span class="o">=</span> <span class="s2">&quot;The wombat is quadrupedal marsupial and can weigh up to 35 kg.&quot;</span>
-<span class="n">info_capybara</span> <span class="o">=</span> <span class="s2">&quot;The capybara is the largest rodent on earth. Its relatives include the guinea pig and the chinchilla.&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">info_wombat</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">info_capybara</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;str&#39;&gt;
-&lt;class &#39;str&#39;&gt;
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-5-2">
 <h5>Exercise 5.2<a class="headerlink" href="#exercise-5-2" title="Permalink to this headline">¶</a></h5>
-<p>Compute the <code class="docutils literal notranslate"><span class="pre">length</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> within the <code class="docutils literal notranslate"><span class="pre">strings</span></code> “The wombat information has [insert length here] characters.” and “The capybara information has [insert length here] characters.” After that, please compare the length of the <code class="docutils literal notranslate"><span class="pre">strings</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> if they are equal.</p>
+<p>Compute the <code class="docutils literal notranslate"><span class="pre">length</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> within the <code class="docutils literal notranslate"><span class="pre">strings</span></code> “The wombat information has [insert length here] characters.” and “The capybara information has [insert length here] characters.”
+After that, please compare the length of the <code class="docutils literal notranslate"><span class="pre">strings</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> if they are equal.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The wombat information has </span><span class="si">%s</span><span class="s2"> characters.&quot;</span> <span class="o">%</span><span class="k">len</span>(info_wombat))
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The capybara information has </span><span class="si">%s</span><span class="s2"> characters.&quot;</span> <span class="o">%</span><span class="k">len</span>(info_capybara))
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The information has an equal amount of characters: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="k">str</span>(len(info_wombat)==len(info_capybara)))
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The wombat information has 62 characters.
-The capybara information has 101 characters.
-The information has an equal amount of characters: False
 </pre></div>
 </div>
 </div>
@@ -2128,33 +2118,15 @@ The information has an equal amount of characters: False
 <div class="section" id="exercise-5-3">
 <h5>Exercise 5.3<a class="headerlink" href="#exercise-5-3" title="Permalink to this headline">¶</a></h5>
 <p>Get the following <code class="docutils literal notranslate"><span class="pre">indices</span></code> from the <code class="docutils literal notranslate"><span class="pre">info_wombat</span></code> and <code class="docutils literal notranslate"><span class="pre">info_capybara</span></code> respectively: <code class="docutils literal notranslate"><span class="pre">4</span></code>-<code class="docutils literal notranslate"><span class="pre">10</span></code> and <code class="docutils literal notranslate"><span class="pre">4</span></code>-<code class="docutils literal notranslate"><span class="pre">12</span></code>. Replace the resulting word in <code class="docutils literal notranslate"><span class="pre">info_wombat</span></code> with <code class="docutils literal notranslate"><span class="pre">capybara</span></code> and the resulting word in <code class="docutils literal notranslate"><span class="pre">info_capybara</span></code> with <code class="docutils literal notranslate"><span class="pre">wombat</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">info_wombat</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">info_capybara</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">12</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">info_wombat</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;wombat&#39;</span><span class="p">,</span> <span class="s1">&#39;capybara&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">info_capybara</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;capybara&#39;</span><span class="p">,</span> <span class="s1">&#39;wombat&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wombat
-capybara
-The capybara is quadrupedal marsupial and can weigh up to 35 kg.
-The wombat is the largest rodent on earth. Its relatives include the guinea pig and the chinchilla.
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div class="section" id="list">
 <h3>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h3>
-<p>Next up: <code class="docutils literal notranslate"><span class="pre">list</span></code>s. In general, <code class="docutils literal notranslate"><span class="pre">list</span></code>s are very similar to <code class="docutils literal notranslate"><span class="pre">strings</span></code>. One crucial difference is that <code class="docutils literal notranslate"><span class="pre">list</span></code> elements (things in the <code class="docutils literal notranslate"><span class="pre">list</span></code>) can be of any <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">integers</span></code>, <code class="docutils literal notranslate"><span class="pre">floats</span></code>, <code class="docutils literal notranslate"><span class="pre">strings</span></code>, etc. . Additionally, <code class="docutils literal notranslate"><span class="pre">types</span></code> can be freely mixed within a <code class="docutils literal notranslate"><span class="pre">list</span></code>, that is, each <code class="docutils literal notranslate"><span class="pre">element</span></code> of a list can be of a different <code class="docutils literal notranslate"><span class="pre">type</span></code>. <code class="docutils literal notranslate"><span class="pre">List</span></code>s are among the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> and <code class="docutils literal notranslate"><span class="pre">structures</span></code> you’ll work with almost every time you do something in <code class="docutils literal notranslate"><span class="pre">python</span></code>. They are super handy and comparably to <code class="docutils literal notranslate"><span class="pre">strings</span></code>, have a lot of “in-built” functionality.</p>
+<p>Next up: <code class="docutils literal notranslate"><span class="pre">list</span></code>s. In general, <code class="docutils literal notranslate"><span class="pre">list</span></code>s are very similar to <code class="docutils literal notranslate"><span class="pre">strings</span></code>. One crucial difference is that <code class="docutils literal notranslate"><span class="pre">list</span></code> elements (things in the <code class="docutils literal notranslate"><span class="pre">list</span></code>) can be of any <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">integers</span></code>, <code class="docutils literal notranslate"><span class="pre">floats</span></code>, <code class="docutils literal notranslate"><span class="pre">strings</span></code>, etc..</p>
+<p>Additionally, <code class="docutils literal notranslate"><span class="pre">types</span></code> can be freely mixed within a <code class="docutils literal notranslate"><span class="pre">list</span></code>, that is, each <code class="docutils literal notranslate"><span class="pre">element</span></code> of a list can be of a different <code class="docutils literal notranslate"><span class="pre">type</span></code>. <code class="docutils literal notranslate"><span class="pre">List</span></code>s are among the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> and <code class="docutils literal notranslate"><span class="pre">structures</span></code> you’ll work with almost every time you do something in <code class="docutils literal notranslate"><span class="pre">python</span></code>. They are super handy and comparably to <code class="docutils literal notranslate"><span class="pre">strings</span></code>, have a lot of “in-built” functionality.</p>
 </br>
-<center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/python_data_types_2.png"></center><p>The basic <code class="docutils literal notranslate"><span class="pre">syntax</span></code> for creating <code class="docutils literal notranslate"><span class="pre">list</span></code>s in <code class="docutils literal notranslate"><span class="pre">python</span></code> is <code class="docutils literal notranslate"><span class="pre">[...]</span></code>:</p>
+<center><img src="../static/python_data_types_2.png"></center><p>The basic <code class="docutils literal notranslate"><span class="pre">syntax</span></code> for creating <code class="docutils literal notranslate"><span class="pre">list</span></code>s in <code class="docutils literal notranslate"><span class="pre">python</span></code> is <code class="docutils literal notranslate"><span class="pre">[...]</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
@@ -2214,10 +2186,10 @@ The wombat is the largest rodent on earth. Its relatives include the guinea pig 
 </div>
 <center><img src="https://media1.giphy.com/media/BXOEmFSzNkOObZhIA3/giphy.gif?cid=ecf05e47iuhbrrici7z2tn33dxeu0xxi96i19uk7qphiojb3&rid=giphy.gif&ct=g" width="300"></center>
 <center><a href="https://giphy.com/gifs/theoffice-the-office-tv-secret-santa-BXOEmFSzNkOObZhIA3">via GIPHY</a></center>
-<p><strong>HEADS UP EVERYONE: INDEXING IN <code class="docutils literal notranslate"><span class="pre">PYTHON</span></code> STARTS AT 0</strong></p>
+<p><strong>HEADS UP EVERYONE: INDEXING IN <code class="docutils literal notranslate"><span class="pre">PYTHON</span></code> STILL STARTS AT 0</strong></p>
 </br>
 <center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/index_list.png"></center>
-<p>This means that the <code class="docutils literal notranslate"><span class="pre">first</span> <span class="pre">index</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, the <code class="docutils literal notranslate"><span class="pre">second</span> <span class="pre">index</span></code> <code class="docutils literal notranslate"><span class="pre">1</span></code>, the <code class="docutils literal notranslate"><span class="pre">third</span> <span class="pre">index</span></code> 2, etc. . This holds true independent of the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> and is one of the major confusions when folks start programming in <code class="docutils literal notranslate"><span class="pre">python</span></code>, so always watch out!</p>
+<p>This means that the <code class="docutils literal notranslate"><span class="pre">first</span> <span class="pre">index</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, the <code class="docutils literal notranslate"><span class="pre">second</span> <span class="pre">index</span></code> <code class="docutils literal notranslate"><span class="pre">1</span></code>, the <code class="docutils literal notranslate"><span class="pre">third</span> <span class="pre">index</span></code> 2, etc. . This holds true independent of the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code>.</p>
 <p>Thus, to get the first index of our <code class="docutils literal notranslate"><span class="pre">reaction_times</span></code>, we have to do the following:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2307,30 +2279,27 @@ the second index of our nested_list is a list we can index again via nested_list
 </div>
 </div>
 <p>Lets have a look at another <code class="docutils literal notranslate"><span class="pre">list</span></code>. Assuming you obtain data describing the favorite <code class="docutils literal notranslate"><span class="pre">movies</span></code> and <code class="docutils literal notranslate"><span class="pre">snacks</span></code> of a sample population, we can put the respective responses in <code class="docutils literal notranslate"><span class="pre">list</span></code>s for easy handling:</p>
+<p><a class="reference external" href="https://media.tenor.com/_tHaF45EuT8AAAAC/live.gif">https://media.tenor.com/_tHaF45EuT8AAAAC/live.gif</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movies</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;The_Intouchables&#39;</span><span class="p">,</span> <span class="s1">&#39;James Bond&#39;</span><span class="p">,</span> <span class="s1">&#39;Forrest Gump&#39;</span><span class="p">,</span> <span class="s1">&#39;Retired Extremely Dangerous&#39;</span><span class="p">,</span> <span class="s1">&#39;The Imitation Game&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;The Philosophers&#39;</span><span class="p">,</span> <span class="s1">&#39;Call Me by Your Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Shutter Island&#39;</span><span class="p">,</span> <span class="s1">&#39;Love actually&#39;</span><span class="p">,</span> <span class="s1">&#39;The Great Gatsby&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;Interstellar&#39;</span><span class="p">,</span> <span class="s1">&#39;Inception&#39;</span><span class="p">,</span> <span class="s1">&#39;Lord of the Rings - The Two Towers&#39;</span><span class="p">,</span> <span class="s1">&#39;Fight Club&#39;</span><span class="p">,</span> <span class="s1">&#39;Shutter Island&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;Harry Potter&#39;</span><span class="p">,</span> <span class="s1">&#39;Harry Potter and the MatLab-Prince&#39;</span><span class="p">,</span> <span class="s1">&#39;Shindlers List&#39;</span><span class="p">,</span> <span class="s1">&#39;Inception&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># everyone name a band/artist</span>
+<span class="n">artists</span> <span class="o">=</span> <span class="p">[]</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>BTW: thanks so much for these, I really enjoyed going through the <code class="docutils literal notranslate"><span class="pre">notebooks</span></code>. However, <code class="docutils literal notranslate"><span class="pre">Harry</span> <span class="pre">Potter</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">MatLab-Prince</span></code>….that one really got me. I mean there was even a short summary of the story…</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snacks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pancakes&#39;</span><span class="p">,</span> <span class="s1">&#39;Banana&#39;</span><span class="p">,</span> <span class="s1">&#39;dominoes&#39;</span><span class="p">,</span> <span class="s1">&#39;carrots&#39;</span><span class="p">,</span> <span class="s1">&#39;hummus&#39;</span><span class="p">,</span> <span class="s1">&#39;chocolate&#39;</span><span class="p">,</span> <span class="s1">&#39;chocolate&#39;</span><span class="p">,</span> <span class="s1">&#39;Pringles&#39;</span><span class="p">,</span> <span class="s1">&#39;snickers&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;chocolate&#39;</span><span class="p">,</span><span class="s1">&#39;Kinder bueno&#39;</span><span class="p">,</span> <span class="s1">&#39;sushi&#39;</span><span class="p">,</span>  <span class="s1">&#39;mint chocolate&#39;</span><span class="p">,</span> <span class="s1">&#39;fruit&#39;</span><span class="p">,</span> <span class="s1">&#39;dried mango&#39;</span><span class="p">,</span> <span class="s1">&#39;dark chocolate&#39;</span><span class="p">,</span> 
-          <span class="s1">&#39;too complicated&#39;</span><span class="p">,</span> <span class="s1">&#39;snickers&#39;</span><span class="p">,</span> <span class="s1">&#39;Rocher&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># everone 2nd name your favourite snack</span>
+<span class="n">snacks</span> <span class="o">=</span> <span class="p">[]</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>A smaller subsample also provided their favorite animal. (If you also provided one but it doesn’t show up it means that you most likely used the “add attachment” option to add images or a way to refers to local files but doesn’t embed them directly in the <code class="docutils literal notranslate"><span class="pre">notebook</span></code>. Unfortunately, things can be a bit strange there…so don’t worry, we address this in subsequent sessions.)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;lizard&#39;</span><span class="p">,</span> <span class="s1">&#39;coral&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;barred owl&#39;</span><span class="p">,</span> <span class="s1">&#39;groundhog&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># everyone 3rd name your favourite pet</span>
+<span class="n">animals</span> <span class="o">=</span> <span class="p">[]</span>
 </pre></div>
 </div>
 </div>
@@ -2338,7 +2307,7 @@ the second index of our nested_list is a list we can index again via nested_list
 <p>So lets check what we can do with these lists. At first, here they are again:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The favorite movies were: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">movies</span>)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The favorite artists were: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">artists</span>)
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The favorite snacks were: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">snacks</span>)
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -2358,17 +2327,22 @@ The favorite animals were: [&#39;cat&#39;, &#39;lizard&#39;, &#39;coral&#39;, &#
 </div>
 </div>
 </div>
-<p>Initially we might want to <code class="docutils literal notranslate"><span class="pre">count</span></code> how many responses there were. We can achieve this via our old friend the <code class="docutils literal notranslate"><span class="pre">len</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>. If we want to also check if we got responses from all 19 participants of our sample population, we can directly use <code class="docutils literal notranslate"><span class="pre">comparisons</span></code>.</p>
+<p>Initially we might want to <code class="docutils literal notranslate"><span class="pre">count</span></code> how many responses there were. We can achieve this via our old friend the <code class="docutils literal notranslate"><span class="pre">len</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>. If we want to also check if we got responses from all 17 participants of our sample population, we can directly use <code class="docutils literal notranslate"><span class="pre">comparisons</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding movies there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(movies))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(movies)==19))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding movies there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(artists))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(artists)==17))
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Regarding movies there were 19 responses
-We got responses from all participants: True
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">49</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding movies there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(movies))
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(movies)==17))
+
+<span class="ne">NameError</span>: name &#39;movies&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -2377,7 +2351,7 @@ We got responses from all participants: True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding snacks there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(snacks))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(snacks)==19))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(snacks)==17))
 </pre></div>
 </div>
 </div>
@@ -2391,7 +2365,7 @@ We got responses from all participants: True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding animals there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(animals))
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(animals)==19))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(animals)==17))
 </pre></div>
 </div>
 </div>
@@ -2402,10 +2376,11 @@ We got responses from all participants: False
 </div>
 </div>
 </div>
-<p>Another thing we might want to check is the number of <code class="docutils literal notranslate"><span class="pre">unique</span></code> responses, that is if some <code class="docutils literal notranslate"><span class="pre">values</span></code> in our <code class="docutils literal notranslate"><span class="pre">list</span></code> appear multiple times and we might also want to get these <code class="docutils literal notranslate"><span class="pre">values</span></code>.  In <code class="docutils literal notranslate"><span class="pre">python</span></code> we have various ways to do this, most often you’ll see (and most likely use) <code class="docutils literal notranslate"><span class="pre">set</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy</span></code>’s <code class="docutils literal notranslate"><span class="pre">unique</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code>. While the first is another example of in-built <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">functions</span></code> that don’t need to be <code class="docutils literal notranslate"><span class="pre">imported</span></code>, the second is a <code class="docutils literal notranslate"><span class="pre">function</span></code> of the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> <code class="docutils literal notranslate"><span class="pre">module</span></code>. They however can achieve the same goal, that is getting us the number of <code class="docutils literal notranslate"><span class="pre">unique</span></code> <code class="docutils literal notranslate"><span class="pre">values</span></code>.</p>
+<p>Another thing we might want to check is the number of <code class="docutils literal notranslate"><span class="pre">unique</span></code> responses, that is if some <code class="docutils literal notranslate"><span class="pre">values</span></code> in our <code class="docutils literal notranslate"><span class="pre">list</span></code> appear multiple times and we might also want to get these <code class="docutils literal notranslate"><span class="pre">values</span></code>.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">python</span></code> we have various ways to do this, most often you’ll see (and most likely use) <code class="docutils literal notranslate"><span class="pre">set</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy</span></code>’s <code class="docutils literal notranslate"><span class="pre">unique</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code>. While the first is another example of in-built <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">functions</span></code> that don’t need to be <code class="docutils literal notranslate"><span class="pre">imported</span></code>, the second is a <code class="docutils literal notranslate"><span class="pre">function</span></code> of the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> <code class="docutils literal notranslate"><span class="pre">module</span></code>. They however can achieve the same goal, that is getting us the number of <code class="docutils literal notranslate"><span class="pre">unique</span></code> <code class="docutils literal notranslate"><span class="pre">values</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">%s</span><span class="s1"> unique responses regarding movies&#39;</span> <span class="o">%</span><span class="k">len</span>(set(movies)))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">%s</span><span class="s1"> unique responses regarding artists&#39;</span> <span class="o">%</span><span class="k">len</span>(set(artists)))
 </pre></div>
 </div>
 </div>
@@ -2418,7 +2393,7 @@ We got responses from all participants: False
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">%s</span><span class="s1"> unique responses regarding movies&#39;</span> <span class="o">%</span><span class="k">len</span>(np.unique(movies)))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">%s</span><span class="s1"> unique responses regarding artists&#39;</span> <span class="o">%</span><span class="k">len</span>(np.unique(artists)))
 </pre></div>
 </div>
 </div>
@@ -2432,7 +2407,7 @@ We got responses from all participants: False
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The unique responses regarding movies were:  </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">np</span>.unique(movies))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The unique responses regarding artists were:  </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">np</span>.unique(artists))
 </pre></div>
 </div>
 </div>
@@ -2480,12 +2455,13 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 <div class="section" id="in-built-functions">
 <h4>In-built functions<a class="headerlink" href="#in-built-functions" title="Permalink to this headline">¶</a></h4>
-<p>As indicated before, <code class="docutils literal notranslate"><span class="pre">list</span></code>s have a great set of in-built functions that allow to perform various <code class="docutils literal notranslate"><span class="pre">operations</span></code>/<code class="docutils literal notranslate"><span class="pre">transformations</span></code> on them: <code class="docutils literal notranslate"><span class="pre">sort</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">insert</span></code> and <code class="docutils literal notranslate"><span class="pre">remove</span></code>. Please note, as these <code class="docutils literal notranslate"><span class="pre">function</span></code>s are part of the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> “<code class="docutils literal notranslate"><span class="pre">list</span></code>”, you don’t prepend (<code class="docutils literal notranslate"><span class="pre">sort(list)</span></code>) but append them: <code class="docutils literal notranslate"><span class="pre">list.sort()</span></code>, <code class="docutils literal notranslate"><span class="pre">list.append()</span></code>, <code class="docutils literal notranslate"><span class="pre">list.insert()</span></code> and <code class="docutils literal notranslate"><span class="pre">list.remove()</span></code>.</p>
+<p>As indicated before, <code class="docutils literal notranslate"><span class="pre">list</span></code>s have a great set of in-built functions that allow to perform various <code class="docutils literal notranslate"><span class="pre">operations</span></code>/<code class="docutils literal notranslate"><span class="pre">transformations</span></code> on them: <code class="docutils literal notranslate"><span class="pre">sort</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">insert</span></code> and <code class="docutils literal notranslate"><span class="pre">remove</span></code>.</p>
+<p>Please note, as these <code class="docutils literal notranslate"><span class="pre">function</span></code>s are part of the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">type</span></code> “<code class="docutils literal notranslate"><span class="pre">list</span></code>”, you don’t prepend (<code class="docutils literal notranslate"><span class="pre">sort(list)</span></code>) but append them: <code class="docutils literal notranslate"><span class="pre">list.sort()</span></code>, <code class="docutils literal notranslate"><span class="pre">list.append()</span></code>, <code class="docutils literal notranslate"><span class="pre">list.insert()</span></code> and <code class="docutils literal notranslate"><span class="pre">list.remove()</span></code>.</p>
 <p>Lets start with <code class="docutils literal notranslate"><span class="pre">sort</span></code> which, as you might have expected, will <code class="docutils literal notranslate"><span class="pre">sort</span></code> our <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movies</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="n">movies</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">artists</span>
 </pre></div>
 </div>
 </div>
@@ -2513,12 +2489,12 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 </div>
-<p>Please note that our <code class="docutils literal notranslate"><span class="pre">list</span></code> is modified/changed in-place. While it’s nice to not have to do a new <code class="docutils literal notranslate"><span class="pre">assignment</span></code>, this can become problematic if the <code class="docutils literal notranslate"><span class="pre">index</span></code> is of relevance!</p>
+<p><strong>Please note that our <code class="docutils literal notranslate"><span class="pre">list</span></code> is modified/changed in-place</strong>. While it’s nice to not have to do a new <code class="docutils literal notranslate"><span class="pre">assignment</span></code>, this can become problematic if the <code class="docutils literal notranslate"><span class="pre">index</span></code> is of relevance!</p>
 <p><code class="docutils literal notranslate"><span class="pre">.sort()</span></code> also allows you to specify <em>how</em> the <code class="docutils literal notranslate"><span class="pre">list</span></code> should be sorted: <code class="docutils literal notranslate"><span class="pre">ascending</span></code> or <code class="docutils literal notranslate"><span class="pre">descending</span></code>. This is controlled via the <code class="docutils literal notranslate"><span class="pre">reverse</span></code> argument of the <code class="docutils literal notranslate"><span class="pre">.sort()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>. By default, <code class="docutils literal notranslate"><span class="pre">list</span></code>s are sorted in an <code class="docutils literal notranslate"><span class="pre">descending</span></code> order. If you want to sort your <code class="docutils literal notranslate"><span class="pre">list</span></code> in an <code class="docutils literal notranslate"><span class="pre">ascending</span></code> order you have to set the <code class="docutils literal notranslate"><span class="pre">reverse</span></code> argument to <code class="docutils literal notranslate"><span class="pre">True</span></code>: <code class="docutils literal notranslate"><span class="pre">list.sort(reverse=True)</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movies</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">movies</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">artists</span>
 </pre></div>
 </div>
 </div>
@@ -2594,8 +2570,8 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 <p>Lets assume we got new data from two participants and thus need to update our <code class="docutils literal notranslate"><span class="pre">list</span></code>, we can simply use <code class="docutils literal notranslate"><span class="pre">.append()</span></code> to, well, append or add these new entries:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;My Neighbor Totoro&#39;</span><span class="p">)</span>
-<span class="n">movies</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;My Neighbor Totoro&#39;</span><span class="p">)</span>
+<span class="n">artists</span>
 </pre></div>
 </div>
 </div>
@@ -2627,8 +2603,8 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 <p>We obviously do the same for <code class="docutils literal notranslate"><span class="pre">snacks</span></code> and <code class="docutils literal notranslate"><span class="pre">animals</span></code> again:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snacks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Wasabi Peanuts&#39;</span><span class="p">)</span>
-<span class="n">snacks</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Wasabi Peanuts&#39;</span><span class="p">)</span>
+<span class="n">artists</span>
 </pre></div>
 </div>
 </div>
@@ -2670,11 +2646,12 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 </div>
-<p>Should the <code class="docutils literal notranslate"><span class="pre">index</span></code> of the new <code class="docutils literal notranslate"><span class="pre">value</span></code> be important, you have to use <code class="docutils literal notranslate"><span class="pre">.insert</span></code> as <code class="docutils literal notranslate"><span class="pre">.append</span></code> will only ever, you guessed it: append. The <code class="docutils literal notranslate"><span class="pre">.insert</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code> takes two <code class="docutils literal notranslate"><span class="pre">arguments</span></code>, the <code class="docutils literal notranslate"><span class="pre">index</span></code> where a new <code class="docutils literal notranslate"><span class="pre">value</span></code> should be inserted and the <code class="docutils literal notranslate"><span class="pre">value</span></code> that should be inserted: <code class="docutils literal notranslate"><span class="pre">list.insert(index,</span> <span class="pre">value)</span></code>. The <code class="docutils literal notranslate"><span class="pre">index</span></code> of the subsequent <code class="docutils literal notranslate"><span class="pre">values</span></code> will shift +1 accordingly. Assuming, we want to add a new <code class="docutils literal notranslate"><span class="pre">value</span></code> at the <code class="docutils literal notranslate"><span class="pre">third</span> <span class="pre">index</span></code> of each of our <code class="docutils literal notranslate"><span class="pre">list</span></code>s, this how we would do that:</p>
+<p>Should the <code class="docutils literal notranslate"><span class="pre">index</span></code> of the new <code class="docutils literal notranslate"><span class="pre">value</span></code> be important, you have to use <code class="docutils literal notranslate"><span class="pre">.insert</span></code> as <code class="docutils literal notranslate"><span class="pre">.append</span></code> will only ever, you guessed it: append.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.insert</span></code> <code class="docutils literal notranslate"><span class="pre">functions</span></code> takes two <code class="docutils literal notranslate"><span class="pre">arguments</span></code>, the <code class="docutils literal notranslate"><span class="pre">index</span></code> where a new <code class="docutils literal notranslate"><span class="pre">value</span></code> should be inserted and the <code class="docutils literal notranslate"><span class="pre">value</span></code> that should be inserted: <code class="docutils literal notranslate"><span class="pre">list.insert(index,</span> <span class="pre">value)</span></code>. The <code class="docutils literal notranslate"><span class="pre">index</span></code> of the subsequent <code class="docutils literal notranslate"><span class="pre">values</span></code> will shift +1 accordingly. Assuming, we want to add a new <code class="docutils literal notranslate"><span class="pre">value</span></code> at the <code class="docutils literal notranslate"><span class="pre">third</span> <span class="pre">index</span></code> of each of our <code class="docutils literal notranslate"><span class="pre">list</span></code>s, this how we would do that:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movies</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;The Big Lebowski&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;The sound of animals fighting&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">artists</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2699,7 +2676,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Manatee&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Quokka&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2713,10 +2690,10 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 <p>If you want to change the <code class="docutils literal notranslate"><span class="pre">value</span></code> of a <code class="docutils literal notranslate"><span class="pre">list</span></code> <code class="docutils literal notranslate"><span class="pre">element</span></code> (e.g. you noticed an error and need to change the <code class="docutils literal notranslate"><span class="pre">value</span></code>), you can do that directly by <code class="docutils literal notranslate"><span class="pre">assigning</span></code> a new <code class="docutils literal notranslate"><span class="pre">value</span></code> to the <code class="docutils literal notranslate"><span class="pre">element</span></code> at the given <code class="docutils literal notranslate"><span class="pre">index</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The element at index 15 of the list movies is: </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">movies</span>[15])
-<span class="n">movies</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Harry Potter and the Python-Prince&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is now </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">movies</span>[15])
-<span class="nb">print</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The element at index 5 of the list of snacks is: </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">snacks</span>[5])
+<span class="n">artists</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Apples&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is now </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">snacks</span>[5])
+<span class="nb">print</span><span class="p">(</span><span class="n">snacks</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2731,26 +2708,34 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 <p>Please note that this is final and the original <code class="docutils literal notranslate"><span class="pre">value</span></code> overwritten. The characteristic of modifying <code class="docutils literal notranslate"><span class="pre">lists</span></code> by <code class="docutils literal notranslate"><span class="pre">assigning</span></code> new <code class="docutils literal notranslate"><span class="pre">values</span></code> to <code class="docutils literal notranslate"><span class="pre">elements</span></code> in the <code class="docutils literal notranslate"><span class="pre">list</span></code> is called <code class="docutils literal notranslate"><span class="pre">mutable</span></code> in technical jargon.</p>
-<p>If you want to remove an <code class="docutils literal notranslate"><span class="pre">element</span></code> of a given <code class="docutils literal notranslate"><span class="pre">list</span></code> (e.g. you noticed there are unwanted duplicates, etc.), you basically have two options <code class="docutils literal notranslate"><span class="pre">list.remove(element)</span></code> and <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">list[index]</span></code> and which one you have to use depends on the goal. As you can see <code class="docutils literal notranslate"><span class="pre">.remove(element)</span></code> expects the <code class="docutils literal notranslate"><span class="pre">element</span></code> that should be removed from the <code class="docutils literal notranslate"><span class="pre">list</span></code>, that is the <code class="docutils literal notranslate"><span class="pre">element</span></code> with the specified <code class="docutils literal notranslate"><span class="pre">value</span></code>. For example, if we want to remove the duplicate <code class="docutils literal notranslate"><span class="pre">Shutter</span> <span class="pre">Island</span></code>, we can do the following:</p>
+<p>If you want to remove an <code class="docutils literal notranslate"><span class="pre">element</span></code> of a given <code class="docutils literal notranslate"><span class="pre">list</span></code> (e.g. you noticed there are unwanted duplicates, etc.), you basically have two options <code class="docutils literal notranslate"><span class="pre">list.remove(element)</span></code> and <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">list[index]</span></code> and which one you have to use depends on the goal.</p>
+<p>As you can see <code class="docutils literal notranslate"><span class="pre">.remove(element)</span></code> expects the <code class="docutils literal notranslate"><span class="pre">element</span></code> that should be removed from the <code class="docutils literal notranslate"><span class="pre">list</span></code>, that is the <code class="docutils literal notranslate"><span class="pre">element</span></code> with the specified <code class="docutils literal notranslate"><span class="pre">value</span></code>. For example, if we want to remove duplicates, we can do the following:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movies</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;Shutter Island&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_2</span> <span class="o">=</span> <span class="n">artists</span> <span class="o">*</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_2</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">artists_2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The_Intouchables&#39;, &#39;The Philosophers&#39;, &#39;The Big Lebowski&#39;, &#39;The Imitation Game&#39;, &#39;The Great Gatsby&#39;, &#39;Shutter Island&#39;, &#39;Shindlers List&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;Love actually&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;James Bond&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Inception&#39;, &#39;Harry Potter and the Python-Prince&#39;, &#39;Harry Potter&#39;, &#39;Forrest Gump&#39;, &#39;Fight Club&#39;, &#39;Call Me by Your Name&#39;, &#39;My Neighbor Totoro&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;doritos&#39;, &#39;banana&#39;, &#39;doritos&#39;, &#39;oreos&#39;, &#39;banana&#39;]
 </pre></div>
 </div>
 </div>
 </div>
-<p>As you can see, only one “Shutter Island” is removed and not both, this is because <code class="docutils literal notranslate"><span class="pre">.remove(element)</span></code> only removes the first <code class="docutils literal notranslate"><span class="pre">element</span></code> of the <code class="docutils literal notranslate"><span class="pre">specified</span></code> value. Thus, if there are more <code class="docutils literal notranslate"><span class="pre">elements</span></code> you want to remove, the <code class="docutils literal notranslate"><span class="pre">del</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> could be more handy.</p>
-<p>You may have noticed that the <code class="docutils literal notranslate"><span class="pre">del</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> expects the <code class="docutils literal notranslate"><span class="pre">index</span></code> of the <code class="docutils literal notranslate"><span class="pre">element</span></code> that should be removed from the <code class="docutils literal notranslate"><span class="pre">list</span></code>. Thus, if we, for example, want to remove the duplicate <code class="docutils literal notranslate"><span class="pre">Inception</span></code>, we can also achieve that via the following:</p>
+<p>As you can see, only the first duplicate is removed and not both, this is because <code class="docutils literal notranslate"><span class="pre">.remove(element)</span></code> only removes the first <code class="docutils literal notranslate"><span class="pre">element</span></code> of the <code class="docutils literal notranslate"><span class="pre">specified</span></code> value. Thus, if there are more <code class="docutils literal notranslate"><span class="pre">elements</span></code> you want to remove, the <code class="docutils literal notranslate"><span class="pre">del</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> could be more handy.</p>
+<p>You may have noticed that the <code class="docutils literal notranslate"><span class="pre">del</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> expects the <code class="docutils literal notranslate"><span class="pre">index</span></code> of the <code class="docutils literal notranslate"><span class="pre">element</span></code> that should be removed from the <code class="docutils literal notranslate"><span class="pre">list</span></code>. Thus, if we, for example, want to remove the duplicate <code class="docutils literal notranslate"> </code>, we can also achieve that via the following:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">movies</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">artists</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">artists</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2760,10 +2745,11 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 </div>
-<p>If there are multiple <code class="docutils literal notranslate"><span class="pre">elements</span></code> you want to remove, you can make use of <code class="docutils literal notranslate"><span class="pre">slicing</span></code> again. For example, our <code class="docutils literal notranslate"><span class="pre">snack</span></code> <code class="docutils literal notranslate"><span class="pre">list</span></code> has multiple <code class="docutils literal notranslate"><span class="pre">elements</span></code> with the <code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">chocolate</span></code>. Nothing against <code class="docutils literal notranslate"><span class="pre">chocolate</span></code>, but you might want to have this <code class="docutils literal notranslate"><span class="pre">value</span></code> only once in our <code class="docutils literal notranslate"><span class="pre">list</span></code>. To achieve that, we basically combine <code class="docutils literal notranslate"><span class="pre">slicing</span></code> and <code class="docutils literal notranslate"><span class="pre">del</span></code> via indicating what <code class="docutils literal notranslate"><span class="pre">indices</span></code> should be removed:</p>
+<p>If there are multiple <code class="docutils literal notranslate"><span class="pre">elements</span></code> you want to remove, you can make use of <code class="docutils literal notranslate"><span class="pre">slicing</span></code> again.</p>
+<p>For example, if our <code class="docutils literal notranslate"><span class="pre">snack</span></code> <code class="docutils literal notranslate"><span class="pre">list</span></code> has multiple <code class="docutils literal notranslate"><span class="pre">elements</span></code> with the <code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">chocolate</span></code>. Nothing against <code class="docutils literal notranslate"><span class="pre">chocolate</span></code>, but you might want to have this <code class="docutils literal notranslate"><span class="pre">value</span></code> only once in our <code class="docutils literal notranslate"><span class="pre">list</span></code>. To achieve that, we basically combine <code class="docutils literal notranslate"><span class="pre">slicing</span></code> and <code class="docutils literal notranslate"><span class="pre">del</span></code> via indicating what <code class="docutils literal notranslate"><span class="pre">indices</span></code> should be removed:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">snacks</span><span class="p">[</span><span class="mi">7</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">snacks</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">snacks</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2822,19 +2808,6 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rare_animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Addax&#39;</span><span class="p">,</span> <span class="s1">&#39;Black-footed Ferret&#39;</span><span class="p">,</span> <span class="s1">&#39;Northern Bald Ibis&#39;</span><span class="p">,</span> <span class="s1">&#39;Cross River Gorilla&#39;</span><span class="p">,</span> <span class="s1">&#39;Saola&#39;</span><span class="p">,</span> <span class="s1">&#39;Amur Leopard&#39;</span><span class="p">,</span> <span class="s1">&#39;Philippine Crocodile&#39;</span><span class="p">,</span> <span class="s1">&#39;Sumatran Rhino&#39;</span><span class="p">,</span> <span class="s1">&#39;South China Tiger&#39;</span><span class="p">,</span> <span class="s1">&#39;Vaquita&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are </span><span class="si">%s</span><span class="s2"> animals in the list.&quot;</span> <span class="o">%</span><span class="k">len</span>(rare_animals))
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 10 animals in the list.
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-6-2">
 <h4>Exercise 6.2<a class="headerlink" href="#exercise-6-2" title="Permalink to this headline">¶</a></h4>
@@ -2842,19 +2815,6 @@ It is now Harry Potter and the Python-Prince
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rare_animals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Manatee&#39;</span><span class="p">)</span>
-<span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">rare_animals</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
 </pre></div>
 </div>
 </div>
@@ -2870,35 +2830,11 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rare_animals</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;Manatee&#39;</span><span class="p">)</span> <span class="c1"># or del rare_animals[11]</span>
-<span class="n">rare_animals</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Giant Panda&#39;</span><span class="p">)</span>
-<span class="n">rare_animals</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Addax&#39;,
- &#39;Black-footed Ferret&#39;,
- &#39;Giant Panda&#39;,
- &#39;Northern Bald Ibis&#39;,
- &#39;Cross River Gorilla&#39;,
- &#39;Saola&#39;,
- &#39;Amur Leopard&#39;,
- &#39;Philippine Crocodile&#39;,
- &#39;Sumatran Rhino&#39;,
- &#39;South China Tiger&#39;,
- &#39;Vaquita&#39;]
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="tuples">
 <h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">Tuples</span></code> are like <code class="docutils literal notranslate"><span class="pre">lists</span></code>, except that they cannot be modified once created, that is they are <strong>immutable</strong>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Tuples</span></code> (from doubles, triples … n‑tuples) are like <code class="docutils literal notranslate"><span class="pre">lists</span></code>, except that they cannot be modified once created, that is they are <strong>immutable</strong>.</p>
 </br>
 <center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/python_data_types_2.png"></center>
 <p>In <code class="docutils literal notranslate"><span class="pre">python</span></code>, <code class="docutils literal notranslate"><span class="pre">tuples</span></code> are created using the syntax <code class="docutils literal notranslate"><span class="pre">(...,</span> <span class="pre">...,</span> <span class="pre">...)</span></code>, or even <code class="docutils literal notranslate"><span class="pre">...,</span> <span class="pre">...</span></code>:</p>
@@ -2963,36 +2899,23 @@ Whoa another thing
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deep_thought</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;answer&#39;</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
-<span class="n">deep_thought</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;answer&#39;, 42)
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="dictionaries">
 <h3>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">Dictionaries</span></code> are also like <code class="docutils literal notranslate"><span class="pre">lists</span></code>, except that each element is a <code class="docutils literal notranslate"><span class="pre">key-value</span> <span class="pre">pair</span></code>. That is, <code class="docutils literal notranslate"><span class="pre">elements</span></code> or <code class="docutils literal notranslate"><span class="pre">entries</span></code> of the <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>, the <code class="docutils literal notranslate"><span class="pre">values</span></code>, can only be assessed via their respective <code class="docutils literal notranslate"><span class="pre">key</span></code> and not via <code class="docutils literal notranslate"><span class="pre">indexing</span></code>, <code class="docutils literal notranslate"><span class="pre">slicing</span></code>, etc. .</p>
+<p><code class="docutils literal notranslate"><span class="pre">Dictionaries</span></code> are also like <code class="docutils literal notranslate"><span class="pre">lists</span></code>, except that each element is a <code class="docutils literal notranslate"><span class="pre">key-value</span> <span class="pre">pair</span></code>. That is, <code class="docutils literal notranslate"><span class="pre">elements</span></code> or <code class="docutils literal notranslate"><span class="pre">entries</span></code> of the <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>, the <code class="docutils literal notranslate"><span class="pre">values</span></code>, can be accessed via their respective <code class="docutils literal notranslate"><span class="pre">key</span></code> and not via <code class="docutils literal notranslate"><span class="pre">indexing</span></code>, <code class="docutils literal notranslate"><span class="pre">slicing</span></code>, etc. .</p>
 </br>
 <center><img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/python_data_types_2.png"></center>
 <p>The syntax for dictionaries is <code class="docutils literal notranslate"><span class="pre">{key1</span> <span class="pre">:</span> <span class="pre">value1,</span> <span class="pre">...}</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">Dictionaries</span></code> are fantastic if you need to organize your data in a highly <code class="docutils literal notranslate"><span class="pre">structured</span></code> way where a precise mapping of a multiple of <code class="docutils literal notranslate"><span class="pre">type</span></code>s is crucial and <code class="docutils literal notranslate"><span class="pre">list</span></code>s might be insufficient. For example, we want to have the information we assessed above for our <code class="docutils literal notranslate"><span class="pre">list</span></code>s in a detailed and holistic manner. Instead of specifying multiple <code class="docutils literal notranslate"><span class="pre">list</span></code>s and <code class="docutils literal notranslate"><span class="pre">variables</span></code>, we could also create a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> that comprises all of that information.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Dictionaries</span></code> are fantastic if you need to organize your data in a highly <code class="docutils literal notranslate"><span class="pre">structured</span></code> way where a precise mapping of a multiple of <code class="docutils literal notranslate"><span class="pre">type</span></code>s is crucial and <code class="docutils literal notranslate"><span class="pre">list</span></code>s might be insufficient. For example, we want to have the information we accessed above for our <code class="docutils literal notranslate"><span class="pre">list</span></code>s in a detailed and holistic manner. Instead of specifying multiple <code class="docutils literal notranslate"><span class="pre">list</span></code>s and <code class="docutils literal notranslate"><span class="pre">variables</span></code>, we could also create a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> that comprises all of that information.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;n_responses&quot;</span> <span class="p">:</span>        <span class="nb">len</span><span class="p">(</span><span class="n">movies</span><span class="p">),</span>
-              <span class="s2">&quot;n_responses_unique&quot;</span> <span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">movies</span><span class="p">)),</span>
-              <span class="s2">&quot;responses&quot;</span> <span class="p">:</span>          <span class="n">movies</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;n_responses&quot;</span> <span class="p">:</span>        <span class="nb">len</span><span class="p">(</span><span class="n">artists</span><span class="p">),</span>
+              <span class="s2">&quot;n_responses_unique&quot;</span> <span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">artists</span><span class="p">)),</span>
+              <span class="s2">&quot;responses&quot;</span> <span class="p">:</span>          <span class="n">artists</span><span class="p">}</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">movie_info</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">movie_info</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">artists_info</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">artists_info</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3004,9 +2927,10 @@ Whoa another thing
 </div>
 </div>
 <p>See how great this is? We have everything in one place and can access the information we need/want via the respective <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+<p><a class="reference external" href="https://media3.giphy.com/media/lXu72d4iKwqek/giphy.gif?cid=ecf05e4761nv5angxqgl133rfn9l01ho8aga49w27xt5gr5q&amp;rid=giphy.gif&amp;ct=g">https://media3.giphy.com/media/lXu72d4iKwqek/giphy.gif?cid=ecf05e4761nv5angxqgl133rfn9l01ho8aga49w27xt5gr5q&amp;rid=giphy.gif&amp;ct=g</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;n_responses&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;n_responses&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3018,7 +2942,7 @@ Whoa another thing
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;n_responses_unique&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;n_responses_unique&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3030,7 +2954,7 @@ Whoa another thing
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;responses&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;responses&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3058,10 +2982,10 @@ Whoa another thing
 </div>
 </div>
 </div>
-<p>As you can see and mentioned before: like <code class="docutils literal notranslate"><span class="pre">list</span></code>s, each <code class="docutils literal notranslate"><span class="pre">value</span></code> of a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> can entail various <code class="docutils literal notranslate"><span class="pre">types</span></code>: <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code> and even <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code>: <code class="docutils literal notranslate"><span class="pre">list</span></code>s, <code class="docutils literal notranslate"><span class="pre">tuples</span></code>, etc. . However, in contrast to <code class="docutils literal notranslate"><span class="pre">list</span></code>s, we can access <code class="docutils literal notranslate"><span class="pre">entries</span></code> can only via their <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">name</span></code> and not <code class="docutils literal notranslate"><span class="pre">indices</span></code>:</p>
+<p>As you can see and mentioned before: like <code class="docutils literal notranslate"><span class="pre">list</span></code>s, each <code class="docutils literal notranslate"><span class="pre">value</span></code> of a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> can entail various <code class="docutils literal notranslate"><span class="pre">types</span></code>: <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code> and even <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code>: <code class="docutils literal notranslate"><span class="pre">list</span></code>s, <code class="docutils literal notranslate"><span class="pre">tuples</span></code>, etc. . However, in contrast to <code class="docutils literal notranslate"><span class="pre">list</span></code>s, we can access <code class="docutils literal notranslate"><span class="pre">entries</span></code> only via their <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">name</span></code> and not <code class="docutils literal notranslate"><span class="pre">indices</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3080,7 +3004,7 @@ Whoa another thing
 If you’re uncertain about the <code class="docutils literal notranslate"><span class="pre">keys</span></code> in your <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>, you can get a <code class="docutils literal notranslate"><span class="pre">list</span></code> of all of them via <code class="docutils literal notranslate"><span class="pre">dictionary.keys()</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3093,7 +3017,7 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 <p>Comparably, if you want to get all the <code class="docutils literal notranslate"><span class="pre">values</span></code>, you can use <code class="docutils literal notranslate"><span class="pre">dictionary.values()</span></code> to obtain a respective <code class="docutils literal notranslate"><span class="pre">list</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3103,12 +3027,12 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 </div>
 </div>
-<p>Assuming you want to add new information to your <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>, i.e. a new <code class="docutils literal notranslate"><span class="pre">key</span></code>, this can directly be done via <code class="docutils literal notranslate"><span class="pre">dictionary[new_key]</span> <span class="pre">=</span> <span class="pre">value</span></code>. For example, you run some stats on our <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">movies</span></code> and determined that this selection is <code class="docutils literal notranslate"><span class="pre">significantly</span> <span class="pre">awesome</span></code> with a <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">value</span></code> of <code class="docutils literal notranslate"><span class="pre">0.000001</span></code>, we can easily add this to our <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>:</p>
+<p>Assuming you want to add new information to your <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>, i.e. a new <code class="docutils literal notranslate"><span class="pre">key</span></code>, this can directly be done via <code class="docutils literal notranslate"><span class="pre">dictionary[new_key]</span> <span class="pre">=</span> <span class="pre">value</span></code>. For example, you run some stats on our <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">artists</span></code> and determined that this selection is <code class="docutils literal notranslate"><span class="pre">significantly</span> <span class="pre">awesome</span></code> with a <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">value</span></code> of <code class="docutils literal notranslate"><span class="pre">0.000001</span></code>, we can easily add this to our <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;movie_selection_awesome&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;movie_selection_awesome_p_value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.000001</span>
-<span class="n">movie_info</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;artist_selection_awesome&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;artist_selection_awesome_p_value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.000001</span>
+<span class="n">artists_info</span>
 </pre></div>
 </div>
 </div>
@@ -3143,8 +3067,8 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 <p>As with <code class="docutils literal notranslate"><span class="pre">list</span></code>s, the <code class="docutils literal notranslate"><span class="pre">value</span></code> of a given <code class="docutils literal notranslate"><span class="pre">element</span></code>, here <code class="docutils literal notranslate"><span class="pre">entry</span></code> can be modified and deleted. This means they are <code class="docutils literal notranslate"><span class="pre">mutable</span></code>. If we for example forgot to correct our <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">value</span></code> for <code class="docutils literal notranslate"><span class="pre">multiple</span> <span class="pre">comparisons</span></code>, we can simply overwrite the original with corrected one:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;movie_selection_awesome_p_value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">movie_info</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;artist_selection_awesome_p_value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="n">artists_info</span>
 </pre></div>
 </div>
 </div>
@@ -3176,11 +3100,11 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 </div>
 </div>
-<p>Assuming we then want to delete the <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">value</span></code> from our <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> because we remembered that the sole focus on <code class="docutils literal notranslate"><span class="pre">significance</span></code> and <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">values</span></code> brought the entirety of science down to a very bad place, we can achieve this via:</p>
+<p>Assuming we then want to delete the <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">value</span></code> from our <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> because we remembered that the sole focus on <code class="docutils literal notranslate"><span class="pre">significance</span></code> and <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">values</span></code> brought the entirety of science down to it’s knees, we can achieve this via:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">movie_info</span><span class="p">[</span><span class="s1">&#39;movie_selection_awesome_p_value&#39;</span><span class="p">]</span>
-<span class="n">movie_info</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;movie_selection_awesome_p_value&#39;</span><span class="p">]</span>
+<span class="n">artists_info</span>
 </pre></div>
 </div>
 </div>
@@ -3221,25 +3145,6 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snack_info</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;n_responses&quot;</span> <span class="p">:</span>            <span class="nb">len</span><span class="p">(</span><span class="n">snacks</span><span class="p">),</span>
-              <span class="s2">&quot;n_responses_unique&quot;</span> <span class="p">:</span>     <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">snacks</span><span class="p">)),</span>
-              <span class="s2">&quot;responses&quot;</span> <span class="p">:</span>              <span class="n">snacks</span><span class="p">,</span>
-              <span class="s2">&quot;snack_selection_awesome&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">snack_info</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">snack_info</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
-{&#39;n_responses&#39;: 19, &#39;n_responses_unique&#39;: 18, &#39;responses&#39;: [&#39;Banana&#39;, &#39;Kinder bueno&#39;, &#39;PB&amp;J&#39;, &#39;Pringles&#39;, &#39;Rocher&#39;, &#39;carrots&#39;, &#39;chocolate&#39;, &#39;dark chocolate&#39;, &#39;dominoes&#39;, &#39;dried mango&#39;, &#39;fruit&#39;, &#39;hummus&#39;, &#39;mint chocolate&#39;, &#39;pancakes&#39;, &#39;snickers&#39;, &#39;snickers&#39;, &#39;sushi&#39;, &#39;too complicated&#39;, &#39;Wasabi Peanuts&#39;], &#39;snack_selection_awesome&#39;: True}
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-8-2">
 <h4>Exercise 8.2<a class="headerlink" href="#exercise-8-2" title="Permalink to this headline">¶</a></h4>
@@ -3247,25 +3152,6 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animal_info</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;n_responses&quot;</span> <span class="p">:</span>            <span class="nb">len</span><span class="p">(</span><span class="n">animals</span><span class="p">),</span>
-              <span class="s2">&quot;n_responses_unique&quot;</span> <span class="p">:</span>      <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">animals</span><span class="p">)),</span>
-              <span class="s2">&quot;responses&quot;</span> <span class="p">:</span>               <span class="n">animals</span><span class="p">,</span>
-              <span class="s2">&quot;animal_selection_awesome&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">animal_info</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">animal_info</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
-{&#39;n_responses&#39;: 8, &#39;n_responses_unique&#39;: 8, &#39;responses&#39;: [&#39;barred owl&#39;, &#39;cat&#39;, &#39;Manatee&#39;, &#39;coral&#39;, &#39;elephant&#39;, &#39;groundhog&#39;, &#39;lizard&#39;, &#39;bear&#39;], &#39;animal_selection_awesome&#39;: True}
 </pre></div>
 </div>
 </div>
@@ -3285,7 +3171,7 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 <div class="section" id="homework-assignment-4">
 <h2>Homework assignment #4<a class="headerlink" href="#homework-assignment-4" title="Permalink to this headline">¶</a></h2>
-<p>Your fourth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it [here](. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
+<p>Your fourth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it [here](soon, eventually). In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
 <p><strong>Deadline: 03/11/2022, 11:59 PM EST</strong></p>
 </div>
 </div>

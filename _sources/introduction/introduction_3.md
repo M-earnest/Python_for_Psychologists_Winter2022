@@ -33,3 +33,8 @@ Not applicable, as project related work didn't start yet.
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
 Your first homework assignment will entail the generation of a `conda environment` called  `bb8` with `python 3.9` and `pandas`, `nilearn`, `jupyter` & sending us the corresponding `environment.yml` via e-mail. This should be somewhat trivial given the information in the presentation in the previous chapter.
+
+Bonus Points: Go through the "presentation adventure" and show me the results of the "fancy analysis" script. Simply taking screenshots is fine and append them to the e-mail!
+
+**Deadline: 14.11.2022**
+
