@@ -945,7 +945,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution in this cell</span>
-<span class="kn">from</span> <span class="nn">pingouin.nonparametric</span> <span class="kn">import</span> <span class="n">wilcoxon</span>
 </pre></div>
 </div>
 </div>
@@ -1266,7 +1265,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">16</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
     <span class="n">outcome_anova</span> <span class="ow">and</span> <span class="ow">or</span> <span class="n">outcome_ancova</span>
                       <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -1549,19 +1548,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">([</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">])</span> 
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="exercise-4-2">
 <h3>Exercise 4.2<a class="headerlink" href="#exercise-4-2" title="Permalink to this headline">¶</a></h3>
@@ -1580,20 +1566,6 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.2</span> <span class="o">+</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">+</span> <span class="mf">1.9</span> <span class="o">+</span> <span class="mf">1.3</span> <span class="o">+</span> <span class="mf">1.2</span> <span class="o">+</span> <span class="mf">1.7</span><span class="p">)</span><span class="o">/</span><span class="mi">7</span>
-<span class="n">mean_reference_comp</span> <span class="o">=</span> <span class="n">mean</span> <span class="o">&lt;=</span> <span class="mf">1.2</span>
-<span class="n">mean_reference_comp</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1668,7 +1640,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1681,7 +1653,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally cute. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally cute. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1694,7 +1666,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1707,7 +1679,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1738,7 +1710,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1812,7 +1784,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39; and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39; and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1824,7 +1796,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1837,7 +1809,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in south america.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The wombat and the capybara are equally awesome. However, while the wombat lives in Australia, the capybara can be found in South America.&#39;
 </pre></div>
 </div>
 </div>
@@ -1849,7 +1821,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Tewma n h ayaaaeeulyaeoe oee,wietewma ie nAsrla h ayaacnb on nsuhaeia&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Tewma n h ayaaaeeulyaeoe oee,wietewma ie nAsrla h ayaacnb on nSuhAeia&#39;
 </pre></div>
 </div>
 </div>
@@ -1963,36 +1935,36 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>There are other ways to be more explicit when formatting strings and we cann even use multiple inputs for one string</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{}</span><span class="s2"> is my name , and this is </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{}</span><span class="s2"> is my name, and this is </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name , and this is Samwise Gamgee.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{0}</span><span class="s2"> is my name , and this is </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{0}</span><span class="s2"> is my name, and this is </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name , and this is Samwise Gamgee.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{fname}</span><span class="s2"> is my name , and this is </span><span class="si">{sname}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fname</span> <span class="o">=</span> <span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="n">sname</span> <span class="o">=</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are hobbits of the Shire. </span><span class="si">{fname}</span><span class="s2"> is my name, and this is </span><span class="si">{sname}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fname</span> <span class="o">=</span> <span class="s2">&quot;Frodo Baggins&quot;</span><span class="p">,</span> <span class="n">sname</span> <span class="o">=</span> <span class="s2">&quot;Samwise Gamgee&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name , and this is Samwise Gamgee.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are hobbits of the Shire. Frodo Baggins is my name, and this is Samwise Gamgee.
 </pre></div>
 </div>
 </div>
@@ -2050,7 +2022,26 @@ All white space i.e. spaces and tabs, within the quotes, are preserved as-is.</p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;I\&#39;m the first line. Check how line-breaks are shown in the second line.\nDo you see the line-break?\n&quot;What\&#39;s going on here?,&quot; you might ask.\nWell, &quot;that\&#39;s just how tiple quotes work.&quot;\n&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;I\&#39;m the first line. Check how line-breaks are shown in the second line.\nDo you see the line-break?\n&quot;What\&#39;s going on here?,&quot; you might ask.\nWell, &quot;that\&#39;s just how triple quotes work.&quot;\n&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;I&#39;m the first line. Check how line-breaks are shown in the second line.</span>
+<span class="s1">Do you see the line-break?</span>
+<span class="s1">&quot;What&#39;s going on here?,&quot; you might ask.</span>
+<span class="s1">Well, &quot;that&#39;s just how triple quotes work.&quot;</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I&#39;m the first line. Check how line-breaks are shown in the second line.
+Do you see the line-break?
+&quot;What&#39;s going on here?,&quot; you might ask.
+Well, &quot;that&#39;s just how triple quotes work.&quot;
 </pre></div>
 </div>
 </div>
@@ -2273,7 +2264,7 @@ After that, please compare the length of the <code class="docutils literal notra
 the length of our nested list is: 2
 the first index of our nested_list is: 1
 the second index of our nested_list is: [2, [3, [4, [5]]]]
-the second index of our nested_list is a list we can index again via nested_list[1][index]: [3, [4, [5]]]
+the second index of our nested_list is a list we can index again via nested_list[1][1]: [3, [4, [5]]]
 </pre></div>
 </div>
 </div>
@@ -2316,13 +2307,13 @@ the second index of our nested_list is a list we can index again via nested_list
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The favorite movies were: [&#39;The_Intouchables&#39;, &#39;James Bond&#39;, &#39;Forrest Gump&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;The Imitation Game&#39;, &#39;The Philosophers&#39;, &#39;Call Me by Your Name&#39;, &#39;Shutter Island&#39;, &#39;Love actually&#39;, &#39;The Great Gatsby&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;Fight Club&#39;, &#39;Shutter Island&#39;, &#39;Harry Potter&#39;, &#39;Harry Potter and the MatLab-Prince&#39;, &#39;Shindlers List&#39;, &#39;Inception&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The favorite artists were: []
 
 
-The favorite snacks were: [&#39;pancakes&#39;, &#39;Banana&#39;, &#39;dominoes&#39;, &#39;carrots&#39;, &#39;hummus&#39;, &#39;chocolate&#39;, &#39;chocolate&#39;, &#39;Pringles&#39;, &#39;snickers&#39;, &#39;chocolate&#39;, &#39;Kinder bueno&#39;, &#39;sushi&#39;, &#39;mint chocolate&#39;, &#39;fruit&#39;, &#39;dried mango&#39;, &#39;dark chocolate&#39;, &#39;too complicated&#39;, &#39;snickers&#39;, &#39;Rocher&#39;]
+The favorite snacks were: []
 
 
-The favorite animals were: [&#39;cat&#39;, &#39;lizard&#39;, &#39;coral&#39;, &#39;elephant&#39;, &#39;barred owl&#39;, &#39;groundhog&#39;]
+The favorite animals were: []
 </pre></div>
 </div>
 </div>
@@ -2336,13 +2327,8 @@ The favorite animals were: [&#39;cat&#39;, &#39;lizard&#39;, &#39;coral&#39;, &#
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">49</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Regarding movies there were </span><span class="si">%s</span><span class="s1"> responses&#39;</span> <span class="o">%</span><span class="k">len</span>(movies))
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We got responses from all participants: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">str</span>(len(movies)==17))
-
-<span class="ne">NameError</span>: name &#39;movies&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Regarding movies there were 0 responses
+We got responses from all participants: False
 </pre></div>
 </div>
 </div>
@@ -2356,8 +2342,8 @@ The favorite animals were: [&#39;cat&#39;, &#39;lizard&#39;, &#39;coral&#39;, &#
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Regarding snacks there were 19 responses
-We got responses from all participants: True
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Regarding snacks there were 0 responses
+We got responses from all participants: False
 </pre></div>
 </div>
 </div>
@@ -2370,7 +2356,7 @@ We got responses from all participants: True
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Regarding animals there were 6 responses
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Regarding animals there were 0 responses
 We got responses from all participants: False
 </pre></div>
 </div>
@@ -2385,7 +2371,7 @@ We got responses from all participants: False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 17 unique responses regarding movies
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 0 unique responses regarding artists
 </pre></div>
 </div>
 </div>
@@ -2398,7 +2384,7 @@ We got responses from all participants: False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 17 unique responses regarding movies
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 0 unique responses regarding artists
 </pre></div>
 </div>
 </div>
@@ -2412,12 +2398,7 @@ We got responses from all participants: False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The unique responses regarding movies were:  [&#39;Call Me by Your Name&#39; &#39;Fight Club&#39; &#39;Forrest Gump&#39; &#39;Harry Potter&#39;
- &#39;Harry Potter and the MatLab-Prince&#39; &#39;Inception&#39; &#39;Interstellar&#39;
- &#39;James Bond&#39; &#39;Lord of the Rings - The Two Towers&#39; &#39;Love actually&#39;
- &#39;Retired Extremely Dangerous&#39; &#39;Shindlers List&#39; &#39;Shutter Island&#39;
- &#39;The Great Gatsby&#39; &#39;The Imitation Game&#39; &#39;The Philosophers&#39;
- &#39;The_Intouchables&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The unique responses regarding artists were:  []
 </pre></div>
 </div>
 </div>
@@ -2431,10 +2412,8 @@ We got responses from all participants: False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 16 unique responses regarding snacks
-The unique responses regarding snacks were:  [&#39;Banana&#39; &#39;Kinder bueno&#39; &#39;Pringles&#39; &#39;Rocher&#39; &#39;carrots&#39; &#39;chocolate&#39;
- &#39;dark chocolate&#39; &#39;dominoes&#39; &#39;dried mango&#39; &#39;fruit&#39; &#39;hummus&#39;
- &#39;mint chocolate&#39; &#39;pancakes&#39; &#39;snickers&#39; &#39;sushi&#39; &#39;too complicated&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 0 unique responses regarding snacks
+The unique responses regarding snacks were:  []
 </pre></div>
 </div>
 </div>
@@ -2447,8 +2426,8 @@ The unique responses regarding snacks were:  [&#39;Banana&#39; &#39;Kinder bueno
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 6 unique responses regarding animals
-The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39; &#39;coral&#39; &#39;elephant&#39; &#39;groundhog&#39; &#39;lizard&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 0 unique responses regarding animals
+The unique responses regarding animals were:  []
 </pre></div>
 </div>
 </div>
@@ -2466,25 +2445,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Call Me by Your Name&#39;,
- &#39;Fight Club&#39;,
- &#39;Forrest Gump&#39;,
- &#39;Harry Potter&#39;,
- &#39;Harry Potter and the MatLab-Prince&#39;,
- &#39;Inception&#39;,
- &#39;Inception&#39;,
- &#39;Interstellar&#39;,
- &#39;James Bond&#39;,
- &#39;Lord of the Rings - The Two Towers&#39;,
- &#39;Love actually&#39;,
- &#39;Retired Extremely Dangerous&#39;,
- &#39;Shindlers List&#39;,
- &#39;Shutter Island&#39;,
- &#39;Shutter Island&#39;,
- &#39;The Great Gatsby&#39;,
- &#39;The Imitation Game&#39;,
- &#39;The Philosophers&#39;,
- &#39;The_Intouchables&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
 </pre></div>
 </div>
 </div>
@@ -2499,25 +2460,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The_Intouchables&#39;,
- &#39;The Philosophers&#39;,
- &#39;The Imitation Game&#39;,
- &#39;The Great Gatsby&#39;,
- &#39;Shutter Island&#39;,
- &#39;Shutter Island&#39;,
- &#39;Shindlers List&#39;,
- &#39;Retired Extremely Dangerous&#39;,
- &#39;Love actually&#39;,
- &#39;Lord of the Rings - The Two Towers&#39;,
- &#39;James Bond&#39;,
- &#39;Interstellar&#39;,
- &#39;Inception&#39;,
- &#39;Inception&#39;,
- &#39;Harry Potter and the MatLab-Prince&#39;,
- &#39;Harry Potter&#39;,
- &#39;Forrest Gump&#39;,
- &#39;Fight Club&#39;,
- &#39;Call Me by Your Name&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
 </pre></div>
 </div>
 </div>
@@ -2531,25 +2474,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Banana&#39;,
- &#39;Kinder bueno&#39;,
- &#39;Pringles&#39;,
- &#39;Rocher&#39;,
- &#39;carrots&#39;,
- &#39;chocolate&#39;,
- &#39;chocolate&#39;,
- &#39;chocolate&#39;,
- &#39;dark chocolate&#39;,
- &#39;dominoes&#39;,
- &#39;dried mango&#39;,
- &#39;fruit&#39;,
- &#39;hummus&#39;,
- &#39;mint chocolate&#39;,
- &#39;pancakes&#39;,
- &#39;snickers&#39;,
- &#39;snickers&#39;,
- &#39;sushi&#39;,
- &#39;too complicated&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
 </pre></div>
 </div>
 </div>
@@ -2562,7 +2487,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;barred owl&#39;, &#39;cat&#39;, &#39;coral&#39;, &#39;elephant&#39;, &#39;groundhog&#39;, &#39;lizard&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
 </pre></div>
 </div>
 </div>
@@ -2576,26 +2501,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The_Intouchables&#39;,
- &#39;The Philosophers&#39;,
- &#39;The Imitation Game&#39;,
- &#39;The Great Gatsby&#39;,
- &#39;Shutter Island&#39;,
- &#39;Shutter Island&#39;,
- &#39;Shindlers List&#39;,
- &#39;Retired Extremely Dangerous&#39;,
- &#39;Love actually&#39;,
- &#39;Lord of the Rings - The Two Towers&#39;,
- &#39;James Bond&#39;,
- &#39;Interstellar&#39;,
- &#39;Inception&#39;,
- &#39;Inception&#39;,
- &#39;Harry Potter and the MatLab-Prince&#39;,
- &#39;Harry Potter&#39;,
- &#39;Forrest Gump&#39;,
- &#39;Fight Club&#39;,
- &#39;Call Me by Your Name&#39;,
- &#39;My Neighbor Totoro&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;My Neighbor Totoro&#39;]
 </pre></div>
 </div>
 </div>
@@ -2609,26 +2515,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Banana&#39;,
- &#39;Kinder bueno&#39;,
- &#39;Pringles&#39;,
- &#39;Rocher&#39;,
- &#39;carrots&#39;,
- &#39;chocolate&#39;,
- &#39;chocolate&#39;,
- &#39;chocolate&#39;,
- &#39;dark chocolate&#39;,
- &#39;dominoes&#39;,
- &#39;dried mango&#39;,
- &#39;fruit&#39;,
- &#39;hummus&#39;,
- &#39;mint chocolate&#39;,
- &#39;pancakes&#39;,
- &#39;snickers&#39;,
- &#39;snickers&#39;,
- &#39;sushi&#39;,
- &#39;too complicated&#39;,
- &#39;Wasabi Peanuts&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;My Neighbor Totoro&#39;, &#39;Wasabi Peanuts&#39;]
 </pre></div>
 </div>
 </div>
@@ -2641,7 +2528,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;barred owl&#39;, &#39;cat&#39;, &#39;coral&#39;, &#39;elephant&#39;, &#39;groundhog&#39;, &#39;lizard&#39;, &#39;bear&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;bear&#39;]
 </pre></div>
 </div>
 </div>
@@ -2656,7 +2543,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The_Intouchables&#39;, &#39;The Philosophers&#39;, &#39;The Big Lebowski&#39;, &#39;The Imitation Game&#39;, &#39;The Great Gatsby&#39;, &#39;Shutter Island&#39;, &#39;Shutter Island&#39;, &#39;Shindlers List&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;Love actually&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;James Bond&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Inception&#39;, &#39;Harry Potter and the MatLab-Prince&#39;, &#39;Harry Potter&#39;, &#39;Forrest Gump&#39;, &#39;Fight Club&#39;, &#39;Call Me by Your Name&#39;, &#39;My Neighbor Totoro&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;My Neighbor Totoro&#39;, &#39;Wasabi Peanuts&#39;, &#39;The sound of animals fighting&#39;]
 </pre></div>
 </div>
 </div>
@@ -2669,7 +2556,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Banana&#39;, &#39;Kinder bueno&#39;, &#39;PB&amp;J&#39;, &#39;Pringles&#39;, &#39;Rocher&#39;, &#39;carrots&#39;, &#39;chocolate&#39;, &#39;chocolate&#39;, &#39;chocolate&#39;, &#39;dark chocolate&#39;, &#39;dominoes&#39;, &#39;dried mango&#39;, &#39;fruit&#39;, &#39;hummus&#39;, &#39;mint chocolate&#39;, &#39;pancakes&#39;, &#39;snickers&#39;, &#39;snickers&#39;, &#39;sushi&#39;, &#39;too complicated&#39;, &#39;Wasabi Peanuts&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;PB&amp;J&#39;]
 </pre></div>
 </div>
 </div>
@@ -2682,7 +2569,7 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;barred owl&#39;, &#39;cat&#39;, &#39;Manatee&#39;, &#39;coral&#39;, &#39;elephant&#39;, &#39;groundhog&#39;, &#39;lizard&#39;, &#39;bear&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;bear&#39;, &#39;Quokka&#39;]
 </pre></div>
 </div>
 </div>
@@ -2698,11 +2585,14 @@ The unique responses regarding animals were:  [&#39;barred owl&#39; &#39;cat&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The element at index 14 of the list movies is: Harry Potter and the MatLab-Prince
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">107</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The element at index 5 of the list of snacks is: </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">snacks</span>[5])
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">artists</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Apples&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is now </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">snacks</span>[5])
 
-It is now Harry Potter and the Python-Prince
-
-[&#39;The_Intouchables&#39;, &#39;The Philosophers&#39;, &#39;The Big Lebowski&#39;, &#39;The Imitation Game&#39;, &#39;The Great Gatsby&#39;, &#39;Shutter Island&#39;, &#39;Shutter Island&#39;, &#39;Shindlers List&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;Love actually&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;James Bond&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Inception&#39;, &#39;Harry Potter and the Python-Prince&#39;, &#39;Harry Potter&#39;, &#39;Forrest Gump&#39;, &#39;Fight Club&#39;, &#39;Call Me by Your Name&#39;, &#39;My Neighbor Totoro&#39;]
+<span class="ne">IndexError</span>: list index out of range
 </pre></div>
 </div>
 </div>
@@ -2725,7 +2615,13 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;doritos&#39;, &#39;banana&#39;, &#39;doritos&#39;, &#39;oreos&#39;, &#39;banana&#39;]
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">109</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">artists_2</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">artists_2</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: list.remove(x): x not in list
 </pre></div>
 </div>
 </div>
@@ -2740,7 +2636,13 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The_Intouchables&#39;, &#39;The Philosophers&#39;, &#39;The Big Lebowski&#39;, &#39;The Imitation Game&#39;, &#39;The Great Gatsby&#39;, &#39;Shutter Island&#39;, &#39;Shindlers List&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;Love actually&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;James Bond&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Harry Potter and the Python-Prince&#39;, &#39;Harry Potter&#39;, &#39;Forrest Gump&#39;, &#39;Fight Club&#39;, &#39;Call Me by Your Name&#39;, &#39;My Neighbor Totoro&#39;]
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">110</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">del</span> <span class="n">artists</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">artists</span><span class="p">)</span>
+
+<span class="ne">IndexError</span>: list assignment index out of range
 </pre></div>
 </div>
 </div>
@@ -2755,7 +2657,7 @@ It is now Harry Potter and the Python-Prince
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Banana&#39;, &#39;Kinder bueno&#39;, &#39;PB&amp;J&#39;, &#39;Pringles&#39;, &#39;Rocher&#39;, &#39;carrots&#39;, &#39;chocolate&#39;, &#39;dark chocolate&#39;, &#39;dominoes&#39;, &#39;dried mango&#39;, &#39;fruit&#39;, &#39;hummus&#39;, &#39;mint chocolate&#39;, &#39;pancakes&#39;, &#39;snickers&#39;, &#39;snickers&#39;, &#39;sushi&#39;, &#39;too complicated&#39;, &#39;Wasabi Peanuts&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;PB&amp;J&#39;]
 </pre></div>
 </div>
 </div>
@@ -2921,7 +2823,7 @@ Whoa another thing
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
-{&#39;n_responses&#39;: 19, &#39;n_responses_unique&#39;: 19, &#39;responses&#39;: [&#39;The_Intouchables&#39;, &#39;The Philosophers&#39;, &#39;The Big Lebowski&#39;, &#39;The Imitation Game&#39;, &#39;The Great Gatsby&#39;, &#39;Shutter Island&#39;, &#39;Shindlers List&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;Love actually&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;James Bond&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Harry Potter and the Python-Prince&#39;, &#39;Harry Potter&#39;, &#39;Forrest Gump&#39;, &#39;Fight Club&#39;, &#39;Call Me by Your Name&#39;, &#39;My Neighbor Totoro&#39;]}
+{&#39;n_responses&#39;: 3, &#39;n_responses_unique&#39;: 3, &#39;responses&#39;: [&#39;My Neighbor Totoro&#39;, &#39;Wasabi Peanuts&#39;, &#39;The sound of animals fighting&#39;]}
 </pre></div>
 </div>
 </div>
@@ -2935,7 +2837,7 @@ Whoa another thing
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -2947,7 +2849,7 @@ Whoa another thing
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -2959,25 +2861,7 @@ Whoa another thing
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;The_Intouchables&#39;,
- &#39;The Philosophers&#39;,
- &#39;The Big Lebowski&#39;,
- &#39;The Imitation Game&#39;,
- &#39;The Great Gatsby&#39;,
- &#39;Shutter Island&#39;,
- &#39;Shindlers List&#39;,
- &#39;Retired Extremely Dangerous&#39;,
- &#39;Love actually&#39;,
- &#39;Lord of the Rings - The Two Towers&#39;,
- &#39;James Bond&#39;,
- &#39;Interstellar&#39;,
- &#39;Inception&#39;,
- &#39;Harry Potter and the Python-Prince&#39;,
- &#39;Harry Potter&#39;,
- &#39;Forrest Gump&#39;,
- &#39;Fight Club&#39;,
- &#39;Call Me by Your Name&#39;,
- &#39;My Neighbor Totoro&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;My Neighbor Totoro&#39;, &#39;Wasabi Peanuts&#39;, &#39;The sound of animals fighting&#39;]
 </pre></div>
 </div>
 </div>
@@ -2992,8 +2876,8 @@ Whoa another thing
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">61</span><span class="o">/</span><span class="mi">0</span><span class="n">lj9r7px3k52gv9yfyx6ky300000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_86733</span><span class="o">/</span><span class="mf">2976284230.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">movie_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">124</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">artists_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="ne">KeyError</span>: 1
 </pre></div>
@@ -3022,7 +2906,7 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_values([19, 19, [&#39;The_Intouchables&#39;, &#39;The Philosophers&#39;, &#39;The Big Lebowski&#39;, &#39;The Imitation Game&#39;, &#39;The Great Gatsby&#39;, &#39;Shutter Island&#39;, &#39;Shindlers List&#39;, &#39;Retired Extremely Dangerous&#39;, &#39;Love actually&#39;, &#39;Lord of the Rings - The Two Towers&#39;, &#39;James Bond&#39;, &#39;Interstellar&#39;, &#39;Inception&#39;, &#39;Harry Potter and the Python-Prince&#39;, &#39;Harry Potter&#39;, &#39;Forrest Gump&#39;, &#39;Fight Club&#39;, &#39;Call Me by Your Name&#39;, &#39;My Neighbor Totoro&#39;]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_values([3, 3, [&#39;My Neighbor Totoro&#39;, &#39;Wasabi Peanuts&#39;, &#39;The sound of animals fighting&#39;]])
 </pre></div>
 </div>
 </div>
@@ -3037,29 +2921,13 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;n_responses&#39;: 19,
- &#39;n_responses_unique&#39;: 19,
- &#39;responses&#39;: [&#39;The_Intouchables&#39;,
-  &#39;The Philosophers&#39;,
-  &#39;The Big Lebowski&#39;,
-  &#39;The Imitation Game&#39;,
-  &#39;The Great Gatsby&#39;,
-  &#39;Shutter Island&#39;,
-  &#39;Shindlers List&#39;,
-  &#39;Retired Extremely Dangerous&#39;,
-  &#39;Love actually&#39;,
-  &#39;Lord of the Rings - The Two Towers&#39;,
-  &#39;James Bond&#39;,
-  &#39;Interstellar&#39;,
-  &#39;Inception&#39;,
-  &#39;Harry Potter and the Python-Prince&#39;,
-  &#39;Harry Potter&#39;,
-  &#39;Forrest Gump&#39;,
-  &#39;Fight Club&#39;,
-  &#39;Call Me by Your Name&#39;,
-  &#39;My Neighbor Totoro&#39;],
- &#39;movie_selection_awesome&#39;: True,
- &#39;movie_selection_awesome_p_value&#39;: 1e-06}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;n_responses&#39;: 3,
+ &#39;n_responses_unique&#39;: 3,
+ &#39;responses&#39;: [&#39;My Neighbor Totoro&#39;,
+  &#39;Wasabi Peanuts&#39;,
+  &#39;The sound of animals fighting&#39;],
+ &#39;artist_selection_awesome&#39;: True,
+ &#39;artist_selection_awesome_p_value&#39;: 1e-06}
 </pre></div>
 </div>
 </div>
@@ -3073,29 +2941,13 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;n_responses&#39;: 19,
- &#39;n_responses_unique&#39;: 19,
- &#39;responses&#39;: [&#39;The_Intouchables&#39;,
-  &#39;The Philosophers&#39;,
-  &#39;The Big Lebowski&#39;,
-  &#39;The Imitation Game&#39;,
-  &#39;The Great Gatsby&#39;,
-  &#39;Shutter Island&#39;,
-  &#39;Shindlers List&#39;,
-  &#39;Retired Extremely Dangerous&#39;,
-  &#39;Love actually&#39;,
-  &#39;Lord of the Rings - The Two Towers&#39;,
-  &#39;James Bond&#39;,
-  &#39;Interstellar&#39;,
-  &#39;Inception&#39;,
-  &#39;Harry Potter and the Python-Prince&#39;,
-  &#39;Harry Potter&#39;,
-  &#39;Forrest Gump&#39;,
-  &#39;Fight Club&#39;,
-  &#39;Call Me by Your Name&#39;,
-  &#39;My Neighbor Totoro&#39;],
- &#39;movie_selection_awesome&#39;: True,
- &#39;movie_selection_awesome_p_value&#39;: 0.001}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;n_responses&#39;: 3,
+ &#39;n_responses_unique&#39;: 3,
+ &#39;responses&#39;: [&#39;My Neighbor Totoro&#39;,
+  &#39;Wasabi Peanuts&#39;,
+  &#39;The sound of animals fighting&#39;],
+ &#39;artist_selection_awesome&#39;: True,
+ &#39;artist_selection_awesome_p_value&#39;: 0.001}
 </pre></div>
 </div>
 </div>
@@ -3103,34 +2955,18 @@ If you’re uncertain about the <code class="docutils literal notranslate"><span
 <p>Assuming we then want to delete the <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">value</span></code> from our <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> because we remembered that the sole focus on <code class="docutils literal notranslate"><span class="pre">significance</span></code> and <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">values</span></code> brought the entirety of science down to it’s knees, we can achieve this via:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;movie_selection_awesome_p_value&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">artists_info</span><span class="p">[</span><span class="s1">&#39;artist_selection_awesome_p_value&#39;</span><span class="p">]</span>
 <span class="n">artists_info</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;n_responses&#39;: 19,
- &#39;n_responses_unique&#39;: 19,
- &#39;responses&#39;: [&#39;The_Intouchables&#39;,
-  &#39;The Philosophers&#39;,
-  &#39;The Big Lebowski&#39;,
-  &#39;The Imitation Game&#39;,
-  &#39;The Great Gatsby&#39;,
-  &#39;Shutter Island&#39;,
-  &#39;Shindlers List&#39;,
-  &#39;Retired Extremely Dangerous&#39;,
-  &#39;Love actually&#39;,
-  &#39;Lord of the Rings - The Two Towers&#39;,
-  &#39;James Bond&#39;,
-  &#39;Interstellar&#39;,
-  &#39;Inception&#39;,
-  &#39;Harry Potter and the Python-Prince&#39;,
-  &#39;Harry Potter&#39;,
-  &#39;Forrest Gump&#39;,
-  &#39;Fight Club&#39;,
-  &#39;Call Me by Your Name&#39;,
-  &#39;My Neighbor Totoro&#39;],
- &#39;movie_selection_awesome&#39;: True}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;n_responses&#39;: 3,
+ &#39;n_responses_unique&#39;: 3,
+ &#39;responses&#39;: [&#39;My Neighbor Totoro&#39;,
+  &#39;Wasabi Peanuts&#39;,
+  &#39;The sound of animals fighting&#39;],
+ &#39;artist_selection_awesome&#39;: True}
 </pre></div>
 </div>
 </div>
