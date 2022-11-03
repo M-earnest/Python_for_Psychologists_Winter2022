@@ -113,11 +113,11 @@ You can choose if you want to only obtain a participation credit **or** a grade.
 
 *In order to obtain your participation credit you will have to provide the following:*
 
-- `homework assignments`: There will be approx. `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+- `homework assignments`: There will be approx. `6 homework assignments`. You have to hand in at least `4` and thus can miss 2 in total.
 - `Class participation`: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.
 
 *If you want to obtain your grade for the module in this course, you will have to provide the following:*
-    - `homework assignments` (20)%: There will be approx. `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+    - `homework assignments` (20)%: There will be approx. `6 homework assignments`. You have to hand in at least `4` and thus can miss 2 in total.
     and 
     - `Experiment script` (80% of final grade): The `interactive & reproducible publication` as outlined. 
     or
@@ -129,7 +129,7 @@ You can choose if you want to only obtain a participation credit **or** a grade.
 The module will be graded with the final grade being the average of . 
 
 In order to obtain your grade in this course, you will have to provide the following:
-    - `homework assignments` (20)%: There will be `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+    - `homework assignments` (20)%: There will be `6 homework assignments`. You have to hand in at least `4` and thus can miss 2 in total.
     and 
     - `Experiment script` (80% of final grade): The `interactive & reproducible publication` as outlined. 
     or
