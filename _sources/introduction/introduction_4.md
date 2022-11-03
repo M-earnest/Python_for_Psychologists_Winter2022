@@ -21,6 +21,9 @@ During the previous session we had a look at different ways of communicating wit
 
 Please see the rendered version of the `jupyter notebook` [Introduction IV - jupyter notebooks](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_jupyter.html) in the `ToC` on the left.
 
+<iframe src="https://docs.google.com/presentation/d/1WjeweDlSvgJivfdDqwpLM96Fmy_MHvzd9NbkqxO8bK0/edit#slide=id.g8074ffaf2c_0_0" frameborder="0" width="700" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
 Not applicable, as project related work didn't start yet.
