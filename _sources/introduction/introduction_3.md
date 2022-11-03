@@ -19,6 +19,13 @@ Fair enough but as hinted at during the introduction, knowing a bit more about t
 
 
 #### Materials 📓
+
+First a quick recap of the last session:
+
+<iframe src="https://docs.google.com/presentation/d/1iQd_mU3zgJhb_fSY7-rXJJqLGlzltTXhDAKC6JkkWZY/edit#slide=id.g17df203133d_0_3" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+Following:
 This session will deal with the example script `fancy_analyzes.py` , which you should find in your User/path/Python_for_Psychologists_Winter2022/lecture/introduction/ directory, otherwise please dowinload it [here](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/blob/main/lecture/introduction/fancy_analyzes.py)
 
 **Warning**: there will be sounds in the presentation, so might you want to lower the volume on your machine.
