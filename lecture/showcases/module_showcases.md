@@ -13,31 +13,31 @@ So what can we actually do to provide the entire attending gang with the chance 
 **Important**: we know that everyone has a lot of stuff to do and that not everyone will be able to go through the stuff we collected here. Y'all: don't worry about that, it's chilli-milli. These things are there and it's up to you to check them out or not. If you go through some of the `notebooks`, please just make sure that you ask **all** the questions that might pop up, the same holds true for any problems you might encounter. Long story short, here are the topics organized from basic to advanced skills and concepts. _Please note that further topics like Eye Tracking, EEG, etc., will be added soon._
 
 
-[Introduction to NumPy](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/python_numpy.html)
+[Introduction to NumPy](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/python_numpy.html)
 
-[Introduction to SciPy](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/python_scipy.html)
+[Introduction to SciPy](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/python_scipy.html)
 
-[Introduction to scikit-learn & scikit-image](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/python_scikit.html)
+[Introduction to scikit-learn & scikit-image](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/module_showcases/python_scikit.html)
 
-[Visualization for data in python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/python_visualization_for_data.html)
+[Visualization for data in python](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/module_showcases/python_visualization_for_data.html)
 
-[Introduction to Neuroimaging in python - Nibabel](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/image_manipulation_nibabel.html)
+[Introduction to Neuroimaging in python - Nibabel](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/Python_for_Psychologists_Winter2021/module_showcases/image_manipulation_nibabel.html)
 
-[Introduction to Neuroimaging in python - Nilearn](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/image_manipulation_nilearn.html)
+[Introduction to Neuroimaging in python - Nilearn](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/module_showcases/image_manipulation_nilearn.html)
 
-[Introduction to fMRI analyses in python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/statistical_analyses_MRI.html)
+[Introduction to fMRI analyses in python](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/statistical_analyses_MRI.html)
 
-[Introduction to fMRI functional connectivity in python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/functional_connectivity.html)
+[Introduction to fMRI functional connectivity in python](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/module_showcases/functional_connectivity.html)
 
-[Introduction to diffusion imaging in python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/diffusion_imaging.html)
+[Introduction to diffusion imaging in python](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/diffusion_imaging.html)
 
-[Neuroimaging - Machine learning - preparation](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/machine_learning_preparation.html)
+[Neuroimaging - Machine learning - preparation](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/machine_learning_preparation.html)
 
-[Neuroimaging - Machine learning - Nilearn](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/machine_learning_nilearn.html)
+[Neuroimaging - Machine learning - Nilearn](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/machine_learning_nilearn.html)
 
-[Neuroimaging - Machine learning - Keras](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/machine_learning_keras.html)
+[Neuroimaging - Machine learning - Keras](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/machine_learning_keras.html)
 
-[Neuroimaging - Machine learning - predicting age](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/module_showcases/Predicting_age_with_machine_learning.html)
+[Neuroimaging - Machine learning - predicting age](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/showcases/Predicting_age_with_machine_learning.html)
 
 
 ## Hakuna matata
