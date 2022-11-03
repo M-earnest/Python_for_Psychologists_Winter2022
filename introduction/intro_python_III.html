@@ -650,6 +650,24 @@
          Let’s quickly talk about function names…
         </a>
        </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#argument-unpacking-with-args-and-kwargs">
+       Argument unpacking with
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         *args
+        </span>
+       </code>
+       and
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         *kwargs
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
        <li class="toc-h4 nav-item toc-entry">
         <a class="reference internal nav-link" href="#exercise-4-1">
          Exercise 4.1
@@ -920,6 +938,24 @@
          Let’s quickly talk about function names…
         </a>
        </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#argument-unpacking-with-args-and-kwargs">
+       Argument unpacking with
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         *args
+        </span>
+       </code>
+       and
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         *kwargs
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
        <li class="toc-h4 nav-item toc-entry">
         <a class="reference internal nav-link" href="#exercise-4-1">
          Exercise 4.1
@@ -2667,6 +2703,111 @@ We can increase readability by calling the <code class="docutils literal notrans
 <li><p>use <code class="docutils literal notranslate"><span class="pre">print</span></code> if your <code class="docutils literal notranslate"><span class="pre">function</span></code> only <code class="docutils literal notranslate"><span class="pre">prints</span></code> <code class="docutils literal notranslate"><span class="pre">statements</span></code></p></li>
 </ul>
 </div>
+</div>
+<div class="section" id="argument-unpacking-with-args-and-kwargs">
+<h3>Argument unpacking with <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">*kwargs</span></code><a class="headerlink" href="#argument-unpacking-with-args-and-kwargs" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes functions need to accept arbitrary/unknown arguments..</p>
+<ul class="simple">
+<li><p>Python handles this elegantly via the <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> conventions</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">*args</span></code>: a list of all unassigned <code class="docutils literal notranslate"><span class="pre">positional</span></code> arguments</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>: a dictionary of all unassigned <code class="docutils literal notranslate"><span class="pre">keyword</span></code> arguments</p></li>
+</ul>
+</li>
+</ul>
+<p><em>Note: the names args and kwargs are purely conventional. The important thing are to use a single <code class="docutils literal notranslate"><span class="pre">*</span></code> and some variable name to indicate args and two, i.e. <code class="docutils literal notranslate"><span class="pre">**</span></code> to inidcate kwargs</em></p>
+<p><a class="reference external" href="https://github.com/neurohackademy/introduction-to-python/blob/master/introduction-to-python.ipynb">Tal yarkoni’s intro to python</a></p>
+<p>So next we’ll try to understand what that actually means by playing around with a new function called <code class="docutils literal notranslate"><span class="pre">print_args_and_kwargs()</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># https://github.com/neurohackademy/introduction-to-python/blob/master/introduction-to-python.ipynb</span>
+
+<span class="k">def</span> <span class="nf">print_args_and_kwargs</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Args:&quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kwargs:&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The great thing is that <code class="docutils literal notranslate"><span class="pre">*args</span></code> allows us to pass a varying number of positional arguments, instead of us being limited to the amount of arguments we specified when we defined functions before.</p>
+<p>Let’s try that:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">print_args_and_kwargs</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="s1">&#39;17&#39;</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Args: ([1, 2, 3], [3, 4, 5], &#39;17&#39;, &#39;float&#39;)
+Kwargs: {}
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> does much the same, except it allows us to pass any number of <code class="docutils literal notranslate"><span class="pre">keyword</span></code> arguments to a function, so:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">print_args_and_kwargs</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;michael&#39;</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="s1">&#39;017xxx&#39;</span><span class="p">,</span> <span class="n">adress</span><span class="o">=</span><span class="s1">&#39;5G.103&#39;</span><span class="p">,</span> <span class="n">e_mail</span><span class="o">=</span><span class="s1">&#39;ernst@psych&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Args: ()
+Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, &#39;adress&#39;: &#39;5G.103&#39;, &#39;e_mail&#39;: &#39;ernst@psych&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>notice that <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> procudes a <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">-</span> <span class="pre">value</span> <span class="pre">pair</span></code> for each <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">parameter</span></code></p>
+<p>We can now use this in combination with <code class="docutils literal notranslate"><span class="pre">return</span></code> to assign the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">arguments</span></code> transformed in structure to a variable:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">return_args</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Args:&quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">args</span>
+
+
+<span class="n">args</span> <span class="o">=</span> <span class="n">return_args</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;str&#39;</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Args: ([1, 2, 3], 7, &#39;str&#39;)
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tuple
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">*args</span></code> function provides a <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, what do you believe a <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> may produce?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">return_kwargs</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;kwargs:&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">kwargs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kwargs</span> <span class="o">=</span> <span class="n">return_kwargs</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;michael&#39;</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="s1">&#39;017xxx&#39;</span><span class="p">,</span> <span class="n">adress</span><span class="o">=</span><span class="s1">&#39;5G.103&#39;</span><span class="p">,</span> <span class="n">e_mail</span><span class="o">=</span><span class="s1">&#39;ernst@psych&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">kwargs</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, &#39;adress&#39;: &#39;5G.103&#39;, &#39;e_mail&#39;: &#39;ernst@psych&#39;}
+{&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, &#39;adress&#39;: &#39;5G.103&#39;, &#39;e_mail&#39;: &#39;ernst@psych&#39;}
+&lt;class &#39;dict&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>For a more in-depth explanation and examples check out the <a class="reference external" href="https://www.geeksforgeeks.org/args-kwargs-python/">tutorial by geeks for geeks</a></p>
 <div class="section" id="exercise-4-1">
 <h4>Exercise 4.1<a class="headerlink" href="#exercise-4-1" title="Permalink to this headline">¶</a></h4>
 <p>Define a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">get_longest_string</span></code> that takes two <code class="docutils literal notranslate"><span class="pre">strings</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span></code> and <code class="docutils literal notranslate"><span class="pre">returns</span></code> the <code class="docutils literal notranslate"><span class="pre">longer</span> <span class="pre">string</span></code>. If the <code class="docutils literal notranslate"><span class="pre">strings</span></code> have the same <code class="docutils literal notranslate"><span class="pre">length</span></code>, the <code class="docutils literal notranslate"><span class="pre">first</span></code> one should be <code class="docutils literal notranslate"><span class="pre">returned</span></code>.</p>
