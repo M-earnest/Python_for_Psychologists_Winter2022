@@ -40,5 +40,6 @@ chapters:
     - file: showcases/machine_learning_keras.ipynb
     - file: showcases/Predicting_age_with_machine_learning.ipynb
 - file: questionnaires
+- file: wsl_tips
 - file: break
 - file: CoC
