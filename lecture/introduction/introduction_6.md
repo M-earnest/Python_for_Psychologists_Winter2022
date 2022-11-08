@@ -23,6 +23,10 @@ This session, we'll build upon the things learn last week and broader our capabi
 
 Please see the rendered version of the `jupyter notebook` [Introduction VI - Introduction to Python II](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_python_II.html) in the `ToC` on the left.
 
+Recap of Day 1 & update regarding regarding Exam regulations
+
+<iframe src="https://docs.google.com/presentation/d/1iQd_mU3zgJhb_fSY7-rXJJqLGlzltTXhDAKC6JkkWZY/edit#slide=id.g17a6284072a_0_480" frameborder="0" width="700" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
