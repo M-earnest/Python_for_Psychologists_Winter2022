@@ -1246,7 +1246,7 @@ Further, we want to know what the <code class="docutils literal notranslate"><sp
 </div>
 <div class="section" id="exercise-1-10">
 <h3>Exercise 1.10<a class="headerlink" href="#exercise-1-10" title="Permalink to this headline">¶</a></h3>
-<p>You can <code class="docutils literal notranslate"><span class="pre">split</span></code> a <code class="docutils literal notranslate"><span class="pre">string</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">strings</span></code> using <code class="docutils literal notranslate"><span class="pre">list.split('</span> <span class="pre">')</span></code>. This function <code class="docutils literal notranslate"><span class="pre">splits</span></code> the string given the parameter <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> (i.e the whitespaces) and generates a <code class="docutils literal notranslate"><span class="pre">list</span></code>. Assign the <code class="docutils literal notranslate"><span class="pre">split</span> <span class="pre">list</span></code> to a <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">variable</span></code>and <code class="docutils literal notranslate"><span class="pre">print</span></code> it.</p>
+<p>You can <code class="docutils literal notranslate"><span class="pre">split</span></code> a <code class="docutils literal notranslate"><span class="pre">string</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">strings</span></code> using <code class="docutils literal notranslate"><span class="pre">string.split('</span> <span class="pre">')</span></code>. This function <code class="docutils literal notranslate"><span class="pre">splits</span></code> the string given the parameter <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> (i.e the whitespaces) and generates a <code class="docutils literal notranslate"><span class="pre">list</span></code>. Assign the <code class="docutils literal notranslate"><span class="pre">split</span> <span class="pre">list</span></code> to a <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">variable</span></code>and <code class="docutils literal notranslate"><span class="pre">print</span></code> it.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Split</span></code> the lord of the stones <code class="docutils literal notranslate"><span class="pre">string</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">words</span></code>, <code class="docutils literal notranslate"><span class="pre">sort</span></code> this new <code class="docutils literal notranslate"><span class="pre">list</span></code>,</p>
 <p>add it to a new <code class="docutils literal notranslate"><span class="pre">variable</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">sorted</span> <span class="pre">list</span></code>. Further <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">10th</span> <span class="pre">element</span></code> of your sorted <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 <div class="cell docutils container">
@@ -1741,17 +1741,49 @@ python
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># call the for loop with a variable provided for keys and values</span>
-<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>parameter1 = A
-parameter2 = B
-parameter3 = C
-parameter4 = D
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(&#39;parameter1&#39;, &#39;A&#39;),
+ (&#39;parameter2&#39;, &#39;B&#39;),
+ (&#39;parameter3&#39;, &#39;C&#39;),
+ (&#39;parameter4&#39;, &#39;D&#39;)]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># call the for loop with a variable provided for keys and values</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;parameter1&#39;, &#39;A&#39;)
+(&#39;parameter2&#39;, &#39;B&#39;)
+(&#39;parameter3&#39;, &#39;C&#39;)
+(&#39;parameter4&#39;, &#39;D&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># call the for loop with a variable provided for keys and values</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>parameter1 = 
+parameter2 = 
+parameter3 = 
+parameter4 = 
 </pre></div>
 </div>
 </div>
@@ -2853,13 +2885,7 @@ Kwargs: {&#39;name&#39;: &#39;michael&#39;, &#39;number&#39;: &#39;017xxx&#39;, 
 <div class="section" id="homework-assignment-5">
 <h2>Homework assignment #5<a class="headerlink" href="#homework-assignment-5" title="Permalink to this headline">¶</a></h2>
 <p>Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it [here](will be up soon). In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
-<p>In preparation for our switch to more applied things, i.e. starting with experiments in <code class="docutils literal notranslate"><span class="pre">python</span></code>. We’ll have to install <code class="docutils literal notranslate"><span class="pre">psychopy</span></code>. To do that please download the <a class="reference external" href="https://raw.githubusercontent.com/psychopy/psychopy/master/conda/psychopy-env.yml">environment.yml</a> file provided and create a new respective <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> (remember those?) via the following lines:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  conda env create -n psychopy -f psychopy-env.yml
-  conda activate psychopy
-  pip install jedi psychtoolbox pygame pyo pyobjc python-vlc ujson
-</pre></div>
-</div>
-<p>and then test if everything works via running the command <code class="docutils literal notranslate"><span class="pre">psychopy</span></code> (type it and then press “enter”) from within the new environment (make sure you did activate it via <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">psychopy</span></code>).</p>
+<p>Also, in preparation for our switch to more applied things, i.e. starting with experiments in <code class="docutils literal notranslate"><span class="pre">python</span></code>. We’ll have to install <code class="docutils literal notranslate"><span class="pre">psychopy</span></code>. To do that please download the programm from <a class="reference external" href="https://www.psychopy.org/download.html">here</a> and follow the instructions for your specific operating system. If you encounter any Problems, please let me know!</p>
 <div class="section" id="and-this-concludes-our-introduction-sessions">
 <h3>And this concludes our introduction sessions.<a class="headerlink" href="#and-this-concludes-our-introduction-sessions" title="Permalink to this headline">¶</a></h3>
 <p>Great work everyone! You’re on your way to actually understand this madness!</p>
