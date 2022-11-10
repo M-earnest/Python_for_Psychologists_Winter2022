@@ -29,7 +29,7 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here] (Will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun!  
+Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://drive.google.com/file/d/1DTO2ufmm6u6OCYIw5M9qaDaJt94fMA7i/view?usp=share_link). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun!  
 
 **Deadline: 03/12/2021, 11:59 PM EST**
 
