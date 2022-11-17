@@ -64,7 +64,7 @@ data_fname = os.path.join(data_path, data_fname) # add path from GUI dialog box
 #===============================
 
 # Open a window
-win = visual.Window(size=(800,600), color='gray', units='pix', fullscr=False) # set size, background color, etc. of window
+win = visual.Window(size=(900,700), color='gray', units='pix', fullscr=False) # set size, background color, etc. of window
 
 # Define experiment start text
 welcome_message = visual.TextStim(win,
@@ -74,8 +74,8 @@ welcome_message = visual.TextStim(win,
 
 # Define trial start text
 start_message = visual.TextStim(win,
-                                text="In this experiment you will rate different musical artists, snacks and animals on a scale from 1 to 7. Please press the spacebar to start.",
-                                color='black', height=40)
+                                text="""In this experiment you will be presented with the different targets '>>>' and '<<<', \n\nPlease indicate the direction that these arrows are pointing in using the a (left) and l (right) buttons, respectively. \n\nBefore every target you will be presented with one the following arrow configurations:\n\n '>>> >>> >>>' or  '<<< <<< <<<'. \n\nPlease only react to the targets ('>>>' or '<<<') """,
+                                color='black', height=20, anchorVert='center')
 
 # Define experiment end text
 end_message = visual.TextStim(win,
@@ -108,7 +108,9 @@ flankers = distractors*trials_n
 rnd.shuffle(stimuli)
 rnd.shuffle(flankers)
 
-
+# if participants press `escape`, stop the experiment
+if event.getKeys(['escape']):
+    core.quit()   
 #=====================
 # Start the experiment
 #=====================
@@ -116,12 +118,12 @@ rnd.shuffle(flankers)
 # display welcome message
 welcome_message.draw() # draw welcome message to buffer screen
 win.flip() # flip it to the front screen
-keys = event.waitKeys(keyList=['space', 'escape']) # wait for spacebar key press before advancing or quit when escape is pressed 
+keys = event.waitKeys(keyList=['space']) # wait for spacebar key press before advancing or quit when escape is pressed 
 
 # display start message
 start_message.draw() # draw start message to buffer screen
 win.flip() # flip it to the front screen
-keys = event.waitKeys(keyList=['space', 'escape']) # wait for spacebar key press before advancing or quit when escape is pressed
+keys = event.waitKeys(keyList=['space']) # wait for spacebar key press before advancing or quit when escape is pressed
 
 # establish dictionary to save data in
 trial_counter = 0
@@ -140,7 +142,7 @@ for stim in stimuli:
     flanker = flankers[trial_counter]
 
     # display/draw fixation cross
-    visual.TextStim(win, text='+', pos=[0, 90]).draw()
+    visual.TextStim(win, text='+', pos=[0, 30], height=40).draw()
     # after everything is drawn, flip it to the front screen
     win.flip()
 
@@ -157,14 +159,15 @@ for stim in stimuli:
     # display/draw respective stimulus within each iteration, notice how the stimulus is set "on the fly"
     visual.TextStim(win, text=stim, bold=True, pos=[0, 30], height=40).draw()
 
-    # after everything is drawn, flip it to the front screen
-    win.flip()
-    trial_keys = event.waitKeys(keyList=['a', 'l', 'escape'], timeStamped=True) # wait for spacebar key press before advancing or quit when escape is pressed 
-
     # if participants press `escape`, stop the experiment
     if event.getKeys(['escape']):
         core.quit()   
         
+    # after everything is drawn, flip it to the front screen
+    win.flip()
+    trial_keys = event.waitKeys(keyList=['a', 'l'], timeStamped=True) # wait for spacebar key press before advancing or quit when escape is pressed 
+
+
     # write data into dict
     data_info['target'].append(stim)
     data_info['flanker'].append(flanker)
