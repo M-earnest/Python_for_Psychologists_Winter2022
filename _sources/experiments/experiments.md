@@ -30,8 +30,7 @@ To get some idea on how to present experiments via Python, we will explore the `
 There are three different sets of materials for this topic. A `slides`, a `jupyter notebook`, as well as several `python scripts` (.py) which can be run using `Psychopy`.
 
 You can find the `slides` here:
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTgO70XYDd7hbRFz-71G6CbSG9v9Opi2S8nsLohTB-61c_88GNNbpOCY1TmBplOI5yEdPGuBhgYjHLW/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
+<iframe src="https://docs.google.com/presentation/d/1zzvIqxXAqJ-ax77gxyZ3_oiCnaJYliZUIwP23OOjOMM/edit#slide=id.g108e193bf9d_0_111" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 We've also got the recap on the last Python lesson here:
 <iframe src="https://docs.google.com/presentation/d/1V_Ww6gECVAXPgR9MktS5e_OnGq8_44DkyOfnI-ejAeo/edit?usp=sharing" frameborder="0" width="960" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
