@@ -24,6 +24,7 @@ chapters:
   - file: introduction/introduction_7.md  
     sections:
     - file: introduction/intro_python_III.ipynb
+- file: experiments/experiments.md
 - file: showcases/module_showcases.md
   sections:
     - file: showcases/python_numpy.ipynb

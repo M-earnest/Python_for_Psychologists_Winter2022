@@ -1,20 +1,64 @@
 # Running experiments in Python
 
-### Schedule
+After spending quite a good while on important prerequisites concerning scientific computing and the basics of the `python` programming language, it's finally time to combine them via transitioning to more applied topics. This adventure will start with a brief exploration of how to create and run experiments using [PsychoPy](https://www.psychopy.org/index.html), a `python library` dedicated to conducting experiments in the realm of `psychology` and adjacent fields. Due to time constraints we will only have a quick look at things and showcase the most important aspects to allow folks to explore things further after the course ends. We'll further concentrate on using psychopy to further your understanding of the Python essential such as control-flow statements.
 
-Please see below for our current optimistic schedule. Depending on our progress, potential problems and different forms of learning, content and times might change a bit. Each lecture will be divided into several parts separated by a 5-10 minute break and might constitute a transition from basic to advanced concepts, theoretic to practical sessions and individual to group work. The different parts are roughly indicated in the schedule below like this:
+## Topics 💡👨🏻‍🏫 
 
-🗓 - important information on date & time  
-💡 - input from the instructor  
-👨🏻‍🏫 - instructor presents content  
-🥼 - research project work  
-🧑🏽‍💻🧑🏾‍💻 - work on demo data  
-🧑🏿‍🔬👩🏻‍🔬 - work on own research project  
-🖥️ - computational work outside course hours  
-✍🏽 - writing outside course hours  
-📖 - reading outside course hours  
+In the following you'll find the `objectives` and `materials` for each of the topics we'll discuss during this session.
 
-| Date (day/month/year) 🗓         | Topic 💡 👨🏻‍🏫   | Assignment & deadline 🖥️ ✍🏽📖 |
-|--------------|-----------|------------|
-| 13/01/2022 | PsychoPy I - writing experiments in python 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬 |  19/01/2022 - 11:59 PM EST  🖥️ ✍🏽📖   |
-| 20/01/2022 | PsychoPy II - stimulus presentation & responses 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬   |  26/01/2022 - 11:59 PM EST 🖥️ ✍🏽📖 |
+
+### Introduction to PsychoPy - I
+
+Most of us already conducted or at watched or help conduct an experiment. However, there's a fair number of different software options and tools out there, which mostly depends on the computational infrastructure at hand, but also on what people have the experience and skills to master. 
+
+That being said: We'll quickly discuss some tools to conduct experiments and work out if we can actually use `python` based resources in this context with a clear conscience or if you're better off by defaulting to paid software packages.
+
+To get some idea on how to present experiments via Python, we will explore the `python library` [PsychoPy](), including its setup, basic working principles, as well as advantages and disadvantages, showcased on a very simple experiment. Buckle up y'all, this is the first time we will use `python` "in the wild".      
+
+#### Objectives 📍
+
+- running `experiments` using `python`
+    - Exploring `PsychoPy`
+    - basic setup & interaction
+    - experiments, trials, stimuli, responses
+    - a very simple experiment
+- Ask and answer questions
+- Have a great time
+
+#### Materials 📓
+
+There are three different sets of materials for this topic. A `slides`, a `jupyter notebook`, as well as several `python scripts` (.py) which can be run using `Psychopy`.
+
+You can find the `slides` here:
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTgO70XYDd7hbRFz-71G6CbSG9v9Opi2S8nsLohTB-61c_88GNNbpOCY1TmBplOI5yEdPGuBhgYjHLW/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+We've also got the recap on the last Python lesson here:
+<iframe src="https://docs.google.com/presentation/d/1V_Ww6gECVAXPgR9MktS5e_OnGq8_44DkyOfnI-ejAeo/edit?usp=sharing" frameborder="0" width="960" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+And the `jupyter notebook` which contains a condensed version of the `slides` in the `ToC` on the left via
+[Experimentation I - Introduction to PsychoPy I](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_psychopy_I.html) .
+
+The Python scripts you can find [here](), to download them you can either download the [course content](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) again and replace the old "experiments" folder with the new one provided or you can download the python scripts directly by opening the respective python file in the [github erpository](https://github.com/M-earnest/Python_for_Psychologists_Winter2022), click `'Raw'` and save the file locally via `ctrl/cmd + s`.
+
+## tasks for subsequent meeting 🖥️✍🏽📖
+
+'soon to come'
+
+### optional/reading/further materials
+
+Here are some cool videos providing some further insights into the world and capabilities of `PsychoPy`.
+
+First, a nice tutorial on how to create a “`line bisection task`” using `PsychoPy`.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQSL_ogaLG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Want to know how far you can go with `PsychoPy`? How about coding an entire video game? Yeah, that's possible!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ISHAnDF4Xkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+As we couldn't address a lot of things, check out this great in-depth dive into Psychopy itself:
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=GSv60zgQlB8&list=PL6PJquR5BWXllUt585cRJWcRTly55iXTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
