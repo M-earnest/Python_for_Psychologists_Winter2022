@@ -41,9 +41,10 @@ And the `jupyter notebook` which contains a condensed version of the `slides` in
 
 The Python scripts you can find [here](), to download them you can either download the [course content](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) again and replace the old "experiments" folder with the new one provided or you can download the python scripts directly by opening the respective python file in the [github erpository](https://github.com/M-earnest/Python_for_Psychologists_Winter2022), click `'Raw'` and save the file locally via `ctrl/cmd + s`.
 
-## tasks for subsequent meeting 🖥️✍🏽📖
+### Homework assignment #6
+Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
 
-'soon to come'
+**Deadline: 17/12/2022, 11:59 PM EST**
 
 ### optional/reading/further materials
 

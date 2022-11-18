@@ -52,6 +52,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python module showcases" href="../showcases/module_showcases.html" />
+    <link rel="prev" title="Running experiments in Python" href="experiments.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -95,7 +97,7 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../dei.html">
    Diversity, Equity and Inclusion
@@ -223,17 +225,29 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="experiments.html">
    Running experiments in Python
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Experimentation I - Introduction to PsychoPy I
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../showcases/module_showcases.html">
    Python module showcases
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -535,6 +549,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#waiting-for-input">
+     Waiting for Input
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#trials">
      <code class="docutils literal notranslate">
       <span class="pre">
@@ -571,6 +590,13 @@
   <a class="reference internal nav-link" href="#outro">
    Outro
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-assignment-6">
+     Homework assignment #6
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -703,6 +729,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#waiting-for-input">
+     Waiting for Input
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#trials">
      <code class="docutils literal notranslate">
       <span class="pre">
@@ -739,6 +770,13 @@
   <a class="reference internal nav-link" href="#outro">
    Outro
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-assignment-6">
+     Homework assignment #6
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -806,7 +844,8 @@ This lecture was prepared by Peer Herholz and further adapted and expanded for t
 <div class="section" id="computing-environments">
 <h3>Computing environments<a class="headerlink" href="#computing-environments" title="Permalink to this headline">¶</a></h3>
 <p>As addressed during the first weeks of the course, <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code> are essential when programming, not only in <code class="docutils literal notranslate"><span class="pre">Python</span></code>. This refers to reproducibility, transfer/sharing of code and many other factors. Lucky for us <code class="docutils literal notranslate"><span class="pre">Python</span></code> makes it easy to <code class="docutils literal notranslate"><span class="pre">create</span></code> and <code class="docutils literal notranslate"><span class="pre">manage</span></code> <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code>, for example using <span class="xref myst">conda</span>.</p>
-<p>We can thus also use it to create a new <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environment</span></code> specifically dedicated to creating and running a new experiment using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. Here we will name it <code class="docutils literal notranslate"><span class="pre">psychopy</span></code> and include/install a few dependencies we already know:</p>
+<p>We can thus also use it to create a new <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environment</span></code> specifically dedicated to creating and running a new experiment using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. Here we will name it <code class="docutils literal notranslate"><span class="pre">psychopy</span></code> and include/install a few dependencies we already know.</p>
+<p><em><strong>Note</strong></em>: Now for you wsl-folks this probably won’t work as intended, therefore we had you download the standalone version of <code class="docutils literal notranslate"><span class="pre">Psychopy</span></code>, so you can safely skipt the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
@@ -1221,6 +1260,9 @@ ipython
 <p>As you might have noticed the <code class="docutils literal notranslate"><span class="pre">draw</span></code> function is applied to the <code class="docutils literal notranslate"><span class="pre">text_stimulus</span></code> to load it onto our <code class="docutils literal notranslate"><span class="pre">buffer</span> <span class="pre">screen</span></code>, while the <code class="docutils literal notranslate"><span class="pre">.flip</span></code> function is applied afterwards to our <code class="docutils literal notranslate"><span class="pre">window</span></code> instead.</p>
 <p>Let’s give it a try via <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">experiment.py</span></code>. If everything works/is set correctly you should see the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> again but this time after clicking <code class="docutils literal notranslate"><span class="pre">OK</span></code>, the <code class="docutils literal notranslate"><span class="pre">text</span></code> we defined as a welcome message should appear next.</p>
 </br>
+</div>
+<div class="section" id="waiting-for-input">
+<h3>Waiting for Input<a class="headerlink" href="#waiting-for-input" title="Permalink to this headline">¶</a></h3>
 <p>However, the text only appears very briefly and in contrast to our <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> doesn’t wait for us to press anything in advance.</p>
 <p>This is because we didn’t tell <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> that we want to <code class="docutils literal notranslate"><span class="pre">wait</span></code> for a distinct <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">press</span></code> before we advance further, we need the <a class="reference external" href="https://psychopy.org/api/event.html">psychopy.event module</a>.</p>
 <p>Through its <code class="docutils literal notranslate"><span class="pre">.waitKeys()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> we can define that nothing should happen/we shouldn’t advancing unless a certain <code class="docutils literal notranslate"><span class="pre">key</span></code> is pressed. We can Specify the respective <code class="docutils literal notranslate"><span class="pre">keys</span></code> we want to allow as input, by providing them as <code class="docutils literal notranslate"><span class="pre">elements</span></code> of a <code class="docutils literal notranslate"><span class="pre">list</span></code> to the function.</p>
@@ -2737,7 +2779,19 @@ object. We have to further specify</p>
 Feel free to explore the other aspects of the coures website for further insights on what you can do with Python.</p>
 <p><strong>Thank so much for sticking with us throughout this!</strong></p>
 <img align="center" src="https://media1.giphy.com/media/Y2bC3o5BkYNndT4vbK/giphy.gif?cid=790b7611efb3ab9e8609b1d019b214ade942084c480d68a9&rid=giphy.gif&ct=g" title="jupyter" width="600" height="300" /> 
-<center><a href="https://giphy.com/gifs/hallmarkecards-wow-otter-otterly-amazing-Y2bC3o5BkYNndT4vbK">via GIPHY</a></center></div>
+<center><a href="https://giphy.com/gifs/hallmarkecards-wow-otter-otterly-amazing-Y2bC3o5BkYNndT4vbK">via GIPHY</a></center><div class="section" id="homework-assignment-6">
+<h3>Homework assignment #6<a class="headerlink" href="#homework-assignment-6" title="Permalink to this headline">¶</a></h3>
+<p>Your sixth and last homework assignment will entail the generation of a “new” psychopy experiment</p>
+<ul class="simple">
+<li><p>You are free to copy any of the existing experiments, in the experiments folder or that were presented in the lesson</p></li>
+<li><p>but at least change the instruction, stimuli and file/experiment name</p></li>
+<li><p>you get full marks, if the experiment runs without crashes, collects participant input in a gui dialogue, logs responses and outputs a .csv file which contains the collected data</p></li>
+<li><p>Bonus: Use a different stimulus modality</p></li>
+</ul>
+<p>Save it as a .py file and e-mail it to <a class="reference external" href="mailto:ernst&#37;&#52;&#48;psych&#46;uni-frankfurt&#46;de">ernst<span>&#64;</span>psych<span>&#46;</span>uni-frankfurt<span>&#46;</span>de</a></p>
+<p><strong>Deadline: 23/12/2023, 11:59 PM EST</strong></p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -2764,7 +2818,21 @@ Feel free to explore the other aspects of the coures website for further insight
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="experiments.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Running experiments in Python</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../showcases/module_showcases.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python module showcases</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
