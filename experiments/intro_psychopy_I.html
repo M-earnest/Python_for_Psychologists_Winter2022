@@ -1410,11 +1410,10 @@ ipython
 <div><p>After that we could bring our <code class="docutils literal notranslate"><span class="pre">shuffle</span></code>d <code class="docutils literal notranslate"><span class="pre">stimuli</span> <span class="pre">list</span></code> into the format required by <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. Specifically, this refers to the definition of <code class="docutils literal notranslate"><span class="pre">experiment</span> <span class="pre">trials</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">trials</span></code> that will be presented during the <code class="docutils literal notranslate"><span class="pre">experiment</span></code>, including their properties (e.g. <code class="docutils literal notranslate"><span class="pre">content</span></code>, <code class="docutils literal notranslate"><span class="pre">order</span></code>, <code class="docutils literal notranslate"><span class="pre">repetition</span></code>, etc.). In <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> this is achieved via the <a class="reference external" href="https://psychopy.org/api/data.html#psychopy.data.TrialHandler">data.TrialHandler()</a> <code class="docutils literal notranslate"><span class="pre">function</span></code> for which we need to convert our <code class="docutils literal notranslate"><span class="pre">shuffle</span></code>d <code class="docutils literal notranslate"><span class="pre">stimuli</span> <span class="pre">list</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">dictionaries</span></code> of the form <code class="docutils literal notranslate"><span class="pre">“stimulus”:</span> <span class="pre">value</span></code>.</p>
 </div></blockquote>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">stim_order</span> <span class="o">=</span> <span class="p">[]</span>
 </pre></div>
 </div>
 </div></blockquote>
-<p>stim_order = []</p>
 <blockquote>
 <div><p>for stim in movies:
 stim_order.append({‘stimulus’: stim})</p>
@@ -1437,17 +1436,8 @@ stim_order.append({‘stimulus’: stim})</p>
 <div><p>With that we can simply <code class="docutils literal notranslate"><span class="pre">loop</span></code> over the <code class="docutils literal notranslate"><span class="pre">trials</span></code> in the <code class="docutils literal notranslate"><span class="pre">trials</span> <span class="pre">object</span></code> and during each <code class="docutils literal notranslate"><span class="pre">iteration</span></code> <code class="docutils literal notranslate"><span class="pre">draw</span></code> and <code class="docutils literal notranslate"><span class="pre">flip</span></code> the respective <code class="docutils literal notranslate"><span class="pre">value</span></code> of the <code class="docutils literal notranslate"><span class="pre">dictionary</span> <span class="pre">key</span></code> <code class="docutils literal notranslate"><span class="pre">“stimulus”</span></code> to present the stimuli of our <code class="docutils literal notranslate"><span class="pre">list</span></code> “movies” one-by-one after one another.</p>
 </div></blockquote>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div></blockquote>
-<p>for trial in trials:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># display/draw respective stimulus within each iteration, notice how the stimulus is set &quot;on the fly&quot;
-visual.TextStim(win, text=trial[&#39;stimulus&#39;], bold=True, pos=[0, 30], height=40).draw()
-</pre></div>
-</div>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">trial</span> <span class="ow">in</span> <span class="n">trials</span><span class="p">:</span>
+   <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">trial</span><span class="p">[</span><span class="s1">&#39;stimulus&#39;</span><span class="p">],</span> <span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -1461,7 +1451,7 @@ visual.TextStim(win, text=trial[&#39;stimulus&#39;], bold=True, pos=[0, 30], hei
 </div>
 <p>Notice, that we are just providing our <code class="docutils literal notranslate"><span class="pre">element</span></code>, i.e. the <code class="docutils literal notranslate"><span class="pre">artist</span> <span class="pre">variable</span></code> as the <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">keyword</span> <span class="pre">argument</span></code> for the <code class="docutils literal notranslate"><span class="pre">TextStim</span></code> function.</p>
 <p>Additionally, we want to display the question <code class="docutils literal notranslate"><span class="pre">“How</span> <span class="pre">much</span> <span class="pre">do</span> <span class="pre">you</span> <span class="pre">like</span> <span class="pre">the</span> <span class="pre">following?”</span></code> above the respective stimulus to remind participant about the task.</p>
-<p>Within each <code class="docutils literal notranslate"><span class="pre">iteration</span></code> of our <code class="docutils literal notranslate"><span class="pre">for-loop</span></code> we will also allow participants to <code class="docutils literal notranslate"><span class="pre">quit</span></code> the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> by pressing <code class="docutils literal notranslate"><span class="pre">“escape”</span></code> via the <code class="docutils literal notranslate"><span class="pre">event.getKeys()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> as we don’t want to wait for a <code class="docutils literal notranslate"><span class="pre">key</span></code> to be <code class="docutils literal notranslate"><span class="pre">pressed</span></code> but want to do something whenever a certain <code class="docutils literal notranslate"><span class="pre">key</span></code> is <code class="docutils literal notranslate"><span class="pre">pressed</span></code>.</p>
+<p>Within each <code class="docutils literal notranslate"><span class="pre">iteration</span></code> of our <code class="docutils literal notranslate"><span class="pre">for-loop</span></code> we will also allow participants to <code class="docutils literal notranslate"><span class="pre">quit</span></code> the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> by pressing <code class="docutils literal notranslate"><span class="pre">“escape”</span></code> via the <code class="docutils literal notranslate"><span class="pre">event.getKeys()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
@@ -1863,7 +1853,7 @@ This would look something like this:</p>
 <div class="section" id="saving-data">
 <h3>Saving data<a class="headerlink" href="#saving-data" title="Permalink to this headline">¶</a></h3>
 <p>Because things work like a charm and we’re using <code class="docutils literal notranslate"><span class="pre">Python</span></code>-based tools, we can make use of the <a class="reference external" href="https://pandas.pydata.org/docs/"><code class="docutils literal notranslate"><span class="pre">Pandas</span></code></a> module, which is great for data handling.</p>
-<p>To demonstrate let’s quickly simulate some data. Don’t worry about the following syntax, we’ll just create some list to populate our dictionary with.</p>
+<p>To demonstrate let’s quickly simulate some data. Don’t worry about the following syntax, we’ll just create some lists to populate our dictionary with.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="nn">rnd</span>
@@ -2778,7 +2768,7 @@ object. We have to further specify</p>
 <p>As usually: awesome work folks! The transition from basic <code class="docutils literal notranslate"><span class="pre">Python</span></code> aspects to applied together is definitely no cake-walk, especially when simultaneously switching to <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scripts</span></code> from <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> but you did a great job!
 Feel free to explore the other aspects of the coures website for further insights on what you can do with Python.</p>
 <p><strong>Thank so much for sticking with us throughout this!</strong></p>
-<img align="center" src="https://media1.giphy.com/media/Y2bC3o5BkYNndT4vbK/giphy.gif?cid=790b7611efb3ab9e8609b1d019b214ade942084c480d68a9&rid=giphy.gif&ct=g" title="jupyter" width="600" height="300" /> 
+<img align="center" src="https://media1.giphy.com/media/Y2bC3o5BkYNndT4vbK/giphy.gif?cid=790b7611efb3ab9e8609b1d019b214ade942084c480d68a9&rid=giphy.gif&ct=g" title="otterly amazing"/> 
 <center><a href="https://giphy.com/gifs/hallmarkecards-wow-otter-otterly-amazing-Y2bC3o5BkYNndT4vbK">via GIPHY</a></center><div class="section" id="homework-assignment-6">
 <h3>Homework assignment #6<a class="headerlink" href="#homework-assignment-6" title="Permalink to this headline">¶</a></h3>
 <p>Your sixth and last homework assignment will entail the generation of a “new” psychopy experiment</p>
