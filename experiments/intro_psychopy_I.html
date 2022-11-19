@@ -1045,7 +1045,7 @@ ipython
 <span class="c1"># Import modules</span>
 <span class="c1">#===============</span>
 
-<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">data</span> <span class="c1"># import psychopy modules/functions</span>
 <span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
 
 <span class="c1">#========================================</span>
@@ -1106,7 +1106,7 @@ ipython
 <span class="c1"># Import modules</span>
 <span class="c1">#===============</span>
 
-<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span> <span class="c1"># import psychopy modules/functions</span>
 <span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
 
 <span class="c1">#========================================</span>
@@ -1135,6 +1135,15 @@ ipython
 <span class="c1"># Data storage: basic information, filename &amp; path</span>
 <span class="c1">#=================================================</span>
 
+<span class="c1"># get current working directory for easier creation/saving of files</span>
+<span class="n">cwd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">_%H_%M&quot;</span><span class="p">)</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># add experiment name to info dict</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="n">data_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cwd</span><span class="p">,</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">],</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">])</span>
 <span class="c1"># Get date and time</span>
 <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
 <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># add experiment name no dict</span>
@@ -1193,7 +1202,7 @@ ipython
 <span class="c1"># Import modules</span>
 <span class="c1">#===============</span>
 
-<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">data</span> <span class="c1"># import psychopy modules/functions</span>
 <span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
 
 <span class="c1">#========================================</span>
@@ -1221,7 +1230,15 @@ ipython
 <span class="c1">#=================================================</span>
 <span class="c1"># Data storage: basic information, filename &amp; path</span>
 <span class="c1">#=================================================</span>
+<span class="c1"># get current working directory for easier creation/saving of files</span>
+<span class="n">cwd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">_%H_%M&quot;</span><span class="p">)</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># add experiment name to info dict</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="n">data_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cwd</span><span class="p">,</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">],</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">])</span>
 <span class="c1"># Get date and time</span>
 <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
 <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># add experiment name no dict</span>
@@ -1278,7 +1295,7 @@ ipython
 <span class="c1"># Import modules</span>
 <span class="c1">#===============</span>
 
-<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">data</span> <span class="c1"># import psychopy modules/functions</span>
 <span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
 
 <span class="c1">#========================================</span>
