@@ -23,6 +23,10 @@ This session, we'll build upon the things learn last week and broader our capabi
 
 Please see the rendered version of the `jupyter notebook` [Introduction VI - Introduction to Python II](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_python_II.html) in the `ToC` on the left.
 
+Recap of Day 1 & update regarding regarding Exam regulations
+
+<iframe src="https://docs.google.com/presentation/d/1iQd_mU3zgJhb_fSY7-rXJJqLGlzltTXhDAKC6JkkWZY/edit#slide=id.g17a6284072a_0_480" frameborder="0" width="700" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
@@ -30,7 +34,7 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-Your fourth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](Will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be _optional_ and thus the notebook will look way longer than it actually is. Also remember that you can work on your homework in groups, as long as you indicate at the top of the homework notebook, with whom you've worked together.
+Your fourth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://drive.google.com/file/d/1CZSOIb8NAeid5pjUzBPoqWF3YS7x42dz/view?usp=share_link). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be _optional_ and thus the notebook will look way longer than it actually is. Also remember that you can work on your homework in groups, as long as you indicate at the top of the homework notebook, with whom you've worked together.
 
 **Deadline: 03/12/2021, 11:59 PM EST**
 

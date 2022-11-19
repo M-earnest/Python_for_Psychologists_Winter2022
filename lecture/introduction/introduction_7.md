@@ -32,13 +32,7 @@ Not applicable, as project related work didn't start yet.
 
 ### Prepare PsychoPy installation
 
-Also, in preparation for our switch to more applied things, i.e. starting with experiments in `python`. We'll have to install `psychopy`. To do that please download the [environment.yml](https://raw.githubusercontent.com/psychopy/psychopy/master/conda/psychopy-env.yml) file provided and create a new respective `conda environment` (remember those?) via the following lines:
-
-      conda env create -n psychopy -f psychopy-env.yml
-      conda activate psychopy
-      pip install jedi psychtoolbox pygame pyo pyobjc python-vlc ujson
-
-and then test if everything works via running the command `psychopy` (type it and then press “enter”) from within the new environment (make sure you did activate it via `conda activate psychopy`).
+Also, in preparation for our switch to more applied things, i.e. starting with experiments in `python`. We'll have to install `psychopy`. To do that please download the programm from [here](https://www.psychopy.org/download.html) and follow the instructions for your specific operating system. If you encounter any Problems, please let me know!
 
 
 ### Homework assignment #5
