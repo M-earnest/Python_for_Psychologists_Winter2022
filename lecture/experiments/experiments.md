@@ -37,14 +37,21 @@ We've also got the recap on the last Python lesson here:
 
 
 And the `jupyter notebook` which contains a condensed version of the `slides` in the `ToC` on the left via
-[Experimentation I - Introduction to PsychoPy I](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_psychopy_I.html) .
+[Experimentation - Introduction to PsychoPy](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/experiments/intro_psychopy_I.html) .
 
-The Python scripts you can find [here](), to download them you can either download the [course content](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) again and replace the old "experiments" folder with the new one provided or you can download the python scripts directly by opening the respective python file in the [github erpository](https://github.com/M-earnest/Python_for_Psychologists_Winter2022), click `'Raw'` and save the file locally via `ctrl/cmd + s`.
+To get the discussed Python scripts you can either download the [course content](https://github.com/M-earnest/Python_for_Psychologists_Winter2022/archive/refs/heads/main.zip) again and replace the old "experiments" folder with the new one provided or you can download the python scripts directly by opening the respective python file in the [github erpository](https://github.com/M-earnest/Python_for_Psychologists_Winter2022), click `'Raw'` and save the file locally via `ctrl/cmd + s`.
+
 
 ### Homework assignment #6
-Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
+Your sixth and last homework assignment will entail the generation of a “new” psychopy experiment
 
-**Deadline: 17/12/2022, 11:59 PM EST**
+You are free to copy any of the existing experiments, but at least change the instruction, stimuli and file/experiment name. You'll get full marks, if the experiment runs without crashes, collects participant input in a gui dialogue, logs responses and outputs a .csv file which contains the collected data.
+Bonus: Use a different stimulus modality
+
+Save it as a .py file and e-mail it to ernst@psych.uni-frankfurt.de
+
+**Deadline: 23/12/2023, 11:59 PM EST**
+
 
 ### optional/reading/further materials
 
