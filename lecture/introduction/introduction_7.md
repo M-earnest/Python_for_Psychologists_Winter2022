@@ -36,9 +36,9 @@ Also, in preparation for our switch to more applied things, i.e. starting with e
 
 
 ### Homework assignment #5
-Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](will be up soon). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
+Your fifth homework assignment will entail working through a few tasks covering the contents discussed in this session within a `jupyter notebook`. You can download it [here](https://drive.google.com/file/d/1HACo0XwC04Tef3zP_2471K1JMvwzeb3Y/view?usp=share_link). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials` in, start a `jupyter notebook server` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be optional and thus the notebook will look way longer than it actually is.
 
-**Deadline: 17/12/2022, 11:59 PM EST**
+**Deadline: 15/01/2023, 11:59 PM EST**
 
 
 ### optional/reading/further materials
